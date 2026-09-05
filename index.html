@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>タルコフ ショアラインマップ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>タルコフ ショアラインマップ</h1>
+
+
+<div class="map-selector">
+    <label for="mapSelect">マップ：</label>
+
+    <select id="mapSelect">
+    <option value="shoreline">ショアライン</option>
+    <option value="customs">カスタム</option>
+    <option value="lighthouse">ライトハウス</option>
+    <option value="woods">ウッズ</option>
+    <option value="interchange">インチェ</option>
+    <option value="reserve">リザーブ</option>
+    <option value="labs">ラボ</option>
+    <option value="streets">ストタル</option>
+    <option value="groundzero">グラゼロ</option>
+    <option value="factory">ファクトリー</option>
+</select>
+
+</div>
+
+
+
+
+<div class="buttons">
+    <button id="pmcButton">PMC脱出</button>
+    <button id="scavButton">SCAV脱出</button>
+    <button id="hideButton">非表示</button>
+</div>
+
+ <div class="map-area">
+
+    <div class="map-scroll">
+
+        <div class="map-container">
+
+        <img id="mapImage" src="Shoreline.svg" alt="ショアラインのマップ">
+
+        <div id="pmc-exits"></div>
+        <div id="scav-exits"></div>
+        <div id="task-markers"></div>
+
+        </div>
+
+    </div>
+
+<div class="task-panel" id="task-panel">
+
+    <div class="task-panel-header">
+        <h2>タスク一覧</h2>
+
+        <div class="task-panel-buttons">
+            <button id="minimizeTaskButton">−</button>
+            <button id="restoreTaskButton">□</button>
+        </div>
+    </div>
+
+    <div id="task-panel-content">
+
+        <input
+            type="text"
+            id="task-search"
+            placeholder="タスク名・依頼主を検索"
+        >
+
+        <div id="task-list"></div>
+
+    </div>
+
+</div>
+
+
+<!-- 選択したタスクの条件 -->
+<div class="condition-panel" id="condition-panel">
+
+    <div class="condition-panel-header">
+        <h2>タスク条件</h2>
+
+        <div class="condition-panel-buttons">
+            <button id="minimizeConditionButton">−</button>
+            <button id="restoreConditionButton">□</button>
+        </div>
+    </div>
+
+    <div id="condition-panel-content">
+    <div id="condition-list"></div>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- Credits / License -->
+<button id="creditsButton" class="credits-button">
+    Credits / License
+</button>
+
+<div id="creditsModal" class="credits-modal">
+
+    <div class="credits-modal-content">
+
+        <button id="closeCreditsButton" class="credits-close">
+            ×
+        </button>
+
+        <h2>Credits / License</h2>
+
+        <h3>Map Assets</h3>
+
+        <p>
+            本サイトでは、以下のマップ素材を使用しています。
+        </p>
+
+        <p>
+            <strong>Escape from Tarkov SVG Maps Project</strong><br>
+            by the-hideout
+        </p>
+
+        <p>
+            <a
+                href="https://github.com/the-hideout/tarkov-dev-svg-maps"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Source / GitHub
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+            <a
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-NC-SA 4.0
+            </a>.
+        </p>
+
+        <hr>
+
+        <p class="credits-notice">
+            本サイトはEscape from Tarkovおよび
+            Battlestate Gamesとは無関係の、
+            ファンによる非公式コミュニティツールです。
+        </p>
+
+        <p class="credits-notice">
+            Escape from Tarkovおよび関連する名称・
+            ゲームコンテンツの権利は、それぞれの権利者に帰属します。
+        </p>
+
+    </div>
+
+</div>
+
+<!-- これを一番最後にする -->
+<script src="script.js"></script>
+
+</body>
+</html>
