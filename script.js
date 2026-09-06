@@ -2169,7 +2169,7 @@ const mapImage = document.getElementById("mapImage");
 const mapImages = {
     shoreline: "Shoreline.svg",
     customs: "Customs.svg",
-    lighthouse: "lighthouse.svg",
+    lighthouse: "Lighthouse.svg",
     woods: "Woods.svg",
     interchange: "Interchange.svg",
     reserve: "Reserve.svg",
