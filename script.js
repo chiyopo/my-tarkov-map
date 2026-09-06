@@ -9,16 +9,16 @@ const tasksData = [
         giver:"プラパー",
         maps: {
             "カスタム": [
-                { left: 30, top: 30 }
+                { left: 73, top: 485 ,width:15,height:70,rotate:-9,type:"area"}
             ],
             "ショアライン": [
-                { left: 60, top: 40 }
+                {left: 48.6, top: 31 ,width:15,height:11,rotate:0,type:"area" }
             ],
             "ウッズ": [
-                { left: 40, top: 60 }
+                {left: 78, top: 278 ,width:15,height:20,rotate:-9,type:"area" }
             ]
         },
-        description: "カスタムの新建、ウッズの医療キャンプ、ショアラインのリゾートでPMC12kill",
+        description: "カスタムの新建、ウッズの医療キャンプ、ショアラインのリゾートでPMC12kill（kill共有あり）",
         selected: false
     },
 
@@ -27,9 +27,9 @@ const tasksData = [
         giver:"プラパー",
         maps: {
             "ショアライン": [
-                { left: 35, top: 35 },
-                { left: 50, top: 50 },
-                { left: 65, top: 65 }
+                { left: 49, top: 34 },
+                { left: 28.5, top: 49.2 },
+                { left: 52, top: 83.5 }
             ]
         },
         description: "取引所3箇所にマーカー設置",
@@ -41,47 +41,29 @@ const tasksData = [
         giver:"プラパー",
         maps: {
             "ストタル": [
-                { left: 30, top: 30 }
+                
             ],
             "ショアライン": [
-                { left: 50, top: 50 }
+                
             ],
             "グラゼロ": [
-                { left: 70, top: 70 }
+               
             ]
         },
-        description: "AK-12にValdayスコープとAK-12サプレッサーをつけてPMCを10killする",
+        description: "AK-12にValdayスコープとAK-12サプレッサーをつけてPMCを10killする（kill共有あり）",
         selected: false
     },
 
-     {
-        name: "［KORD BREACH］Cast the Net",
-        giver:"プラパー",
-        maps: {
-            "ショアライン": [
-                { left: 35, top: 35 },
-                { left: 65, top: 65 }
-            ],
-            "ストタル": [
-                { left: 50, top: 50 }
-            ],
-            "グラゼロ": [
-                { left: 30, top: 70 },
-                { left: 70, top: 30 }
-            ]
-        },
-        description: "ショアライン2箇所、ストタル1箇所、グラゼロ2箇所にカメラ設置",
-        selected: false
-    },
+    
 
     {
         name: "Colleagues",
         giver:"セラピスト",
         maps: {
             "ショアライン": [
-                { left: 30, top: 30 },
-                { left: 50, top: 50 },
-                { left: 70, top: 70 }
+                {left: 49, top: 35},
+               { left: 28.5, top: 48 },
+               { left: 52, top: 83.5 }
             ]
         },
         description: "3箇所の死体を1度のレイドでみて生還する",
@@ -93,10 +75,10 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             "ショアライン": [
-                { left: 30, top: 30 },
-                { left: 45, top: 45 },
-                { left: 60, top: 60 },
-                { left: 75, top: 75 }
+                { left: 15, top: 68 },
+               { left: 14.5, top: 68 },
+                { left: 28.5, top: 48 },
+                { left: 49, top: 34 },
             ]
         },
         description: "4箇所の救急車にマーカー",
@@ -108,7 +90,7 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             "ショアライン": [
-                { left: 45, top: 40 }
+                { left: 47, top: 33 ,comment:"西棟306号室🔑"}
             ]
         },
         description: "西棟306号室(鍵)で情報を手に入れる",
@@ -120,22 +102,22 @@ const tasksData = [
         giver:"スキアー",
         maps: {
             "ショアライン": [
-                { left: 55, top: 45 }
+               {left: 68, top: 25 ,width:13,height:30,rotate:0,type:"area" }
             ],
-            "インターチェンジ": [
-                { left: 50, top: 50 }
+            "インチェ": [
+                {left: 100, top: 335 ,width:30,height:35,rotate:0,type:"area" }
             ]
         },
-        description: "密輸業者の基地で10キルする",
+        description: "密輸業者の基地で10キルする（kill共有あり）",
         selected: false
     },
 
     {
-        name: "master key",
+        name: "Master key",
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [
-                { left: 60, top: 40 }
+                { left: 43, top: 14.8 }
             ]
         },
         description: "Health Res(鍵)を手に入れる",
@@ -147,7 +129,7 @@ const tasksData = [
     giver:"ピースキーパー",
         maps: {
             "ショアライン": [
-                { left: 40, top: 55 }
+                { left: 17.7, top: 36.5 }
             ]
         },
         description: "情報提供者を探す。生還する。",
@@ -159,7 +141,7 @@ const tasksData = [
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [
-                { left: 70, top: 80 }
+                { left: 45, top: 80.2 }
             ]
         },
         description: "マルチツールとUNTERボディーアーマーをボートに隠す",
@@ -171,9 +153,10 @@ const tasksData = [
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [
-                { left: 40, top: 35 },
-                { left: 55, top: 35 },
-                { left: 65, top: 55 }
+                { left: 44.8, top: 34, comment:"西棟219🔑or220号室🔑",commentX:-50,commentY:15},
+                { left: 53, top: 34,  comment:"東棟220号室"
+                },
+                
             ]
         },
         description: "西棟219号室(鍵)と東棟220号室の発電機を見る。西棟219は220号室の鍵でもok。fuel tankを3つ納品する",
@@ -185,8 +168,8 @@ const tasksData = [
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [
-                { left: 30, top: 45 },
-                { left: 70, top: 55 }
+                { left: 29.5, top: 26 },
+                { left: 65.9, top: 29.2 }
             ]
         },
         description: "飛行機の墜落現場2箇所でSASディスクを手に入れる",
@@ -198,11 +181,11 @@ const tasksData = [
         giver:"ピースキーパー",
         maps: {
             "ウッズ": [
-                { left: 35, top: 40 },
-                { left: 65, top: 60 }
+                { left: 0, top: 225 },
+                { left: 55, top: 65 }
             ],
             "ショアライン": [
-                { left: 55, top: 50 }
+                { left: 53, top: 33, comment:"東棟321号室" }
             ]
         },
         description: "ウッズ2箇所、ショアライン1箇所で儀式の場所にマーカー設置する",
@@ -214,7 +197,8 @@ const tasksData = [
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [
-                { left: 30, top: 65 }
+                { left: 48, top: 26 },
+                { left: 68, top: 82 }
             ]
         },
         description: "UNトラックにマーカー設置する。MREレーションパックを5個納品する",
@@ -226,9 +210,9 @@ const tasksData = [
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [
-                { left: 30, top: 30 },
-                { left: 50, top: 50 },
-                { left: 70, top: 70 }
+                { left: 12.2, top: 54 },
+                { left: 43.5, top: 17 },
+                { left: 54.3, top: 57 }
             ]
         },
         description: "戦車3箇所にマーカー設置する",
@@ -240,8 +224,8 @@ const tasksData = [
     giver:"ピースキーパー",
         maps: {
             "ショアライン": [
-                { left: 45, top: 35 },
-                { left: 55, top: 65 }
+                { left: 53.5, top: 33 , comment:"東棟108号室"},
+                { left: 43, top: 34, comment:"西棟地下" }
             ]
         },
         description: "東棟108号室で情報を手に入れる。西棟地下の隠された貨物を見つける",
@@ -253,7 +237,7 @@ const tasksData = [
         giver:"メカニック",
         maps: {
             "ショアライン": [
-                { left: 60, top: 40 }
+                { left: 52, top: 34, comment:"東棟110号室(San tape🔑)"},
             ]
         },
         description: "東棟110号室(San tapeキー)(サニターオフィス)をみる。脱出する",
@@ -265,8 +249,8 @@ const tasksData = [
         giver:"メカニック",
         maps: {
             "ショアライン": [
-                { left: 35, top: 45 },
-                { left: 65, top: 55 }
+                { left: 45, top: 34 },
+                { left: 62, top: 63 }
             ]
         },
         description: "信号発信源2箇所にシグナルジャマーを設置する",
@@ -278,10 +262,10 @@ const tasksData = [
         giver:"ラグマン",
         maps: {
             "ショアライン": [
-                { left: 50, top: 70 }
+                { left: 22, top: 25 }
             ]
         },
-        description: "ラグマンのSUV見つける。生還する",
+        description: "ラグマンのSUV見つける。生還する(ランスルー不可)",
         selected: false
     },
 
@@ -290,12 +274,12 @@ const tasksData = [
         giver:"イエーガー",
         maps: {
             "ショアライン": [
-                { left: 30, top: 40 },
-                { left: 50, top: 60 },
-                { left: 70, top: 40 }
+                { left: 12.2, top: 30 },
+                { left: 10.8, top: 37 },
+                { left: 17.6, top: 37 }
             ]
         },
-        description: "会長の家、漁師の家、司祭の家を見つける。生還する",
+        description: "1レイドで会長の家、漁師の家、司祭の家を見つける。生還する",
         selected: false
     },
 
@@ -304,12 +288,920 @@ const tasksData = [
         giver:"イエーガー",
         maps: {
             "ショアライン": [
-                { left: 55, top: 55 }
+               
             ]
         },
-        description: "22時〜7時の間にSCAVを12killする",
+        description: "22時〜7時の間にSCAVを12killする（kill共有あり）",
         selected: false
-    }
+    },
+
+　　{
+        name: "Forge a Freiendship",
+        giver:"プラパー",
+        maps: {
+            "ショアライン": [ { left: 52.5, top: 83 },
+               
+            ]
+        },
+        description: "プラパーの荷物を入手する（ランダム沸き）",
+        selected: false
+    },
+
+    {
+        name: "Wet Job-part1",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ 
+               
+            ]
+        },
+        description: "M4A1、ADAR、Lone Star、M16A1、M16A2を使いScavを10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Wet Job-part2",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ { left: 20, top: 78 },
+               
+            ]
+        },
+        description: "M4A1、ADAR、Lone Star、M16A1、M16A2を使いScavを10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Wet Job-part3",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ { left: 30, top: 71 },
+               
+            ]
+        },
+        description: "Artyomの車（黄色いセダン）にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Wet Job-part4",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ { left: 49.5, top: 28 },
+               
+            ]
+        },
+        description: "北館3F東側の事務室で入居者リストを見つける",
+        selected: false
+    },
+　　{
+        name: "Wet Job-part5",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ { left: 49.5, top: 28 ,comment:"東棟328号室🔑"},
+               
+            ]
+        },
+        description: "東館328号室でArtyomの仕事の情報を見つけて引き渡す",
+        selected: false
+    },
+    {
+        name: "The Punisher-part2",
+        giver:"プラパー",
+        maps: {
+            "ショアライン": [ 
+               
+            ]
+        },
+        description: "AKMシリーズを使ってSCAVを15Kill",
+        selected: false
+    },
+    {
+        name: "Tarkov-Style Dipolomacy",
+        giver:"セラピスト",
+        maps: {
+            "ショアライン": [ { left: 28.7, top: 50, comment:"Cottage(コテージの裏口)🔑"},
+                { left: 52.5, top: 83 },
+               
+            ]
+        },
+        description: "サニターの検眼鏡とサージカルキットを手に入れる",
+        selected: false
+    },
+    {
+        name: "Thirsty-Echo",
+        giver:"セラピスト",
+        maps: {
+            "ショアライン": [ { left: 45.3, top: 34, comment:"西棟地下" }
+               
+               
+            ]
+        },
+        description: "サニターの検眼鏡とサージカルキットを手に入れる",
+        selected: false
+    },
+   {
+        name: "Rigged Game",
+        giver:"スキアー",
+        maps: {
+            "ショアライン": [
+                { left: 49, top: 34 },
+                { left: 28.5, top: 49.2 },
+                { left: 52, top: 83.5 }
+            ]
+        },
+        description: "医療物資コンテナ3箇所にマーカー設置",
+        selected: false
+    },
+
+
+    {
+        name: "Long Road",
+        giver:"スキアー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            "ライトハウス": [
+                
+            ]
+        },
+        description: "海岸及び主要道路沿いのScavを7kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Cargo X",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [{ left: 50.2, top: 33 ,comment:"東棟306or308号室🔑"},
+                
+            ]
+            
+        },
+        description: "積荷目録を入手して引き渡す",
+        selected: false
+    },
+    {
+        name: "Peacekeeping Mission",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            "カスタム": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            "インチェ": [
+                
+            ],
+            
+        },
+        description: "UNTERヘルメット＆アーマー装備＆武器指定（M16A1・M16A2・M4A1・SCAR-L・HK 416A5・HK G36・Howa Type 20・DML・Radian・AUG）、ウッズorリザーブでScavを12kill、カスタムorライトハウスでScavを12kill、ショアorストタルでScavを12kill,グラゼロorインチェでScavを12kill（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "The Guide",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            "カスタム": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            "インチェ": [
+                
+            ],
+            "ラボ": [
+                
+            ],
+            "ファクトリー": [
+                
+            ],
+
+
+            
+        },
+        description: "インチェorウッズから生還、ショアorリザーブから生還、ファクトリーorカスタムから生還、ラボorライトハウスから生還、グラゼロorストタルから生還、任意の敵を15kill(kill共有あり)",
+        selected: false
+    },
+    {
+        name: "Worst Job in the World",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            
+            "ライトハウス": [
+                
+            ],
+            
+            "グラゼロ": [
+                
+            ],
+            
+        },
+        description: "AR15系の武器（M4A1、ADAR、Lone Star、M16A1、M16A2、Radian)を使用して100m以上離れた場所から敵30kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Insomnia",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            
+            "ライトハウス": [
+                
+            ],
+            
+            "グラゼロ": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            
+        },
+        description: "21時～6時の間にPMCを25kill",
+        selected: false
+    },
+    {
+        name: "Shooter Born in Heaven",
+        giver:"メカニック",
+        maps: {
+            "カスタム": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            "ショアライン": [
+                
+            ],
+            "インチェ": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            
+            "リザーブ": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            
+        },
+        description: "ボルトアクションライフル指定、カスタムorライトハウスでヘッドショットでPMCを5kill、ストタルorショアでヘッドショットでPMCを5kill、インチェorグラゼロでヘッドショットでPMCを5kill、ウッズorリザーブでヘッドショットでPMCを5kill、",
+        selected: false
+    },
+    {
+        name: "Needle in a Haystak",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left: 9, top: 103 },
+                
+            ],
+            
+            "インチェ": [{ left: -15, top: 203 },{ left:-21, top: 233 },
+                
+            ],
+            "グラゼロ": [{ left: 85, top: 85 },
+                
+            ],
+            "ショアライン": [{ left: 53, top: 30 },{ left:70, top: 83 },
+                
+            ],
+            
+            
+        },
+        description: "グラゼロでテラグループ本社前中庭調査、インチェで子供の遊び場とカートコースを調査、ショアで工事現場と子供の遊び場を調査、ストタルで子供の遊び場を調査",
+        selected: false
+    },
+    {
+        name: "【ラビリンス】Hidden Layer",
+        giver:"メカニック",
+        maps: {
+            
+             "ショアライン": [{ left: 47.3, top: 33 ,commentX:-95,commentY:-28,comment:"西棟2F🔑沸き"},{ left: 45.6, top: 34 , commentX:-100,commentY:15,comment:"西棟1F🔑沸き【目的】地下入室"},{ left:51, top: 32.5,comment:"東棟2F&3F🔑沸き"},{ left: 49.5, top: 28.5 ,comment:"北館3F🔑沸き"},
+                
+            ],
+            
+            
+        },
+        description: "西棟地下の鍵部屋に入る方法を探す（任意：Knossos🔑を手に入れる）",
+        selected: false
+    },
+    {
+        name: "【ラビリンス】Offensive Reconnaissance",
+        giver:"メカニック",
+        maps: {
+            
+             "ショアライン": [{ left: 45.6, top: 34 ,}
+                
+            ],
+            
+            
+        },
+        description: "ラビリンスへトランジットする",
+        selected: false
+    },
+    {
+        name: "Nostalgia",
+        giver:"イエーガー",
+        maps: {
+            
+             "ショアライン": [{ left: 47, top: 33 ,comment:"西棟303号室",},
+                
+            ],
+            
+            
+        },
+        description: "イエーガーが宿泊してた西棟303号室のアルバムを持ち帰る",
+        selected: false
+    },
+    {
+        name: "Forester's Duty",
+        giver:"イエーガー",
+        maps: {
+            
+             "ショアライン": [
+                
+            ],
+             "ライトハウス": [{ left: 48, top: 12.5,comment:"ショアへのトランジット",},
+                
+            ],
+            
+            
+        },
+        description: "ライトハウスでScavを5killしてショアへトランジット⇒ショアでScavを5kill(1レイドで※脱出しなければトランジット繰り返してもOK）",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Forest Cleaning",
+        giver:"イエーガー",
+        maps: {
+            
+             "ショアライン": [
+                
+            ],
+             "ライトハウス": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            
+            
+        },
+        description: "ショア・ライハ・ストタル・リザーブのいずれかでScavを50kill（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Slaughterhouse",
+        giver:"イエーガー",
+        maps: {
+            
+            "ファクトリー": [
+                
+            ], 
+            "ストタル": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ショアライン": [
+                
+            ],
+             
+            "リザーブ": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            
+            
+            
+        },
+        description: "ファクトリー（昼）・ストタル・ライトハウス・ショア・リザーブ・グラゼロでそれぞれ近接武器でScavを10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "【選択タスク】The Huntsman Path-Sadist",
+        giver:"イエーガー",
+        maps: {
+            
+           
+            "ショアライン": [
+                
+            ],
+             
+           
+            
+            
+        },
+        description: "サニターkill&サニターバッグ納品、セラピのA Difficult Choiceと選択タスク",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Relentless",
+        giver:"イエーガー",
+        maps: {
+            
+           
+            "ショアライン": [
+                
+            ],
+            "ファクトリー": [
+                
+            ],
+            "インチェ": [
+                
+            ],
+            "カスタム": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+             
+        },
+        description: "1回も死なずに、タギラ・キラ・リシャーラ・シュターマン・グラハ・サニターを倒す（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Stray Dogs",
+        giver:"イエーガー",
+        maps: {
+            
+           
+            "ショアライン": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            
+            "カスタム": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            
+             
+        },
+        description: "3バカの討伐（多分）",
+        selected: false
+    },
+    {
+        name: "The Tarkov Import",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+            
+            
+            "リザーブ": [
+                
+            ],
+            
+             
+        },
+        description: "ライハかリザーブでSR-25に指定サプレッサーとスコープ付けてPMCを8kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Easy-Breezy",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+            
+            
+            "リザーブ": [
+                
+            ],
+            
+             
+        },
+        description: "ライハかリザーブでSR-2Mに指定サプレッサーとスコープ付けて任意の敵を30kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Easy Job",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 10.7, top: 27.7 ,width:5.2,height:3.5,type:"area"}
+                
+            ],
+            
+   
+        },
+        description: "ヘリコプターにマーカー設置して、周辺エリアで任意の敵を10kill(kill共有あり））",
+        selected: false
+    },
+    {
+        name: "Reconnaissance",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: -7, top: 27.7 },{ left: 4.5, top: 35.8 },{ left: 0, top: 22.5 }
+                
+            ],
+            
+   
+        },
+        description: "オフィスビル3ついずれかの屋上を偵察して、生還する",
+        selected: false
+    },
+    {
+        name: "Reconnaissance",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: -7, top: 27.7 },{ left: 4.5, top: 35.8 },{ left: 0, top: 22.5 }
+                
+            ],
+            
+   
+        },
+        description: "オフィスビル3ついずれかの屋上を偵察して、生還する",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Our Own Land",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+            
+   
+        },
+        description: "ローグをグレネードランチャーで10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Best Job in the World",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+             "リザーブ": [
+                
+            ],
+            
+   
+        },
+        description: "AK-74シリーズのアサルトライフルで敵を30kill",
+        selected: false
+    },
+    {
+        name: "Unique Experience",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+             "ラボ": [
+                
+            ],
+            
+   
+        },
+        description: "Velociraptorで任意の敵を30kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Getting some air",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+            "ショアライン": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            
+   
+        },
+        description: "RPDNにEKP-30を装着し、任意の敵を40kill",
+        selected: false
+    },
+    {
+        name: "Getting some air",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ]
+            
+   
+        },
+        description: "SVDSもしくはTKPDでScavを10kill、ScavベストもしくはSecurity Vestを着てScavを10kill、A-2607 Knifeを5つ納品する",
+        selected: false
+    },
+    {
+        name: "Sea Side Vacation",
+        giver:"セラピスト",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 50.5, top: 41.5 },
+                
+            ]
+            
+   
+        },
+        description: "情報提供者のブリーフケースを入手する",
+        selected: false
+    },
+    {
+        name: "Lost Contact",
+        giver:"セラピスト",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 75, top: 29 },
+                
+            ]
+            
+   
+        },
+        description: "失踪したグループを探す、生還する",
+        selected: false
+    },
+    {
+        name: "Drug Trafficking",
+        giver:"セラピスト",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: -18, top: 26 },
+                
+            ]
+            
+   
+        },
+        description: "ドラッグラボにWI-FIカメラつける",
+        selected: false
+    },
+    {
+        name: "Missing Cargo",
+        giver:"スキアー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 72, top: 25.8 },{ left: 90, top: 26,comment:"ヘリ"},
+                
+            ]
+            
+   
+        },
+        description: "墜落したヘリを見つける、情報提供者のフォルダを探す",
+        selected: false
+    },
+    {
+        name: "Top Secret",
+        giver:"スキアー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 115, top: 53.5,comment:"Radar🔑"},
+                
+            ]
+            
+   
+        },
+        description: "レーダー指令基地でHDDを入手する、DSPTが必要？？",
+        selected: false
+    },
+    {
+        name: "【選択タスク+ストーリータスクエンディング分岐】Choose Your Friends Wisely",
+        giver:"スキアー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+            "カスタム": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            
+   
+        },
+        description: "カスタム⇒リザーブ⇒ウッズ⇒ライトハウスにトランジットして生還する、トランジットしつつPMCを5kill",
+        selected: false
+    },
+    {
+        name: "Revision-Lighthouse",
+        giver:"ピースキーパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: -2.7, top: 29.3},{ left: 15.5, top: 33.7},{ left: 112.3, top:37.5},{ left:65, top: 30.8},
+                
+            ],
+           
+            
+   
+        },
+        description: "BRDM2台とStryker2台にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Gifts from Tarkov",
+        giver:"ピースキーパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 68, top: 41},
+                
+            ],
+            "リザーブ": [
+                
+            ],
+           
+            
+   
+        },
+        description: "貨物にマーカー設置、ライハかリザーブでM203グレネードランチャーで任意の敵を10kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Overpopulation",
+        giver:"ピースキーパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 68, top: 41},
+                
+            ],
+              
+   
+        },
+        description: "コテージエリアで任意の敵を10kill(kill共有あり）、地形図、インテリもしくはブルーフォルダーを5つ納品する",
+        selected: false
+    },
+    {
+        name: "Corporate Secrets",
+        giver:"メカニック",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: -7, top: 27.7 },{ left: 4.5, top: 35.8 },
+                
+            ],
+              
+   
+        },
+        description: "ウォーターポンプの情報とポンプ場の情報を入手する",
+        selected: false
+    },
+    {
+        name: "Energy Crisis",
+        giver:"メカニック",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: -25, top: 26 },{ left: -20, top: 29 },{ left: 6, top:24 },{ left: 23.8, top: 34.5 },
+            ],
+              
+   
+        },
+        description: "タンクローリーにマーカー設置",
+        selected: false
+    },
+    {
+        name: "Broadcast-part1",
+        giver:"メカニック",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 4.5, top: 35.8 ,comment:"OR🔑"},
+            ],
+              
+   
+        },
+        description: "レコーディングスタジオを見つけてシグナルジャマーを設置する",
+        selected: false
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 // タスクマーカー
@@ -323,16 +1215,16 @@ function showTaskMarkers() {
 
     // タスクを表示する順番の色
     const taskColors = [
-        "#ff0000", // 1番目：赤
-        "#0066ff", // 2番目：青
-        "#00aa00", // 3番目：緑
-        "#ffcc00", // 4番目：黄色
-        "#ff6600", // 5番目：オレンジ
-        "#cc00ff", // 6番目：紫
-        "#00cccc", // 7番目：水色
-        "#ff3399", // 8番目：ピンク
-        "#996633", // 9番目：茶色
-        "rgb(85, 176, 250)"  // 10番目：グレー
+        "#ff0000",
+        "#0066ff",
+        "#00aa00",
+        "#ffcc00",
+        "#ff6600",
+        "#cc00ff",
+        "#00cccc",
+        "#ff3399",
+        "#996633",
+        "rgb(85, 176, 250)"
     ];
 
     let colorIndex = 0;
@@ -348,22 +1240,67 @@ function showTaskMarkers() {
             const markers = task.maps[currentMap];
 
             markers.forEach(function(markerData) {
+                // 四角い範囲の場合
+                if (markerData.type === "area") {
 
-                const marker = document.createElement("div");
+                    const area = document.createElement("div");
 
-                marker.className = "task-marker";
-                marker.style.setProperty("--task-color", taskColor);
-                marker.style.left = markerData.left + "%";
-                marker.style.top = markerData.top + "%";
+                    area.className = "task-area";
+                    area.style.setProperty("--task-color", taskColor);
 
-                taskMarkers.appendChild(marker);
+                    area.style.left = markerData.left + "%";
+                    area.style.top = markerData.top + "%";
+                    area.style.width = markerData.width + "%";
+                    area.style.height = markerData.height + "%";
+                    area.style.setProperty("--rotate", (markerData.rotate || 0) + "deg");
+                    taskMarkers.appendChild(area);
+                    }
+
+                // ピンの場合
+                else {
+
+
+
+                    
+
+                    const marker = document.createElement("div");
+                    marker.className = "task-marker";
+                    marker.style.setProperty("--task-color", taskColor);
+                    marker.style.left = markerData.left + "%";
+                    marker.style.top = markerData.top + "%";
+
+
+                    taskMarkers.appendChild(marker);
+
+
+// コメントがある場合だけ表示
+
+               if (markerData.comment) {
+
+             const comment = document.createElement("div");
+
+              comment.className = "task-comment";
+              comment.textContent = markerData.comment;
+
+              comment.style.left = "calc(" + markerData.left + "% + " + (markerData.commentX || 0) + "px)";
+              comment.style.top = "calc(" + markerData.top + "% + " + (markerData.commentY || 0) + "px)";
+
+             taskMarkers.appendChild(comment);
+              }
+
+
+
+
+
+
+
+                }
             });
 
             colorIndex++;
         }
     });
 }
-
 
 
 // 脱出地点のデータ
