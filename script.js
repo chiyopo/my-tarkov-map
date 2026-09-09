@@ -1890,7 +1890,196 @@ const tasksData = [
         description: "古い家の中で血まみれの放送があった場所を探す、生還する",
         selected: false
     },
-    
+    {
+        name: "Delivery From the Past",
+        giver:"プラパー",
+        maps: {
+            
+            "カスタム": [{ left:-155, top: 450,comment:"Director's🔑"},
+            ],
+            "ファクトリー": [{ left:-130, top: 180,},
+            ],
+          
+        },
+        description: "カスタムの赤倉庫でドキュメントを入手する、ファクトリーに設置する",
+        selected: false
+    },
+    {
+        name: "Possessor",
+        giver:"プラパー",
+        maps: {
+            
+            "ファクトリー": [{ left:75, top: 250,},
+            ],
+          
+        },
+        description: "ヘリのログブックを見つけて入手する",
+        selected: false
+    },
+    {
+        name: "Sanitary Standards",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:200, top: 230,},
+            ],
+          
+        },
+        description: "研究棟にガスアナ設置する、ガスアナ2つ納品",
+        selected: false
+    },
+    {
+        name: "All Is Revealed",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:-17, top: 380,},
+            ],
+          
+        },
+        description: "壊れたタンクコンテナから化学サンプルを入手する",
+        selected: false
+    },
+    {
+        name: "Health Care Privacy-Part5",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:-120, top: 255,},
+            ],
+          
+        },
+        description: "夜にガンパウダー3つ隠す",
+        selected: false
+    },
+    {
+        name: "Health Care Privacy-Part6",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:300, top: 430,comment:"Factory emergency🔑"},
+            ],
+            "ラボ": [{ left:50, top: 50,comment:"地図入れたらマーカー移動する"},
+            ],
+          
+        },
+        description: "死亡した労働者から血液サンプルを採取する⇒ラボのサニターオフィスに隠す、LEDXを納品する",
+        selected: false
+    },
+    {
+        name: "Playing the Market",
+        giver:"メカニック",
+        maps: {
+            
+            "ファクトリー": [{ left:280, top: 100,}, {left:80, top: 67,},
+            ],
+            
+          
+        },
+        description: "ツールセットを2か所に設置する",
+        selected: false
+    },
+    {
+        name: "Black Swan",
+        giver:"メカニック",
+        maps: {
+            
+            "ファクトリー": [{ left:0, top: 300,comment:"地下図面入れたら"}, {left:80, top: 67,comment:"地下図面入れたら"},{left:80, top: 67,comment:"地下図面入れたら"},
+            ],
+            
+          
+        },
+        description: "熱交換器のいずれか1つにマーカー設置",
+        selected: false
+    },
+    {
+        name: "Scout",
+        giver:"メカニック",
+        maps: {
+            
+            "ファクトリー": [{left: -203, top: 625,}, {left: -243, top: 110,}, {left: 320, top: 430,},{left: 195, top: 37,},
+            ],
+            
+          
+        },
+        description: "出口0、3、Med Tent Gates、Cellarsを見て生還する",
+        selected: false
+    },
+    {
+        name: "Seacret of Polikhim",
+        giver:"メカニック",
+        maps: {
+            
+            "カスタム": [{left: 5, top: 510,}, 
+            ],
+            "ファクトリー": [{ left:200, top: 230,},
+            ],
+            
+          
+        },
+        description: "カスタムでツールパッケージを入手する⇒ファクトリーにトランジットする⇒Scavを3killしてパッケージを設置する",
+        selected: false
+    },
+    {
+        name: "Ever Hunter Knows This",
+        giver:"イエーガー",
+        maps: {
+            
+            "カスタム": [{left: 55, top: 160,}, 
+            ],
+            "ファクトリー": [{ left:-120, top: 255,},
+            ],
+        },
+        description: "カスタムとファクトリーでトリップワイヤーの設置に適した場所を見つける",
+        selected: false
+    },
+    {
+        name: "Claustrophobia",
+        giver:"イエーガー",
+        maps: {
+            
+            
+            "ファクトリー": [
+            ],
+        },
+        description: "地下で任意の敵を5kill",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Factory Chief",
+        giver:"イエーガー",
+        maps: {
+            
+            
+            "ファクトリー": [
+            ],
+        },
+        description: "タギラを倒す、ボスキャップを納品する",
+        selected: false
+    },
+    {
+        name: "Dragnet",
+        giver:"イエーガー",
+        maps: {
+            
+            
+            "ファクトリー": [{ left:-120, top: 255,comment:"地下、Polikhimカードキー"},
+            ],
+        },
+        description: "倉庫で化学薬品容器を見つける",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Secured Perimenter",
+        giver:"イエーガー",
+        maps: {
+            
+            "ファクトリー": [
+            ],
+        },
+        description: "PMCを6kill(kill共有あり）",
+        selected: false
+    },
 
 
 
@@ -2347,7 +2536,7 @@ const factoryPmcExitsData = [
 
     { name: "Gate 0", left: -203, top: 625, labelX: -203, labelY: 625, condition: "" },
     { name: "Med Tent Gates", left: 320, top: 430, labelX: 320, labelY: 430, condition: "Factory emergency exit鍵" },
-    { name: "Cellars", left: -200, top: 625, labelX: -200, labelY: 625, condition: "地下マップ入れたら" },
+    { name: "Cellars", left: 195, top: 37, labelX: 195, labelY: 37, condition:"地下、Factory emaergency exit🔑"},
 
     ];
 
