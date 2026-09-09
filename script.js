@@ -1186,6 +1186,721 @@ const tasksData = [
         description: "レコーディングスタジオを見つけてシグナルジャマーを設置する",
         selected: false
     },
+    {
+        name: "No Place for Renegades",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            
+        },
+        description: "レイダーを5kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Special Comms",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [{ left: 120, top: 340 },
+            ],
+            "ウッズ": [{ left: 63, top: 313},
+            ],
+            
+        },
+        description: "ウッズにミリタリーケーブル隠す⇒ウッズからリザーブにトランジットする⇒リザーブでミリタリーケーブル隠す",
+        selected: false
+    },
+    {
+        name: "Documents",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [{ left: -35, top: 202 },{ left: -38, top: 205 },{ left: -30, top: 210 },
+            ],
+            
+            
+        },
+        description: "軍事資料を3つ手に入れる",
+        selected: false
+    },
+    {
+        name: "The Bunker",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            
+            
+        },
+        description: "指令室・白ビショップ・黒ビショップ・白ポーン・黒ポーン・キングの気密扉見つける",
+        selected: false
+    },
+    {
+        name: "Escort",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            "ファクトリー": [
+            ],
+            "カスタム": [
+            ],
+            "ショアライン": [
+            ],
+            "ウッズ": [
+            ],
+            "インターチェンジ": [
+            ],
+            "ラボ": [
+            ],
+            "グラゼロ": [
+            ],
+            
+            
+        },
+        description: "各マップでPMCを2kill",
+        selected: false
+    },
+    {
+        name: "The Punisher-part3",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            
+            
+        },
+        description: "9×39口径の武器でScavを12kill、ハーフマスクを7こ引き渡す",
+        selected: false
+    },
+    {
+        name: "Disease History",
+        giver:"セラピスト",
+        maps: {
+            
+            "リザーブ": [{ left: 10, top: 248,comment:"RB-SMP🔑",commentY:10,commentX:-55},{ left:20, top: 248 ,comment:"RB-KSM🔑",commentY:10,commentX:-15},
+            ],
+            
+            
+        },
+        description: "医療日誌を2つ手に入れる",
+        selected: false
+    },
+    {
+        name: "Safe Corridor",
+        giver:"スキアー",
+        maps: {
+            
+            "リザーブ": [{ left: 113, top: 292,width:33,height:90,type:"area"},
+            ],
+            
+            
+        },
+        description: "地下倉庫でScavを5kill(kill共有あり）、地下倉庫の🔑3つ納品",
+        selected: false
+    },
+    {
+        name: "Classified Technologies",
+        giver:"スキアー",
+        maps: {
+            
+            "リザーブ": [{ left: -30, top:123},
+            ],
+            
+            
+        },
+        description: "パッケージを入手する",
+        selected: false
+    },
+    {
+        name: "The Cleaner",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            "ラボ": [
+            ],
+            
+            
+        },
+        description: "レイダーもしくはBDを10kill(kill共有あり）",
+        selected: false
+    },
+　　{
+        name: "Revision-Reserve",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "リザーブ": [{ left: 70, top:110},{ left: 100, top:145},{ left: 85, top:215},{ left: 95, top:350},
+            ],
+           
+            
+            
+        },
+        description: "BMP 4台にマーカー設置する",
+        selected: false
+    },
+    {
+        name: "Surplus Goods",
+        giver:"メカニック",
+        maps: {
+            
+            "リザーブ": [{ left: 100, top:145,comment:"RB-ST🔑"},
+            ],
+           
+            
+            
+        },
+        description: "ナビゲーションシステムを手に入れる",
+        selected: false
+    },
+    {
+        name: "Back Door",
+        giver:"メカニック",
+        maps: {
+            
+            "リザーブ": [{ left: -53, top:113},
+            ],
+     
+        },
+        description: "D2から脱出する",
+        selected: false
+    },
+    {
+        name: "Reserve Expert",
+        giver:"ラグマン",
+        maps: {
+            
+            "リザーブ": [{ left: -63, top:218,comment:"2F RB-ORB3🔑,3F RB-OB🔑,4F 鍵なし"},{ left: -43, top:165,comment:"2F RB-ORB2🔑,4F RB-ORB1🔑"},
+            ],
+     
+        },
+        description: "武器庫を調べる、6アーマーを3つ納品する",
+        selected: false
+    },
+    {
+        name: "A Fuel Matter",
+        giver:"ラグマン",
+        maps: {
+            
+            "リザーブ": [{ left: 180, top:250,},{ left: 50, top:155,},
+            ],
+     
+        },
+        description: "燃料タンクにマーカー設置する",
+        selected: false
+    },
+    {
+        name: "Reserve",
+        giver:"イエーガー",
+        maps: {
+            
+            "リザーブ": [{ left: 113, top: 292,width:33,height:90,type:"area"},
+            ],
+     
+        },
+        description: "食料貯蔵庫を見つけて生還する",
+        selected: false
+    },
+    {
+        name: "Pest Control",
+        giver:"イエーガー",
+        maps: {
+            
+            "リザーブ": [{ left: -35, top: 193,width:75,height:75,type:"area"},
+            ],
+     
+        },
+        description: "食料貯蔵庫を見つけて生還する",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Liberation",
+        giver:"イエーガー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            "ラボ": [
+            ],
+     
+        },
+        description: "レイダー6kill",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Eraser",
+        giver:"イエーガー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            
+     
+        },
+        description: "グラハをkill(kill共有あり）、護衛のヘルメットを2つ納品する",
+        selected: false
+    },
+    {
+        name: "Properties All Around",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [{ left: 65, top: 118},
+            ],
+            
+     
+        },
+        description: "不動産取引書類を入手する（ランダム沸き、REA🔑必要かも）",
+        selected: false
+    },
+    {
+        name: "You've Got Mail",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [{ left: 46, top: 63},
+            ],
+            
+     
+        },
+        description: "書留郵便を入手する（ランダム沸き）",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Green Corridor",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [{ left: 50, top: 85},{ left: 44, top: 89},
+            ],
+            
+     
+        },
+        description: "貨物列車と待ち伏せ場所を確認する",
+        selected: false
+    },
+    {
+        name: "District Patrol",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [
+            ],
+            
+     
+        },
+        description: "アサルトライフルもしくはアサルトカービンを用いて任意の敵を20kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Kings of the Rooftops",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [
+            ],
+            
+     
+        },
+        description: "スナイパースカブを8kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Glory to CPSU",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [{ left: -0.5, top: 54},
+            ],
+            
+     
+        },
+        description: "プラパーの友人の仕事場を発見して、消息に関する情報を入手する",
+        selected: false
+    },
+    {
+        name: "Population Census",
+        giver:"セラピスト",
+        maps: {
+            
+            "ストタル": [{ left: 37.5, top: 66},
+            ],
+            
+     
+        },
+        description: "ジャーナルを入手する",
+        selected: false
+    },
+    {
+        name: "Paramedic",
+        giver:"セラピスト",
+        maps: {
+            
+            "ストタル": [{ left: 37.5, top: 19},{ left: 31, top: 29},{ left: 33, top:44},{ left: 32, top: 54},{ left: 31, top: 83},{ left: 5, top: 105},{ left: -10, top: 111},{ left: 19.5, top: 115},{ left: 60, top:98},{ left: 65, top: 78},
+            ],
+            
+     
+        },
+        description: "スマホを入手して、タクシー脱出する",
+        selected: false
+    },
+    {
+        name: "Urban Medicine",
+        giver:"セラピスト",
+        maps: {
+            
+            "ストタル": [{ left: 33.8, top: 96},
+            ],
+            
+     
+        },
+        description: "薬品サンプルの容器を入手する、Scavを10kill",
+        selected: false
+    },
+    {
+        name: "Pet Won't Need It",
+        giver:"セラピスト",
+        maps: {
+            
+            "ストタル": [{ left: 46, top: 70,comment:"薬局"},{ left: 63.5, top: 98,comment:"薬局"},{ left: 7, top: 72.8},{ left: 14, top: 63,comment:"X-ray🔑"},{ left: 35, top: 2,comment:"薬局"},
+            ],
+            
+     
+        },
+        description: "薬局3か所めぐる、動物病院を探す、放射線技師の部屋を探す、医薬品を5つ納品する",
+        selected: false
+    },
+    {
+        name: "Beyond the Red Meat",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 61, top: 39.5,comment:"Beluga🔑"},
+            ],
+            
+     
+        },
+        description: "料理の秘密の情報を入手する（ランダム沸き）",
+        selected: false
+    },
+    {
+        name: "Debtor",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 25, top: 81.5,comment:"Check15🔑"},{ left: 77, top: 55,comment:"206号室"},
+            ],
+            
+     
+        },
+        description: "パインウッドホテルの債務者の死体を確認する、CELLSのCheck15🔑の部屋を訪れる、Iron gate🔑納品",
+        selected: false
+    },
+    {
+        name: "The Secret Recipe",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 44, top: 36,comment:"TG meetin🔑"},{ left: 62, top: 28},
+            ],
+            
+     
+        },
+        description: "どっちかにランダム沸きの秘密の材料を入手する",
+        selected: false
+    },
+    {
+        name: "House Arrest",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 25, top: 81.5,comment:"Iron gate🔑"},{ left: 77, top: 55,comment:"206号室"},
+            ],
+            
+     
+        },
+        description: "パインウッドホテルの債務者の死体を確認する、CELLSのIron gate🔑の部屋を訪れる、Check15🔑納品",
+        selected: false
+    },
+    {
+        name: "Pyramid Scheme",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 32, top: 42},{ left: 37, top: 41},
+            ],
+            
+     
+        },
+        description: "ATMにマーカー設置(どっちからしい)",
+        selected: false
+    },
+    {
+        name: "Route Diviation",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 27.5, top: 49.5},{ left: 10, top: 85},{ left: 86, top: 108},{ left: 55, top: 78},{ left: 103, top: 82},{ left: 82, top: 55},
+            ],
+            
+     
+        },
+        description: "BTRの停車場所にマーカー設置",
+        selected: false
+    },
+    {
+        name: "New Paths",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ストタル": [
+            ],
+            "グラゼロ": [{ left: -45, top: 100,width:15,height:10,type:"area"},
+            ],
+            
+     
+        },
+        description: "グラゼロでMira Aveの周辺を偵察する⇒ストタルにトランジットする⇒生還する",
+        selected: false
+    },
+    {
+        name: "Secret Message",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ストタル": [
+            ],
+           
+            
+     
+        },
+        description: "12ゲージショットガンで任意の敵をヘッドショットで15kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Revision-Street of Tarkov",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ストタル": [{ left:31, top: 106.5,},{ left:85, top: 114.5,}, {left:54, top:52,},
+            ],
+           
+            
+     
+        },
+        description: "戦車にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Your Car Needs a Servise",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ストタル": [{ left:42, top: 95,comment:"LexOs🔑&LexOs sect🔑"},
+            ],
+           
+            
+     
+        },
+        description: "カーディーラーでUSB入手する",
+        selected: false
+    },
+    {
+        name: "The Secret to Productivity",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:100 , top: 92,comment:"Relax🔑"},
+            ],
+           
+            
+     
+        },
+        description: "Hiveにいく",
+        selected: false
+    },
+    {
+        name: "Corporate Perks",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:18 , top: 70,comment:"Negotiatio🔑"},
+            ],
+           
+            
+     
+        },
+        description: "オフィスで会社が成功した秘密を解明する",
+        selected: false
+    },
+    {
+        name: "Watching You",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:70 , top: 55,comment:"Pnwd 215🔑"},
+            ],
+           
+            
+     
+        },
+        description: "オフィスで会社が成功した秘密を解明する",
+        selected: false
+    },
+    {
+        name: "The Door",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:15 , top: 57,comment:"Rusted🔑"},
+            ],
+           
+            
+     
+        },
+        description: "オフィスで会社が成功した秘密を解明する",
+        selected: false
+    },
+    {
+        name: "Broadcast-part2",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:25 , top: 94,},
+            ],
+           
+            
+     
+        },
+        description: "食料店内で血まみれの放送場所を確認する",
+        selected: false
+    },
+    {
+        name: "Dandies",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [{ left:10 , top: 109.8,},
+            ],
+           
+            
+     
+        },
+        description: "RayBenchヒップスターの眼鏡とBomberビーニー被って15killする（kill共有あり）⇒装備を隠す",
+        selected: false
+    },
+    {
+        name: "Ballet Lover",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [{ left:43.8 , top: 68,comment:"Skybridge🔑"},
+            ],
+           
+            
+     
+        },
+        description: "balletmeister'sのアパートを探す、生還する",
+        selected: false
+    },
+    {
+        name: "Audit",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [{ left:92 , top: 81,},
+            ],
+           
+            
+     
+        },
+        description: "財務記録を手に入れる",
+        selected: false
+    },
+    {
+        name: "Audiophile",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [{ left:43.8 , top: 68,comment:"Skybridge🔑"},
+            ],
+           
+            
+     
+        },
+        description: "ミュージシャンが集まる場所でギターピックを入手する",
+        selected: false
+    },
+    {
+        name: "Know Your Place!",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [
+            ],
+            "インチェ": [
+            ],
+           
+            
+     
+        },
+        description: "ストタルで任意の敵を5kill(kill共有あり)⇒インチェに移動する⇒任意の敵を5killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Crooked Cop",
+        giver:"イエーガー",
+        maps: {
+            
+            "ストタル": [
+            ],
+          
+        },
+        description: "コロンタイを倒す（kill共有）、コロンタイの警棒を引き渡す",
+        selected: false
+    },
+    {
+        name: "The Delicious Sausage",
+        giver:"イエーガー",
+        maps: {
+            
+            "ストタル": [{ left:-5 , top: 105,},{ left:25 , top: 93,},{ left:73 , top: 73,},{ left:98 , top: 75.2,},
+            ],
+          
+        },
+        description: "スーパー巡る、ソーセージ納品する",
+        selected: false
+    },
+    {
+        name: "Broadcast-Part3",
+        giver:"イエーガー",
+        maps: {
+            
+            "ストタル": [{ left:97, top: 85,},
+            ],
+          
+        },
+        description: "古い家の中で血まみれの放送があった場所を探す、生還する",
+        selected: false
+    },
+    
+
+
+
+
+
+
+
+
+
+
 
 
 
