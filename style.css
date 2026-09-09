@@ -452,6 +452,12 @@ height: auto;
     transform-origin: center center;
 }
 
+/* ラボ */
+#mapImage.labs-map {
+    transform: translateY(300px)scale(3)!important;
+    transform-origin: center center;
+}
+
 /* =========================
    Credits Button
    ========================= */

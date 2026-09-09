@@ -3077,10 +3077,10 @@ const mapImages = {
     woods: "Woods.svg",
     interchange: "Interchange.svg",
     reserve: "Reserve.svg",
-    labs: "ラボ.png",
+    labs: "Labs.svg",
     streets: "StreetsOfTarkov.svg",
     groundzero: "GroundZero.svg",
-    factory: "Factory.svg"
+    factory: "Factory.svg",
 };
 
 
@@ -3111,6 +3111,8 @@ mapSelect.addEventListener("change", function () {
     mapImage.classList.add("reserve-map");
      }else if (this.value === "woods") {
     mapImage.classList.add("woods-map");
+    }else if (this.value === "labs") {
+    mapImage.classList.add("labs-map");
 }
 
     const mapNames = {
@@ -3123,7 +3125,7 @@ mapSelect.addEventListener("change", function () {
         labs: "ラボ",
         streets: "ストタル",
         groundzero: "グラゼロ",
-        factory: "ファクトリー"
+        factory: "ファクトリー",
     };
 
     currentMap = mapNames[this.value];
