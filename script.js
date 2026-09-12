@@ -4,55 +4,8 @@ let currentMap = "ショアライン";
 
 // タスクのデータ
 const tasksData = [
-    {
-        name: "Capturing Outposts",
-        giver:"プラパー",
-        maps: {
-            "カスタム": [
-                { left: 73, top: 485 ,width:15,height:70,rotate:-9,type:"area"}
-            ],
-            "ショアライン": [
-                {left: 48.6, top: 31 ,width:15,height:11,rotate:0,type:"area" }
-            ],
-            "ウッズ": [
-                {left: 78, top: 278 ,width:15,height:20,rotate:-9,type:"area" }
-            ]
-        },
-        description: "カスタムの新建、ウッズの医療キャンプ、ショアラインのリゾートでPMC12kill（kill共有あり）",
-        selected: false
-    },
 
-    {
-        name: "Anesthesia",
-        giver:"プラパー",
-        maps: {
-            "ショアライン": [
-                { left: 49, top: 34 },
-                { left: 28.5, top: 49.2 },
-                { left: 52, top: 83.5 }
-            ]
-        },
-        description: "取引所3箇所にマーカー設置",
-        selected: false
-    },
 
-    {
-        name: "Job for a Patriot",
-        giver:"プラパー",
-        maps: {
-            "ストタル": [
-                
-            ],
-            "ショアライン": [
-                
-            ],
-            "グラゼロ": [
-               
-            ]
-        },
-        description: "AK-12にValdayスコープとAK-12サプレッサーをつけてPMCを10killする（kill共有あり）",
-        selected: false
-    },
 
     
 
@@ -294,19 +247,6 @@ const tasksData = [
         description: "22時〜7時の間にSCAVを12killする（kill共有あり）",
         selected: false
     },
-
-　　{
-        name: "Forge a Freiendship",
-        giver:"プラパー",
-        maps: {
-            "ショアライン": [ { left: 52.5, top: 83 },
-               
-            ]
-        },
-        description: "プラパーの荷物を入手する（ランダム沸き）",
-        selected: false
-    },
-
     {
         name: "Wet Job-part1",
         giver:"ピースキーパー",
@@ -360,17 +300,6 @@ const tasksData = [
             ]
         },
         description: "東館328号室でArtyomの仕事の情報を見つけて引き渡す",
-        selected: false
-    },
-    {
-        name: "The Punisher-part2",
-        giver:"プラパー",
-        maps: {
-            "ショアライン": [ 
-               
-            ]
-        },
-        description: "AKMシリーズを使ってSCAVを15Kill",
         selected: false
     },
     {
@@ -801,188 +730,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "The Tarkov Import",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [
-                
-            ],
-            
-            
-            "リザーブ": [
-                
-            ],
-            
-             
-        },
-        description: "ライハかリザーブでSR-25に指定サプレッサーとスコープ付けてPMCを8kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Easy-Breezy",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [
-                
-            ],
-            
-            
-            "リザーブ": [
-                
-            ],
-            
-             
-        },
-        description: "ライハかリザーブでSR-2Mに指定サプレッサーとスコープ付けて任意の敵を30kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Easy Job",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: 10.7, top: 27.7 ,width:5.2,height:3.5,type:"area"}
-                
-            ],
-            
-   
-        },
-        description: "ヘリコプターにマーカー設置して、周辺エリアで任意の敵を10kill(kill共有あり））",
-        selected: false
-    },
-    {
-        name: "Reconnaissance",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: -7, top: 27.7 },{ left: 4.5, top: 35.8 },{ left: 0, top: 22.5 }
-                
-            ],
-            
-   
-        },
-        description: "オフィスビル3ついずれかの屋上を偵察して、生還する",
-        selected: false
-    },
-    {
-        name: "Reconnaissance",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: -7, top: 27.7 },{ left: 4.5, top: 35.8 },{ left: 0, top: 22.5 }
-                
-            ],
-            
-   
-        },
-        description: "オフィスビル3ついずれかの屋上を偵察して、生還する",
-        selected: false
-    },
-    {
-        name: "【BEARのみ】Our Own Land",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [
-                
-            ],
-            
-   
-        },
-        description: "ローグをグレネードランチャーで10killする（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Best Job in the World",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [
-                
-            ],
-             "リザーブ": [
-                
-            ],
-            
-   
-        },
-        description: "AK-74シリーズのアサルトライフルで敵を30kill",
-        selected: false
-    },
-    {
-        name: "Unique Experience",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [
-                
-            ],
-             "ラボ": [
-                
-            ],
-            
-   
-        },
-        description: "Velociraptorで任意の敵を30kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Getting some air",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [
-                
-            ],
-            "ショアライン": [
-                
-            ],
-            "リザーブ": [
-                
-            ],
-            
-   
-        },
-        description: "RPDNにEKP-30を装着し、任意の敵を40kill",
-        selected: false
-    },
-    {
-        name: "Getting some air",
-        giver:"プラパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [
-                
-            ]
-            
-   
-        },
-        description: "SVDSもしくはTKPDでScavを10kill、ScavベストもしくはSecurity Vestを着てScavを10kill、A-2607 Knifeを5つ納品する",
-        selected: false
-    },
-    {
         name: "Sea Side Vacation",
         giver:"セラピスト",
         maps: {
@@ -1187,98 +934,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "No Place for Renegades",
-        giver:"プラパー",
-        maps: {
-            
-            "リザーブ": [
-            ],
-            
-        },
-        description: "レイダーを5kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Special Comms",
-        giver:"プラパー",
-        maps: {
-            
-            "リザーブ": [{ left: 120, top: 340 },
-            ],
-            "ウッズ": [{ left: 63, top: 313},
-            ],
-            
-        },
-        description: "ウッズにミリタリーケーブル隠す⇒ウッズからリザーブにトランジットする⇒リザーブでミリタリーケーブル隠す",
-        selected: false
-    },
-    {
-        name: "Documents",
-        giver:"プラパー",
-        maps: {
-            
-            "リザーブ": [{ left: -35, top: 202 },{ left: -38, top: 205 },{ left: -30, top: 210 },
-            ],
-            
-            
-        },
-        description: "軍事資料を3つ手に入れる",
-        selected: false
-    },
-    {
-        name: "The Bunker",
-        giver:"プラパー",
-        maps: {
-            
-            "リザーブ": [
-            ],
-            
-            
-        },
-        description: "指令室・白ビショップ・黒ビショップ・白ポーン・黒ポーン・キングの気密扉見つける",
-        selected: false
-    },
-    {
-        name: "Escort",
-        giver:"プラパー",
-        maps: {
-            
-            "リザーブ": [
-            ],
-            "ファクトリー": [
-            ],
-            "カスタム": [
-            ],
-            "ショアライン": [
-            ],
-            "ウッズ": [
-            ],
-            "インターチェンジ": [
-            ],
-            "ラボ": [
-            ],
-            "グラゼロ": [
-            ],
-            
-            
-        },
-        description: "各マップでPMCを2kill",
-        selected: false
-    },
-    {
-        name: "The Punisher-part3",
-        giver:"プラパー",
-        maps: {
-            
-            "リザーブ": [
-            ],
-            
-            
-        },
-        description: "9×39口径の武器でScavを12kill、ハーフマスクを7こ引き渡す",
-        selected: false
-    },
-    {
         name: "Disease History",
         giver:"セラピスト",
         maps: {
@@ -1447,84 +1102,7 @@ const tasksData = [
         description: "グラハをkill(kill共有あり）、護衛のヘルメットを2つ納品する",
         selected: false
     },
-    {
-        name: "Properties All Around",
-        giver:"プラパー",
-        maps: {
-            
-            "ストタル": [{ left: 65, top: 118},
-            ],
-            
-     
-        },
-        description: "不動産取引書類を入手する（ランダム沸き、REA🔑必要かも）",
-        selected: false
-    },
-    {
-        name: "You've Got Mail",
-        giver:"プラパー",
-        maps: {
-            
-            "ストタル": [{ left: 46, top: 63},
-            ],
-            
-     
-        },
-        description: "書留郵便を入手する（ランダム沸き）",
-        selected: false
-    },
-    {
-        name: "【BEARのみ】Green Corridor",
-        giver:"プラパー",
-        maps: {
-            
-            "ストタル": [{ left: 50, top: 85},{ left: 44, top: 89},
-            ],
-            
-     
-        },
-        description: "貨物列車と待ち伏せ場所を確認する",
-        selected: false
-    },
-    {
-        name: "District Patrol",
-        giver:"プラパー",
-        maps: {
-            
-            "ストタル": [
-            ],
-            
-     
-        },
-        description: "アサルトライフルもしくはアサルトカービンを用いて任意の敵を20kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Kings of the Rooftops",
-        giver:"プラパー",
-        maps: {
-            
-            "ストタル": [
-            ],
-            
-     
-        },
-        description: "スナイパースカブを8kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Glory to CPSU",
-        giver:"プラパー",
-        maps: {
-            
-            "ストタル": [{ left: -0.5, top: 54},
-            ],
-            
-     
-        },
-        description: "プラパーの友人の仕事場を発見して、消息に関する情報を入手する",
-        selected: false
-    },
+
     {
         name: "Population Census",
         giver:"セラピスト",
@@ -1891,32 +1469,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Delivery From the Past",
-        giver:"プラパー",
-        maps: {
-            
-            "カスタム": [{ left:-155, top: 450,comment:"Director's🔑"},
-            ],
-            "ファクトリー": [{ left:7.7, top: 63,},
-            ],
-          
-        },
-        description: "カスタムの赤倉庫でドキュメントを入手する、ファクトリーに設置する",
-        selected: false
-    },
-    {
-        name: "Possessor",
-        giver:"プラパー",
-        maps: {
-            
-            "ファクトリー": [{ left:84.5, top: 70,},
-            ],
-          
-        },
-        description: "ヘリのログブックを見つけて入手する",
-        selected: false
-    },
-    {
         name: "Sanitary Standards",
         giver:"セラピスト",
         maps: {
@@ -2080,6 +1632,766 @@ const tasksData = [
         description: "PMCを6kill(kill共有あり）",
         selected: false
     },
+    {
+        name: "Luxurious Life",
+        giver:"プラパー",
+        maps: {
+            
+            "グラゼロ": [{ left: 25, top: 84,},
+            ],
+        },
+        description: "リカーショップでワイン見つける",
+        selected: false
+    },
+    {
+        name: "Shootout Picnic",
+        giver:"プラパー",
+        maps: {
+            
+            "グラゼロ": [
+            ],
+            "ウッズ": [
+            ],
+            "カスタム": [
+            ],
+            "インチェ": [
+            ],
+        },
+        description: "ウッズ、グラゼロ、カスタムもしくはインチェで任意の敵を15killする(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Search Mission",
+        giver:"プラパー",
+        maps: {
+            
+            "ウッズ": [{ left: -3.8, top: 88,},{ left: -23, top: 128,},
+            ],
+           
+        },
+        description: "プラパーの列車とUSECキャンプ見る（1レイドじゃなくておｋ）",
+        selected: false
+    },
+    {
+        name: "Bad Rep Evidence",
+        giver:"プラパー",
+        maps: {
+            
+            "カスタム": [{ left: 73, top: 324,comment:"Bunkhous🔑なくても行ける"},
+            ],
+           
+        },
+        description: "フォルダーを手に入れる",
+        selected: false
+    },
+    {
+        name: "Shaking up the Teller",
+        giver:"プラパー",
+        maps: {
+            
+            "カスタム": [{ left: 60, top: 170,comment:"Dor203🔑"},
+            ],
+           
+        },
+        description: "貴重品を手に入れる",
+        selected: false
+    },
+    {
+        name: "Background Check",
+        giver:"プラパー",
+        maps: {
+            
+            "カスタム": [{ left: 20, top: 340,comment:"Machinery🔑"},
+            ],
+           
+        },
+        description: "懐中時計を手に入れる",
+        selected: false
+    },
+    {
+        name: "Belka and Strelka",
+        giver:"プラパー",
+        maps: {
+            
+            "カスタム": [{ left: 60, top: 650,comment:"緑フレアで脱出"},
+            ],
+           
+        },
+        description: "Railroad Passageから脱出する",
+        selected: false
+    },
+    {
+        name: "Oil Run",
+        giver:"プラパー",
+        maps: {
+            
+            "カスタム": [{ left: 200, top: 310,}, { left: 150, top: 550,},{ left: 16.5, top: 350,},{ left: -230, top: 540,},
+            ],
+           
+        },
+        description: "タンクローリーのいずれかにマーカー設置",
+        selected: false
+    },
+    {
+        name: "Debut",
+        giver:"プラパー",
+        maps: {
+            
+            "グラゼロ": [
+            ],
+            "ウッズ": [
+            ],
+            "カスタム": [
+            ],
+            "インチェ": [
+            ],
+           
+        },
+        description: "ウッズ、グラゼロ、インチェもしくはカスタムでScavを5kill（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Power of Persuasion",
+        giver:"プラパー",
+        maps: {
+            
+            "グラゼロ": [
+            ],
+            "ウッズ": [
+            ],
+            "カスタム": [
+            ],
+            "インチェ": [
+            ],
+           
+        },
+        description: "ウッズ、グラゼロ、インチェもしくはカスタムでMP5SDでPMCを5kill（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Shooting Cans",
+        giver:"プラパー",
+        maps: {
+            
+            "グラゼロ": [{ left: 63, top: 130,}, { left: 30, top: 200,},
+            ],
+           
+           
+        },
+        description: "マシンガン、グレネードランチャーを見る、5killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Properties All Around",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [{ left: 65, top: 118,comment:"REA🔑必要かも"},
+            ],
+            
+     
+        },
+        description: "不動産取引書類を入手する（ランダム沸き）",
+        selected: false
+    },
+    {
+        name: "Grenadier",
+        giver:"プラパー",
+        maps: {
+           
+            
+     
+        },
+        description: "手榴弾もしくはグレネードランチャーで任意の敵を5kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "You've Got Mail",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [{ left: 46, top: 63},
+            ],
+            
+     
+        },
+        description: "書留郵便を入手する（ランダム沸き）",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Green Corridor",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [{ left: 50, top: 85},{ left: 44, top: 89},
+            ],
+            
+     
+        },
+        description: "貨物列車と待ち伏せ場所を確認する",
+        selected: false
+    },
+     {
+        name: "District Patrol",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [
+            ],
+            
+     
+        },
+        description: "アサルトライフルもしくはアサルトカービンを用いて任意の敵を20kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Kings of the Rooftops",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [
+            ],
+            
+     
+        },
+        description: "スナイパースカブを8kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Anesthesia",
+        giver:"プラパー",
+        maps: {
+            "ショアライン": [
+                { left: 49, top: 34 ,comment:"1"},
+                { left: 28.5, top: 49.2,comment:"2" },
+                { left: 52, top: 83.5,comment:"3" }
+            ]
+        },
+        description: "取引所3箇所にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Postman Pat-Part1",
+        giver:"プラパー",
+        maps: {
+
+           "ファクトリー": [
+                { left: 68.5, top: 33 ,},
+                
+            ]
+        },
+        description: "手紙を手に入れてセラピストに引き渡す",
+        selected: false
+    },
+    {
+        name: "Capturing Outposts",
+        giver:"プラパー",
+        maps: {
+            "カスタム": [
+                { left: 73, top: 485 ,width:15,height:70,rotate:-9,type:"area"}
+            ],
+            "ショアライン": [
+                {left: 48.6, top: 31 ,width:15,height:11,rotate:0,type:"area" }
+            ],
+            "ウッズ": [
+                {left: 78, top: 278 ,width:15,height:20,rotate:-9,type:"area" }
+            ]
+        },
+        description: "カスタムの新建、ウッズの医療キャンプ、ショアラインのリゾートでPMC12kill（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Ice Cream Cones",
+        giver:"プラパー",
+        maps: {
+            
+        },
+        description: "6L31(60連マガジン)を3個引き渡す",
+        selected: false
+    },
+    {
+        name: "Glory to CPSU",
+        giver:"プラパー",
+        maps: {
+            
+            "ストタル": [{ left: -0.5, top: 54},
+            ],
+            
+     
+        },
+        description: "プラパーの友人の仕事場を発見して、消息に関する情報を入手する(ランダム沸き)",
+        selected: false
+    },
+    {
+        name: "Delivery From the Past",
+        giver:"プラパー",
+        maps: {
+            
+            "カスタム": [{ left:-155, top: 450,comment:"Director's🔑"},
+            ],
+            "ファクトリー": [{ left:7.7, top: 63,},
+            ],
+          
+        },
+        description: "カスタムの赤倉庫でドキュメントを入手する、ファクトリーに設置する",
+        selected: false
+    },
+    {
+        name: "Possessor",
+        giver:"プラパー",
+        maps: {
+            
+            "ファクトリー": [{ left:84.5, top: 70,},
+            ],
+          
+        },
+        description: "ヘリのログブックを見つけて入手する",
+        selected: false
+    },
+    {
+        name: "Job for a Patriot",
+        giver:"プラパー",
+        maps: {
+            "ストタル": [
+                
+            ],
+            "ショアライン": [
+                
+            ],
+            "グラゼロ": [
+               
+            ]
+        },
+        description: "AK-12にValdayスコープとAK-12サプレッサーをつけてPMCを10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "The Tarkov Import",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+            
+            
+            "リザーブ": [
+                
+            ],
+            
+             
+        },
+        description: "ライハかリザーブでSR-25に指定サプレッサーとスコープ付けてPMCを8kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Easy-Breezy",
+        giver:"プラパー",
+        maps: { 
+            
+            "ライトハウス": [
+                
+            ],
+            
+            
+            "リザーブ": [
+                
+            ],
+            
+        },
+        description: "ライハかリザーブでSR-2M Vereskに指定サプレッサーとスコープ付けて任意の敵を30kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "No Place for Renegades",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            
+        },
+        description: "レイダーを5kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Easy Job",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 10.7, top: 27.7 ,width:5.2,height:3.5,type:"area"}
+                
+            ],
+            
+   
+        },
+        description: "ヘリコプターにマーカー設置して、周辺エリアで任意の敵を10kill(kill共有あり））",
+        selected: false
+    },
+    {
+        name: "Special Comms",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [{ left: 120, top: 340 },
+            ],
+            "ウッズ": [{ left: 63, top: 313},
+            ],
+            
+        },
+        description: "ウッズにミリタリーケーブル隠す⇒ウッズからリザーブにトランジットする⇒リザーブでミリタリーケーブル隠す",
+        selected: false
+    },
+    {
+        name: "Reconnaissance",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: -7, top: 27.7 },{ left: 4.5, top: 35.8 },{ left: 0, top: 22.5 }
+                
+            ],
+            
+   
+        },
+        description: "オフィスビル3ついずれかの屋上を偵察して、生還する",
+        selected: false
+    },
+    {
+        name: "Documents",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [{ left: -35, top: 202 },{ left: -38, top: 205 },{ left: -30, top: 210 },
+            ],
+            
+            
+        },
+        description: "軍事資料を3つ手に入れる",
+        selected: false
+    },
+    {
+        name: "The Bunker",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            
+            
+        },
+        description: "指令室・白ビショップ・黒ビショップ・白ポーン・黒ポーン・キングの気密扉見つける",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Our Own Land",
+        giver:"プラパー",
+        maps: {
+            
+            "ライトハウス": [
+                
+            ],
+            
+        },
+        description: "ローグをグレネードランチャーで10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Ironclad Proof",
+        giver:"プラパー",
+        maps: {
+            
+        },
+        description: "ロシア産のグレネード（in raid）10個納品する、任意の敵をGP-25グレネードランチャーで排除する（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Best Job in the World",
+        giver:"プラパー",
+        maps: {
+            
+            "ライトハウス": [
+                
+            ],
+             "リザーブ": [
+                
+            ],
+        
+        },
+        description: "AK-74シリーズのアサルトライフルで敵を30kill",
+        selected: false
+    },
+    {
+        name: "Intimidator",
+        giver:"プラパー",
+        maps: {
+            
+            
+        },
+        description: "Scavをヘッドショットで40kill",
+        selected: false
+    },
+    {
+        name: "The Art of Explosion",
+        giver:"プラパー",
+        maps: {
+            
+            
+        },
+        description: "手榴弾もしくはグレネードランチャーでPMCを20kill",
+        selected: false
+    },
+    {
+        name: "Unique Experience",
+        giver:"プラパー",
+        maps: {
+  
+            "ライトハウス": [
+            ],
+             "ラボ": [            
+            ],
+
+        },
+        description: "Velociraptorで任意の敵を30kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Regulated Materials",
+        giver:"プラパー",
+        maps: {
+
+        },
+        description: "タンクバッテリー(in raid)とOFZ(in raid)を納品する",
+        selected: false
+    },
+    {
+        name: "Escort",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            "ファクトリー": [
+            ],
+            "カスタム": [
+            ],
+            "ショアライン": [
+            ],
+            "ウッズ": [
+            ],
+            "インターチェンジ": [
+            ],
+            "ラボ": [
+            ],
+            "グラゼロ": [
+            ],
+            
+            
+        },
+        description: "各マップでPMCを2kill",
+        selected: false
+    },
+    {
+        name: "Special Order",
+        giver:"プラパー",
+        maps: {
+
+            
+        },
+        description: "RR（in raid)を納品する",
+        selected: false
+    },
+    {
+        name: "Getting some air",
+        giver:"プラパー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+            "ショアライン": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            
+   
+        },
+        description: "RPDNにEKP-30を装着し、任意の敵を40kill",
+        selected: false
+    },
+    {
+        name: "The Punisher-Part1",
+        giver:"プラパー",
+        maps: {
+　　　　　　　　"カスタム": [
+           　　 ],
+            
+        },
+        description: "AKS-74UシリーズでScavを25kill",
+        selected: false
+    },
+     {
+        name: "The Punisher-part2",
+        giver:"プラパー",
+        maps: {
+            "ショアライン": [ 
+               
+            ]
+        },
+        description: "AKMシリーズを使ってSCAVを15Kill",
+        selected: false
+    },
+    {
+        name: "The Punisher-part3",
+        giver:"プラパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            
+            
+        },
+        description: "9×39口径の武器でScavを12kill、ハーフマスク(in raid)を7こ引き渡す",
+        selected: false
+    },
+    {
+        name: "The Punisher-part4",
+        giver:"プラパー",
+        maps: {
+            
+            "ライトハウス": [
+            ],
+            
+            
+        },
+        description: "SVDSもしくはTKPDでScavを10kill、Scavベストを着てScavを10kill、A-2607ナイフ(in raid)を納品する",
+        selected: false
+    },
+    {
+        name: "The Punisher-part5",
+        giver:"プラパー",
+        maps: {
+
+            
+            
+        },
+        description: "AK-74(in raid)、M4A1(in raid)、PM ピストル2個(in raid)を納品する、ライトマシンガンでPMCを10kill/Scavを20kill",
+        selected: false
+    },
+    {
+        name: "The Punisher-part6",
+        giver:"プラパー",
+        maps: {
+           "ライトハウス": [
+            ],
+            "ショアライン": [
+            ],
+            "リザーブ": [
+            ],
+            "グラゼロ": [
+            ],
+            "ラボ": [
+            ],
+
+        },
+        description: "ドックタグを10個納品する、任意のボスを5人kill、ライハ/ショア/リザーブ/グラゼロ/ラボのいずれかで指定武器（wiki参照）でPMCを30kill",
+        selected: false
+    },
+    {
+        name: "【選択タスク】Big Customer",
+        giver:"プラパー",
+        maps: {
+           
+            "カスタム": [{ left: 225, top: 422 },
+            ],
+
+        },
+        description: "薬品輸送車にマーカーセットする",
+        selected: false
+    },
+    {
+        name: "Stick in the Wheel",
+        giver:"プラパー",
+        maps: {
+           
+           
+        },
+        description: "任意の場所で30kill",
+        selected: false
+    },
+    {
+        name: "Shipping Delay-Part1",
+        giver:"プラパー",
+        maps: {
+            "ウッズ": [{ left: 170, top: 255 },
+            ],
+           
+        },
+        description: "プラパーの荷物を入手する",
+        selected: false
+    },
+    {
+        name: "Forge a Freiendship",
+        giver:"プラパー",
+        maps: {
+            "ショアライン": [ { left: 52.5, top: 83 },
+               
+            ]
+        },
+        description: "プラパーの荷物を入手する（ランダム沸き）",
+        selected: false
+    },
+    {
+        name: "Half Empty",
+        giver:"プラパー",
+        maps: {
+           
+        },
+        description: "電子部品(in raid)を5個、PC部品(in Raid)を10個納品する",
+        selected: false
+    },
+    {
+        name: "Fog of War",
+        giver:"プラパー",
+        maps: {
+           "ライトハウス": [ { left: -2.5, top: 30 ,comment:"BRDM付近"},{ left: 20, top: 34.5 ,comment:"監視塔付近"},{ left: -7, top: 27.7 ,comment:"いずれか"},{ left: 4.5, top: 35.8 ,comment:"いずれか"},{ left: 0, top: 22.5 ,comment:"いずれか"}
+               
+            ]
+        },
+        description: "BRDM付近の陣地、監視塔付近のチェックポイント、浄水場建物の屋上のいずれかを偵察せよ",
+        selected: false
+    },
+    {
+        name: "Number Temporarily Unavailable",
+        giver:"プラパー",
+        maps: {
+           "ライトハウス": [ { left: 110, top: 30 ,},
+           ]
+        },
+        description: "キャンプに電子部品3個、軍用ケーブル、コンデンサを保管する",
+        selected: false
+    },
+    {
+        name: "All-Inclusive Support",
+        giver:"プラパー",
+        maps: {
+           "ライトハウス": [ { left: 11, top: 13 ,comment:"レッドフレア"},
+           ]
+          
+        },
+        description: "ライハで任意の敵を15kill(kill共有あり）⇒リザーブにトランジットする、ライハのPassage by the Lake付近でRedフレア上げる(共有あり）",
+        selected: false
+    },
+
 
 
 
