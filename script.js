@@ -2585,16 +2585,23 @@ const lighthouseScavExitsData = [
 
 const labsPmcExitsData = [
 
-    { name: "Ventilation Shaft", left: 9, top: 89, labelX: 9, labelY: 89, condition: "バックパック外す" },
+    { name: "Ventilation Shaft", left: 9, top: 89, labelX: 0, labelY: 86, condition: "バックパック外す" },
 
-    { name: "Medical Block Elevator", left: 20, top: 96.2, labelX: 20, labelY: 96.2, condition: "①の電源入れる" },
+    { name: "Medical Block Elevator", left: 20, top: 96.2, labelX: 15, labelY:99, condition: "①の電源入れる" },
 
-    { name: "Northern CheckPoint", left: -30, top: 40.2, labelX: -30, labelY: 40.2, condition: "" },
+    { name: "①", left: 28, top: 94.2, labelX: 28, labelY: 94.2, condition: "電源" },
 
-    { name: "Path to Shoreline", left: 47, top: 12.5, labelX: 47, labelY: 12.5, condition: "" },
-    { name: "Road to Military Base V-Ex", left: -11, top: 12, labelX: -20, labelY: 10, condition: "お金" },
-    { name: "Side Tunnel(Co-Op)", left: 92.8, top: 31, labelX: 88, labelY:29.2, condition: "PMCとSCAV各1人" },
-    { name: "Southern Road", left: 102, top: 16.8, labelX: 102, labelY: 16.8, condition: "" }
+    { name: "Cargo Elevator", left: 58.7, top: 44.5, labelX: 58.7, labelY: 44.5, condition: "地下の電源②を入れる" },
+    { name: "②", left: 18.1, top: 93.8, labelX: 14, labelY: 93.8, condition: "電源" },
+    { name: "Sewage Conduit", left:39, top: 91.5, labelX: 39, labelY:93, condition: "③の電源入れる" },
+    { name: "③", left: 39, top: 88.5, labelX: 39, labelY: 88, condition: "電源" },
+    { name: "Hangar Gate", left:46, top: 30.8, labelX: 46, labelY:30.8, condition: "⑤の電源入れる" },
+    { name: "⑤", left:86, top: 30.8, labelX: 86, labelY:30.8, condition: "電源" },
+    { name: "Main Elevator", left:16, top: 61, labelX: 6, labelY:61, condition: "④の電源入れる" },
+    { name: "④", left:23.2, top: 58, labelX: 23.2, labelY:58, condition: "電源" },
+    { name: "Parking Gate", left:2.3, top: 17.5, labelX: 2.3, labelY:17.5, condition: "⑥の電源入れる" },
+    { name: "⑥", left:64.9, top:14.3, labelX:61, labelY:14.3, condition: "電源" },
+
 
 ];
 
