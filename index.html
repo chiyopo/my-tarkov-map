@@ -44,13 +44,119 @@
 
         <div class="map-container">
 
-        <img id="mapImage" src="Shoreline.svg" alt="ショアラインのマップ">
+    <!-- 通常マップ -->
+    <img id="mapImage" src="Shoreline.svg" alt="ショアラインのマップ">
 
-        <div id="pmc-exits"></div>
-        <div id="scav-exits"></div>
-        <div id="task-markers"></div>
+    <!-- ファクトリー専用 -->
+   <div id="factory-floor-grid">
 
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">地下</div>
+       <div class="factory-floor-map" data-floor="Basement">
+    <img src="Factory_Basement.svg" alt="ファクトリー地下">
+    </div>
+    </div>
+
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">1F</div>
+        <div class="factory-floor-map" data-floor="Ground_Floor">
+       <img src="Factory_Ground_Floor.svg" alt="ファクトリー1F">
+     </div>
+    </div>
+
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">2F</div>
+        <div class="factory-floor-map" data-floor="Second_Floor">
+       <img src="Factory_Second_Floor.svg" alt="ファクトリー2F">
+      </div>
+    </div>
+
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">3F</div>
+        <div class="factory-floor-map" data-floor="Third_Floor">
+       <img src="Factory_Third_Floor.svg" alt="ファクトリー3F">
+      </div>
+    </div>
+
+    
+</div>
+
+<!-- ラボ専用 -->
+<div id="labs-floor-grid">
+
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">1F</div>
+        <div class="labs-floor-map">
+            <img src="Labs_First_Level.svg" alt="ラボ1F">
         </div>
+    </div>
+
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">2F</div>
+        <div class="labs-floor-map">
+            <img src="Labs_Second_Level.svg" alt="ラボ2F">
+        </div>
+    </div>
+
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">地下</div>
+        <div class="labs-floor-map">
+            <img src="Labs_Technical_Level.svg" alt="ラボ地下">
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- インチェ専用 -->
+<div id="interchange-floor-grid">
+
+    <!-- 上中央：1F・外 -->
+    <div class="factory-floor-card interchange-ground">
+        <div class="factory-floor-title">1F・外</div>
+        <div class="interchange-floor-map">
+            <img src="Interchange_Ground_Level.svg" alt="インチェ1F・外">
+        </div>
+    </div>
+
+    <!-- 左下：2F -->
+    <div class="factory-floor-card interchange-first">
+        <div class="factory-floor-title">2F</div>
+        <div class="interchange-floor-map">
+            <img src="Interchange_First_Floor.svg" alt="インチェ2F">
+        </div>
+    </div>
+
+    <!-- 右下：3F -->
+    <div class="factory-floor-card interchange-second">
+        <div class="factory-floor-title">3F</div>
+        <div class="interchange-floor-map">
+            <img src="Interchange_Second_Floor.svg" alt="インチェ3F">
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pmc-exits"></div>
+    <div id="scav-exits"></div>
+    <div id="task-markers"></div>
+
+</div>
 
     </div>
 

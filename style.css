@@ -606,3 +606,185 @@ height: auto;
     z-index: 5002;
     pointer-events: none;
 }
+
+
+/* =========================
+   Factory 2x2 floor maps
+   ========================= */
+
+#factory-floor-grid {
+    width: 82vw;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    padding: 0;
+}
+
+
+
+.factory-floor-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.factory-floor-title {
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+.factory-floor-map {
+    width: 100%;
+    overflow: hidden;
+}
+
+.factory-floor-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.labs-floor-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+#labs-floor-grid {
+    width: 90vw;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    padding: 0;
+}
+
+#interchange-floor-grid {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: start;
+}
+
+/* =========================
+   Interchange floor maps
+   ========================= */
+
+#interchange-floor-grid {
+    display: grid;
+    grid-template-columns: 700px 400px;
+    grid-template-rows: 400px 400px;
+    column-gap: 50px;
+    row-gap: 30px;
+    width: max-content;
+    margin: 0 auto;
+    align-items: start;
+}
+
+#interchange-floor-grid .interchange-ground {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 700px;
+    align-self: start;
+    position: relative;
+    top: 250px;
+    left: -100px;
+}
+
+#interchange-floor-grid .interchange-second {
+    grid-column: 2;
+    grid-row: 1;
+    width: 400px;
+    align-self: start;
+}
+
+#interchange-floor-grid .interchange-first {
+    grid-column: 2;
+    grid-row: 2;
+    width: 400px;
+    align-self: start;
+}
+
+/* インチェ階数タイトル */
+#interchange-floor-grid .factory-floor-card {
+    position: relative;
+}
+
+/* 1F・外 */
+#interchange-floor-grid .interchange-ground .factory-floor-title {
+    position: absolute;
+    top: -105px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+}
+
+/* 3F */
+#interchange-floor-grid .interchange-second .factory-floor-title {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+}
+
+/* 2F */
+#interchange-floor-grid .interchange-first .factory-floor-title {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+}
+/* マップサイズ */
+#interchange-floor-grid .interchange-ground .interchange-floor-map {
+    width: 700px;
+}
+
+#interchange-floor-grid .interchange-first .interchange-floor-map,
+#interchange-floor-grid .interchange-second .interchange-floor-map {
+    width: 400px;
+}
+
+/* 全部左に90度回転 */
+#interchange-floor-grid .interchange-floor-map img {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+}
+
+/* 各階のタスク・脱出口を置くための場所 */
+.factory-floor-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* スマホなど狭い画面では1列 */
+@media (max-width: 900px) {
+    #factory-floor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#factory-floor-grid {
+    position: relative;
+}
+
+#factory-exits {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5000;
+}

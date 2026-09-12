@@ -105,7 +105,7 @@ const tasksData = [
                {left: 68, top: 25 ,width:13,height:30,rotate:0,type:"area" }
             ],
             "インチェ": [
-                {left: 100, top: 335 ,width:30,height:35,rotate:0,type:"area" }
+                {left:50, top: 55 ,width:30,height:35,rotate:0,type:"area" }
             ]
         },
         description: "密輸業者の基地で10キルする（kill共有あり）",
@@ -1897,7 +1897,7 @@ const tasksData = [
             
             "カスタム": [{ left:-155, top: 450,comment:"Director's🔑"},
             ],
-            "ファクトリー": [{ left:-130, top: 180,},
+            "ファクトリー": [{ left:7.7, top: 63,},
             ],
           
         },
@@ -1909,7 +1909,7 @@ const tasksData = [
         giver:"プラパー",
         maps: {
             
-            "ファクトリー": [{ left:75, top: 250,},
+            "ファクトリー": [{ left:84.5, top: 70,},
             ],
           
         },
@@ -1921,7 +1921,7 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             
-            "ファクトリー": [{ left:200, top: 230,},
+            "ファクトリー": [{ left:40.5, top: 68,},
             ],
           
         },
@@ -1933,7 +1933,7 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             
-            "ファクトリー": [{ left:-17, top: 380,},
+            "ファクトリー": [{ left:21.8, top: 33,},
             ],
           
         },
@@ -1945,7 +1945,7 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             
-            "ファクトリー": [{ left:-120, top: 255,},
+            "ファクトリー": [{ left:63.5, top: 71,},
             ],
           
         },
@@ -1957,7 +1957,7 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             
-            "ファクトリー": [{ left:300, top: 430,comment:"Factory emergency🔑"},
+            "ファクトリー": [{ left: 97, top:  31.6,comment:"Factory emergency🔑"},
             ],
             "ラボ": [{ left:50, top: 50,comment:"地図入れたらマーカー移動する"},
             ],
@@ -1971,7 +1971,7 @@ const tasksData = [
         giver:"メカニック",
         maps: {
             
-            "ファクトリー": [{ left:280, top: 100,}, {left:80, top: 67,},
+            "ファクトリー": [{ left:92, top: 7,}, {left:80, top: 4.8,},
             ],
             
           
@@ -1984,7 +1984,7 @@ const tasksData = [
         giver:"メカニック",
         maps: {
             
-            "ファクトリー": [{ left:0, top: 300,comment:"地下図面入れたら"}, {left:80, top: 67,comment:"地下図面入れたら"},{left:80, top: 67,comment:"地下図面入れたら"},
+            "ファクトリー": [{ left:13.8, top: 38,}, {left:30.5, top: 18.3,},{left:44, top: 15,},
             ],
             
           
@@ -1997,7 +1997,7 @@ const tasksData = [
         giver:"メカニック",
         maps: {
             
-            "ファクトリー": [{left: -203, top: 625,}, {left: -243, top: 110,}, {left: 320, top: 430,},{left: 195, top: 37,},
+            "ファクトリー": [{left: 53, top: 8}, {left:  55.7, top:  45.2,}, {left: 97, top:  31.6,},{left:  41, top:  3.5,},
             ],
             
           
@@ -2012,7 +2012,7 @@ const tasksData = [
             
             "カスタム": [{left: 5, top: 510,}, 
             ],
-            "ファクトリー": [{ left:200, top: 230,},
+            "ファクトリー": [{ left:89, top: 17.5,},
             ],
             
           
@@ -2027,7 +2027,7 @@ const tasksData = [
             
             "カスタム": [{left: 55, top: 160,}, 
             ],
-            "ファクトリー": [{ left:-120, top: 255,},
+            "ファクトリー": [{ left:63.5, top: 71,},
             ],
         },
         description: "カスタムとファクトリーでトリップワイヤーの設置に適した場所を見つける",
@@ -2063,7 +2063,7 @@ const tasksData = [
         maps: {
             
             
-            "ファクトリー": [{ left:-120, top: 255,comment:"地下、Polikhimカードキー"},
+            "ファクトリー": [{ left: 9, top: 38,comment:"地下、Polikhimカードキー"},
             ],
         },
         description: "倉庫で化学薬品容器を見つける",
@@ -2415,25 +2415,25 @@ const woodsScavExitsData = [
 // インチェ
 const interchangePmcExitsData = [
 
-    { name: "Railway Exfil", left: -75, top: 340, labelX: -75, labelY: 340, condition: "" },
+    { name: "Railway Exfil", left: -4, top: 93.2, labelX: -4, labelY: 93.2, condition: "" },
 
-    { name: "Scav Camp(Co-Op)", left: 28, top: 275, labelX: 28, labelY: 275, condition: "PMCとSCAV各1人" },
+    { name: "Scav Camp(Co-Op)", left: 18, top: 78, labelX: 18, labelY: 78, condition: "PMCとSCAV各1人" },
 
-    { name: "Power Station V-Ex", left: -57.4, top: 75, labelX: -57.4, labelY: 75, condition: "お金" },
-    { name: "Hole in the Fence", left: 38, top: 100, labelX: 38, labelY: 100, condition: "バッグを装備しない" },
-    { name: "Emercom Checkpoint", left: 130, top: 70, labelX: 130, labelY:70, condition: "" },
-    { name: "Saferoom Exfil", left: 50, top: 150, labelX: 50, labelY:150, condition: "地下図面いれる、電源＆Object 11SRキーカード" },
-    { name: "", left: -54, top: 109, labelX: -54, labelY:109, condition: "電源オン"},
+    { name: "Power Station V-Ex", left: -0.2, top:33, labelX: -0.2, labelY: 33, condition: "お金" },
+    { name: "Hole in the Fence", left: 25.5, top: 37, labelX: 25.5, labelY: 37, condition: "バッグを装備しない" },
+    { name: "Emercom Checkpoint", left: 37, top: 32, labelX: 37, labelY: 32,condition: "" },
+    { name: "Saferoom Exfil", left: 23.5, top: 53, labelX: 23.5, labelY:53, condition: "地下図面いれる、電源＆Object 11SRキーカード" },
+    { name: "", left: 0.8, top: 40.3, labelX: 0.8, labelY:40.3, condition: "電源オン"},
 
     ];
 
 const interchangeScavExitsData = [
 
-    { name: "Railway Exfil", left: -75, top: 340, labelX: -75, labelY: 340, condition: "" },
+    { name: "Railway Exfil", left: -4, top: 93.2, labelX: -4, labelY: 93.2,condition: "" },
 
-    { name: "Emercom Checkpoint", left: 130, top: 70, labelX: 130, labelY:70, condition: "" },
+    { name: "Emercom Checkpoint",left: 37, top: 32, labelX: 37, labelY: 32, condition: "" },
 
-    { name: "Scav Camp(Co-Op)", left: 28, top: 275, labelX: 28, labelY: 275, condition: "PMCとSCAV各1人" },
+    { name: "Scav Camp(Co-Op)",left: 18, top: 78, labelX: 18, labelY: 78,condition: "PMCとSCAV各1人" },
 
     ];
 
@@ -2530,23 +2530,23 @@ const groundzeroScavExitsData = [
 // ファクトリー
 const factoryPmcExitsData = [
 
-    { name: "Gate 3", left: -243, top: 110, labelX:-243,labelY: 110, condition: "" },
+    { name: "Gate 3",left: 53, top: 8, labelX:53,labelY: 8, condition: "" },
 
-    { name: "COURTYARD GATE", left: -243, top: 280, labelX: -243, labelY: 280, condition: "" },
+    { name: "COURTYARD GATE",left:  53, top: 20, labelX:  53, labelY:  20, condition: "" },
 
-    { name: "Gate 0", left: -203, top: 625, labelX: -203, labelY: 625, condition: "" },
-    { name: "Med Tent Gates", left: 320, top: 430, labelX: 320, labelY: 430, condition: "Factory emergency exit鍵" },
-    { name: "Cellars", left: 195, top: 37, labelX: 195, labelY: 37, condition:"地下、Factory emaergency exit🔑"},
+    { name: "Gate 0",left:  55.7, top:  45.2, labelX:  55.7, labelY:  45.2, condition: "" },
+    { name: "Med Tent Gates", left: 97, top:  31.6, labelX:  97, labelY:  31.6, condition: "Factory emergency exit🔑" },
+    { name: "Cellars", left:  41, top:  3.5, labelX:36.5, labelY:  4.6, condition:"地下、Factory emaergency exit🔑"},
 
     ];
 
 const factoryScavExitsData = [
 
-    { name: "Office Window", left: -164.5, top: 295, labelX: -164.5, labelY: 295, condition: "" },
+    { name: "Office Window",left: 62.9, top: 74.8, labelX: 62.9, labelY:74.8 , condition: "" },
 
-    { name: "Gate 3", left: -243, top: 110, labelX:-243,labelY: 110, condition: "" },
+    { name: "Gate 3",left: 53, top: 8, labelX:53,labelY: 8, condition: "" },
 
-    { name: "Camera Bunker Door", left: 70, top: 70, labelX: 70, labelY: 70, condition: "地下マップ入れたら" },
+    { name: "Camera Bunker Door", left: 10.6, top: 38, labelX: 10.6, labelY: 38, condition: "" },
 
     ];
 
@@ -2579,6 +2579,27 @@ const lighthouseScavExitsData = [
 
     { name: "Hideout Under the Landing Stage", left: 88.5, top: 41, labelX: 85, labelY: 42, condition: "" }
 
+];
+
+// ラボ
+
+const labsPmcExitsData = [
+
+    { name: "Ventilation Shaft", left: 9, top: 89, labelX: 9, labelY: 89, condition: "バックパック外す" },
+
+    { name: "Medical Block Elevator", left: 20, top: 96.2, labelX: 20, labelY: 96.2, condition: "①の電源入れる" },
+
+    { name: "Northern CheckPoint", left: -30, top: 40.2, labelX: -30, labelY: 40.2, condition: "" },
+
+    { name: "Path to Shoreline", left: 47, top: 12.5, labelX: 47, labelY: 12.5, condition: "" },
+    { name: "Road to Military Base V-Ex", left: -11, top: 12, labelX: -20, labelY: 10, condition: "お金" },
+    { name: "Side Tunnel(Co-Op)", left: 92.8, top: 31, labelX: 88, labelY:29.2, condition: "PMCとSCAV各1人" },
+    { name: "Southern Road", left: 102, top: 16.8, labelX: 102, labelY: 16.8, condition: "" }
+
+];
+
+const labsScavExitsData = [
+    
 ];
 
 
@@ -2624,6 +2645,11 @@ const exitsByMap = {
     "ファクトリー": {
         pmc: factoryPmcExitsData,
         scav: factoryScavExitsData
+    },
+
+    "ラボ": {
+        pmc: labsPmcExitsData,
+        scav: labsScavExitsData
     },
 };
 
@@ -2691,6 +2717,129 @@ if (exit.condition) {
     });
 }
 
+function showFactoryExits(exits, type) {
+    console.log("Factory exits:", exits);
+
+
+// ファクトリー脱出口専用レイヤーを取得
+let factoryExits = document.getElementById("factory-exits");
+
+if (!factoryExits) {
+    factoryExits = document.createElement("div");
+    factoryExits.id = "factory-exits";
+
+    const factoryMap = document.getElementById("factory-floor-grid");
+    factoryMap.appendChild(factoryExits);
+}
+
+// 今表示されている脱出口を消す
+factoryExits.innerHTML = "";
+
+exits.forEach(function(exit) {
+
+    // ⚫ 脱出口の点
+    const dot = document.createElement("div");
+
+    dot.className = "exit-dot";
+    dot.textContent = "●";
+
+    dot.style.left = exit.left + "%";
+    dot.style.top = exit.top + "%";
+
+
+    // 文字
+    const label = document.createElement("div");
+
+    label.className = "exit-label";
+
+    label.style.left = exit.labelX + "%";
+    label.style.top = exit.labelY + "%";
+
+
+    // 脱出地点名
+    const name = document.createElement("div");
+
+    name.textContent = exit.name;
+
+    label.appendChild(name);
+
+
+    // 条件がある場合だけ表示
+    if (exit.condition) {
+
+        const condition = document.createElement("div");
+
+        condition.className = "exit-condition";
+        condition.textContent = exit.condition;
+
+        label.appendChild(condition);
+    }
+
+
+    factoryExits.appendChild(dot);
+    factoryExits.appendChild(label);
+
+});
+}
+
+function showInterchangeExits(exits, type) {
+    console.log("Interchange exits:", exits);
+
+    let interchangeExits = document.getElementById("interchange-exits");
+
+    if (!interchangeExits) {
+        interchangeExits = document.createElement("div");
+        interchangeExits.id = "interchange-exits";
+
+        const interchangeMap = document.getElementById("interchange-floor-grid");
+        interchangeMap.appendChild(interchangeExits);
+    }
+
+    interchangeExits.innerHTML = "";
+
+    exits.forEach(function(exit) {
+
+        const dot = document.createElement("div");
+
+        dot.className = "exit-dot";
+        dot.textContent = "●";
+
+        dot.style.left = exit.left + "%";
+        dot.style.top = exit.top + "%";
+
+
+        const label = document.createElement("div");
+
+        label.className = "exit-label";
+
+        label.style.left = exit.labelX + "%";
+        label.style.top = exit.labelY + "%";
+
+
+        const name = document.createElement("div");
+
+        name.textContent = exit.name;
+
+        label.appendChild(name);
+
+
+        if (exit.condition) {
+
+            const condition = document.createElement("div");
+
+            condition.className = "exit-condition";
+            condition.textContent = exit.condition;
+
+            label.appendChild(condition);
+        }
+
+
+        interchangeExits.appendChild(dot);
+        interchangeExits.appendChild(label);
+
+    });
+}
+
 // マップごとの脱出地点データ
 const mapExitData = {
 shoreline: {
@@ -2701,6 +2850,9 @@ scav: scavExitsData
 
 // マップに合わせて脱出地点を更新
 function updateExits(mapName) {
+
+console.log("現在のマップ:", mapName);
+console.log("インチェデータ:", exitsByMap["インチェ"]);
 
 const data = exitsByMap[mapName];
 pmcExits.innerHTML = "";
@@ -2724,10 +2876,32 @@ setActiveButton(pmcButton);
 scavExits.style.display = "none";
 setActiveButton(pmcButton);
 
-updateExits(currentMap);
+if (currentMap === "インチェ") {
+    showInterchangeExits(interchangePmcExitsData, "pmc");
+    pmcExits.style.display = "none";
+    scavExits.style.display = "none";
+} else {
+    updateExits(currentMap);
+}
 
 // PMCボタン
 pmcButton.addEventListener("click", function() {
+
+    if (currentMap === "ファクトリー") {
+        pmcExits.innerHTML = "";
+        scavExits.innerHTML = "";
+        showFactoryExits(factoryPmcExitsData, "pmc");
+        setActiveButton(pmcButton);
+        return;
+    }
+
+    if (currentMap === "インチェ") {
+    pmcExits.innerHTML = "";
+    scavExits.innerHTML = "";
+    showInterchangeExits(interchangePmcExitsData, "pmc");
+    setActiveButton(pmcButton);
+    return;
+    }
 
     pmcExits.style.display = "block";
     scavExits.style.display = "none";
@@ -2739,6 +2913,26 @@ pmcButton.addEventListener("click", function() {
 
 // SCAVボタン
 scavButton.addEventListener("click", function() {
+
+    if (currentMap === "ファクトリー") {
+        pmcExits.innerHTML = "";
+        scavExits.innerHTML = "";
+
+        showFactoryExits(factoryScavExitsData, "scav");
+
+        setActiveButton(scavButton);
+        return;
+    }
+    
+    if (currentMap === "インチェ") {
+    pmcExits.innerHTML = "";
+    scavExits.innerHTML = "";
+
+    showInterchangeExits(interchangeScavExitsData, "scav");
+
+    setActiveButton(scavButton);
+    return;
+   }
 
     pmcExits.style.display = "none";
     scavExits.style.display = "block";
@@ -2753,6 +2947,21 @@ hideButton.addEventListener("click", function() {
 
     pmcExits.style.display = "none";
     scavExits.style.display = "none";
+
+    if (currentMap === "ファクトリー") {
+        const factoryExits = document.getElementById("factory-exits");
+
+        if (factoryExits) {
+            factoryExits.innerHTML = "";
+        }
+    }
+    if (currentMap === "インチェ") {
+    const interchangeExits = document.getElementById("interchange-exits");
+
+    if (interchangeExits) {
+        interchangeExits.innerHTML = "";
+    }
+}
 
     setActiveButton(hideButton);
 
@@ -3069,7 +3278,12 @@ restoreConditionButton.addEventListener("click", function() {
 // マップ画像の切り替え
 const mapSelect = document.getElementById("mapSelect");
 const mapImage = document.getElementById("mapImage");
-
+const factoryFloorGrid = document.getElementById("factory-floor-grid");
+const labsFloorGrid = document.getElementById("labs-floor-grid");
+const interchangeFloorGrid = document.getElementById("interchange-floor-grid");
+factoryFloorGrid.style.display = "none";
+labsFloorGrid.style.display = "none";
+interchangeFloorGrid.style.display = "none";
 const mapImages = {
     shoreline: "Shoreline.svg",
     customs: "Customs.svg",
@@ -3082,38 +3296,276 @@ const mapImages = {
     groundzero: "GroundZero.svg",
     factory: "Factory.svg",
 };
+async function loadFactoryFloors() {
+
+    const floorMaps = document.querySelectorAll(".factory-floor-map");
+
+    try {
+        const response = await fetch("Factory.svg");
+
+        if (!response.ok) {
+            throw new Error("Factory.svg を読み込めませんでした");
+        }
+
+        const svgText = await response.text();
+
+        floorMaps.forEach(function (container) {
+
+            const floorName = container.dataset.floor;
+
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(
+                svgText,
+                "image/svg+xml"
+            );
+
+            const svg = doc.documentElement;
+
+            const floors = [
+                "Basement",
+                "Ground_Floor",
+                "Second_Floor",
+                "Third_Floor"
+            ];
+
+            floors.forEach(function (floor) {
+
+                const group = svg.querySelector("#" + floor);
+
+                if (group) {
+                    group.style.display = "none";
+                }
+            });
+
+            const currentFloor = svg.querySelector(
+                "#" + floorName
+            );
+
+            if (currentFloor) {
+             currentFloor.style.display = "block";
+              }
+
+            container.innerHTML = "";
+            container.appendChild(svg);
+
+        });
+
+    } catch (error) {
+        console.error("Factory.svg の読み込みに失敗:", error);
+    }
+}
+
+async function loadLabsFloors() {
+
+    const floorMaps = document.querySelectorAll(".labs-floor-map");
+
+    try {
+        const response = await fetch("Labs.svg");
+
+        if (!response.ok) {
+            throw new Error("Labs.svg を読み込めませんでした");
+        }
+
+        const svgText = await response.text();
+
+        floorMaps.forEach(function (container) {
+
+            const floorName = container.dataset.floor;
+
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(
+                svgText,
+                "image/svg+xml"
+            );
+
+            const svg = doc.documentElement;
+
+            const floors = [
+                "Technical_Level",
+                "First_Level",
+                "Second_Level"
+            ];
+
+            floors.forEach(function (floor) {
+
+                const group = svg.querySelector("#" + floor);
+
+                if (group) {
+                    group.style.display = "none";
+                }
+            });
+
+            const currentFloor = svg.querySelector(
+                "#" + floorName
+            );
+
+            if (currentFloor) {
+                currentFloor.style.display = "block";
+            }
+
+            container.innerHTML = "";
+            container.appendChild(svg);
+
+        });
+
+    } catch (error) {
+        console.error("Labs.svg の読み込みに失敗:", error);
+    }
+}
+
 
 
 mapSelect.addEventListener("change", function () {
 
-    mapImage.src = mapImages[this.value];
+    // =========================
+    // インチェ
+    // =========================
 
-    // 一度、専用クラスを両方とも削除
-    mapImage.classList.remove("lighthouse-map", "customs-map","factory-map","groundzero-map",
-        "interchange-map","shoreline-map","streetsoftarkov","reserve-map","woods-map");
+    if (this.value === "interchange") {
 
-    // マップごとにクラスを付ける
+        mapImage.style.display = "none";
+
+        factoryFloorGrid.style.display = "none";
+        labsFloorGrid.style.display = "none";
+        interchangeFloorGrid.style.display = "grid";
+
+        
+
+        // 通常マップの脱出口を消す
+        pmcExits.innerHTML = "";
+        scavExits.innerHTML = "";
+        pmcExits.style.display = "none";
+        scavExits.style.display = "none";
+
+    }
+
+    // =========================
+    // ファクトリー
+    // =========================
+
+    else if (this.value === "factory") {
+
+        mapImage.style.display = "none";
+
+        factoryFloorGrid.style.display = "grid";
+        labsFloorGrid.style.display = "none";
+        interchangeFloorGrid.style.display = "none";
+
+        loadFactoryFloors();
+
+        // 通常マップの脱出口を消す
+        pmcExits.innerHTML = "";
+        scavExits.innerHTML = "";
+        pmcExits.style.display = "none";
+        scavExits.style.display = "none";
+
+        showFactoryExits(factoryPmcExitsData, "pmc");
+
+
+
+    }
+
+    // =========================
+    // その他のマップ
+    // =========================
+
+    else {
+
+        mapImage.style.display = "block";
+
+        factoryFloorGrid.style.display = "none";
+        labsFloorGrid.style.display = "none";
+        interchangeFloorGrid.style.display = "none";
+
+        pmcExits.style.display = "block";
+        scavExits.style.display = "block";
+
+        mapImage.src = mapImages[this.value];
+
+        // =========================
+        // ラボ
+        // =========================
+
+        if (this.value === "labs") {
+
+            mapImage.style.display = "none";
+
+            factoryFloorGrid.style.display = "none";
+            labsFloorGrid.style.display = "grid";
+            interchangeFloorGrid.style.display = "none";
+
+            loadLabsFloors();
+        }
+    }
+
+
+    // =========================
+    // マップ専用クラスをリセット
+    // =========================
+
+    mapImage.classList.remove(
+    "lighthouse-map",
+    "customs-map",
+    "factory-map",
+    "groundzero-map",
+    "interchange-map",
+    "shoreline-map",
+    "streetsoftarkov-map",
+    "reserve-map",
+    "woods-map",
+    "labs-map"
+);
+
+
+    // =========================
+    // マップごとのクラス
+    // =========================
+
     if (this.value === "lighthouse") {
+
         mapImage.classList.add("lighthouse-map");
+
     } else if (this.value === "customs") {
+
         mapImage.classList.add("customs-map");
-    }else if (this.value === "factory") {
+
+    } else if (this.value === "factory") {
+
         mapImage.classList.add("factory-map");
-    }else if (this.value === "groundzero") {
+
+    } else if (this.value === "groundzero") {
+
         mapImage.classList.add("groundzero-map");
-    }else if (this.value === "interchange") {
+
+    } else if (this.value === "interchange") {
+
         mapImage.classList.add("interchange-map");
-    }else if (this.value === "shoreline") {
-    mapImage.classList.add("shoreline-map");
-    }else if (this.value === "streets") {
-    mapImage.classList.add("streetsoftarkov-map");
-    }else if (this.value === "reserve") {
-    mapImage.classList.add("reserve-map");
-     }else if (this.value === "woods") {
-    mapImage.classList.add("woods-map");
-    }else if (this.value === "labs") {
-    mapImage.classList.add("labs-map");
-}
+
+    } else if (this.value === "shoreline") {
+
+        mapImage.classList.add("shoreline-map");
+
+    } else if (this.value === "streets") {
+
+        mapImage.classList.add("streetsoftarkov-map");
+
+    } else if (this.value === "reserve") {
+
+        mapImage.classList.add("reserve-map");
+
+    } else if (this.value === "woods") {
+
+        mapImage.classList.add("woods-map");
+
+    } else if (this.value === "labs") {
+
+        mapImage.classList.add("labs-map");
+    }
+
+
+    // =========================
+    // マップ名
+    // =========================
 
     const mapNames = {
         shoreline: "ショアライン",
@@ -3128,13 +3580,26 @@ mapSelect.addEventListener("change", function () {
         factory: "ファクトリー",
     };
 
+
     currentMap = mapNames[this.value];
 
     showTaskList();
     showTaskMarkers();
     showTaskConditions();
 
-    updateExits(currentMap);
+    if (this.value === "interchange") {
+    showInterchangeExits(interchangePmcExitsData, "pmc");
+}
+
+
+    // インチェ・ファクトリー以外は通常の脱出口処理
+    if (
+        this.value !== "factory" &&
+        this.value !== "interchange"
+    ) {
+        updateExits(currentMap);
+    }
+
 });
 
 

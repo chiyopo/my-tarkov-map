@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xml:space="preserve"
+   id="svg176"
+   width="99.471382"
+   height="107.1527"
+   version="1.1"
+   viewBox="0 0 99.471379 107.1527"
+   sodipodi:docname="Factory.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview218"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1" />
+  <style
+   id="style_common">
+    .trees { fill:#144043 }
+    .cement { fill:#c6c2c2 }
+    .land { fill:#1f5054 }
+    .rock { fill:#dcd5b6 }
+    .water { fill:#4a6b96 }
+    .wood { fill:#593700 }
+    .tarmac { fill:#768089 }
+    .gravel { fill:#946d3e }
+    .building { fill:#1a2632 }
+    .floor { fill:#70777f }
+    .locked { fill:#37414c }
+    .map_border { fill:none;stroke:#000;stroke-width:2 }
+    .fence { fill:none;stroke:#c4e3c3;stroke-width:1 }
+    .road_tarmac { fill:none;stroke:#888 }
+    .road_gravel { fill:none;stroke:#946d3e }
+    .road_small { stroke-width:5 }
+    .road_medium { stroke-width:8 }
+    .road_large { stroke-width:12 }
+    .railroad { fill:none;stroke:#914833;stroke-dasharray:6;stroke-width:3 }
+    .powerline { fill:none;stroke:#ffce00;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6,6 }
+    .danger { fill:red;fill-opacity:.4;stroke:red;stroke-dasharray:4,2;stroke-width:2 }
+    .danger_small { fill:red;fill-opacity:.4;stroke:red;stroke-dasharray:2,1;stroke-width:1 }
+    .task { fill:#000 }
+    .stairs { fill:#FFD700 }
+    .shadow { filter:drop-shadow(0 0 2px #000) }
+  </style>
+  <style
+   id="style_factory">
+    .wall { fill:none;stroke:#000;stroke-width:0.2; }
+  </style>
+  <defs
+   id="defs1">
+    <path
+   id="stair-1"
+   d="M 39.1426,95.2973 V 106.58 h 3.0521 V 95.2973 Z" />
+    <path
+   id="stair-2"
+   d="m 30.1617,114.287 h -6.5965 v 3.006 h 6.5965 z" />
+    <path
+   id="stair-3"
+   d="m 23.7935,120.316 h 2.8739 v 1.517 h -2.8739 z" />
+    <path
+   id="stair-4"
+   d="m 28.3251,75.1428 v 3.0709 h 1.4402 v -3.0709 z" />
+    <path
+   id="stair-7"
+   d="m 75.1892,95.2502 9.07,0.0157 -0.008,2.9515 -9.07,-0.0157 z" />
+    <path
+   id="stair-8"
+   d="m 87.0874,63.3964 v 8.3085 h 2.9758 v -8.3085 z" />
+    <path
+   id="stair-220"
+   d="M 86.1828,49.887 V 39.5518 h 4.9597 V 49.887 Z" />
+    <path
+   id="stair-221"
+   d="m 98.587,39.1456 h 2.931 v -1.2648 h -2.931 z" />
+    <path
+   id="stair-222"
+   d="M 98.4578,9.62181 V 11.0454 H 101.4 V 9.62181 Z" />
+    <path
+   id="stair-223"
+   d="m 45.8568,62.7733 h 1.3624 v 4.8857 h -1.3624 z" />
+    <path
+   id="stair-224"
+   d="m 54.4139,60.0327 h 1.3622 v 4.8857 h -1.3622 z" />
+    <path
+   id="stair-69"
+   d="m 18.2137,111.316 v 6.069 H 20.95 v -6.069 z m 1.3028,1.166 h 0.1308 v 3.735 h -0.1308 z" />
+    <path
+   id="stair-96"
+   d="m 14.176,69.4637 v 5.8536 h 2.7363 v -5.8536 z m 1.3027,1.125 h 0.1308 v 3.6016 h -0.1308 z" />
+    <path
+   id="stair-97"
+   d="m 52.0882,93.4709 v 6.0459 h 2.7363 v -6.0459 z m 1.3027,1.162 h 0.1309 v 3.7202 h -0.1309 z" />
+    <path
+   id="stair-100"
+   d="m 70.3349,93.4707 v 6.0463 h 2.7363 v -6.0463 z m 1.3027,1.162 h 0.1309 v 3.7202 h -0.1309 z" />
+    <path
+   id="stair-101"
+   d="M 96.7289,21.8536 H 90.8754 V 24.59 h 5.8535 z m -1.125,1.3028 v 0.1308 h -3.6016 v -0.1308 z" />
+    <path
+   id="stair-129"
+   d="m 46.6849,43.5374 v 6.0547 h 2.7364 v -6.0547 z m 1.3028,1.1637 h 0.1308 v 3.7253 h -0.1308 z" />
+    <path
+   id="stair-62"
+   d="m 28.0307,29.732 h -2.7258 v -4.1555 h 2.7258" />
+    <path
+   id="stair-127"
+   d="m 30.3351,39.7077 h -6.3573 v 3.2048 h 6.3573 z m -1.5627,1.5258 v 0.1533 h -3.3123 v -0.1533 z" />
+    <path
+   id="stair-128"
+   d="m 30.3351,65.8672 h -6.3573 v 3.2048 h 6.3573 z m -1.5628,1.5258 v 0.1532 H 25.46 V 67.393 Z" />
+    <path
+   id="stair-63"
+   d="m 24.7291,87.3812 h 2.9143 v 1.2792 h -2.9143" />
+    <path
+   id="stair-130"
+   d="m 24.7418,72.3192 h 2.9143 v 1.2792 h -2.9143" />
+    <path
+   id="stair-131"
+   d="m 84.0534,42.6737 -1.4406,0.0027 0.0125,3.7271 1.4405,-0.0027 z" />
+    <path
+   id="stair-132"
+   d="m 83.3833,39.4151 h 1.2252 v -5.4587 h -1.2252 z" />
+    <path
+   id="stair-140"
+   d="m 33.3318,94.6163 h -1.2787 v 2.9043 h 1.2787 z" />
+    <path
+   id="stair-141"
+   d="m 47.7275,94.6592 h -1.2787 v 2.9043 h 1.2787 z" />
+    <path
+   id="stair-155"
+   d="M 52.5058,20.887 V 17.4393 H 51.3337 V 20.887 Z" />
+    <path
+   id="stair-226"
+   d="M 70.98,25.5491 V 21.945 h -1.1722 v 3.6041 z" />
+    <path
+   id="stair-134"
+   d="m 92.2973,42.9477 v 5.8536 h 3.1411 v -5.8536 z m 1.4954,1.125 h 0.1502 v 3.6016 h -0.1502 z" />
+    <path
+   id="stair-135"
+   d="m 12.0115,65.0487 h 3.2275 v 1.3764 h -3.2275 z" />
+    <path
+   id="stair-136"
+   d="m 53.6835,6.40033 h 2.9323 v 1.32034 h -2.9323 z" />
+    <path
+   id="stair-138"
+   d="m 53.1803,30.0761 h 2.9557 v -1.229 h -2.9557 z" />
+    <path
+   id="stair-139"
+   d="M 78.1769,37.6569 H 75.299 v 1.3571 h 2.8779 z" />
+    <path
+   id="stair-143"
+   d="M 0.147886,74.7243 V 71.7988 H 1.55806 v 2.9255 z" />
+  </defs>
+  
+  
+  
+  <g
+   id="Third_Floor"
+   class="shadow"
+   transform="translate(-3.89062,-10.2363)">
+    <g
+   id="Floor-3"
+   class="floor">
+      <path
+   d="m 25.293,10.2363 v 0.9102 h 5.0957 V 23.1836 H 25.293 v 0.8769 H 84.9668 V 23.1836 H 34.3145 V 11.1465 h 62.5293 v -0.9102 z m 69.5273,14.3106 v 0.2343 L 25.293,24.7752 v 0.9063 l 25.1484,0.002 v 12.2052 l -13.1641,-0.002 v 0.9063 h 3.2071 l -0.0625,1.709 h -7.041 v -1.0313 h -4.6114 l -0.0117,0.1426 -0.0117,0.1445 h -4.1777 v 3.2344 h 6.5058 v 3.6328 h -0.168 v -3.377 h -4.9257 v 6.1036 h 4.9257 v -1.8301 h 0.168 v 4.0058 h -0.168 v -1.832 h -4.9257 v 4.6172 l 4.9257,-0.1914 v -1.832 h 0.168 v 4.0644 h -0.168 v -2.0039 l -4.9257,0.2109 v 11.0059 h 4.9257 v -3.5098 h 0.168 v 3.7579 l -3.2539,-0.0039 -3.2519,-0.0039 v 3.2324 h 6.914 v 0.3047 H 3.89648 L 3.89062,117.389 H 18.3105 v -2.024 H 18.0078 L 18.0137,71.4961 H 33.959 L 33.957,99.457 h 0.9063 l 0.002,-10.0976 h 14.7422 l -0.002,10.0976 h 0.9062 l 0.0059,-54.1152 h 0.6406 L 51.1523,99.457 H 67.7051 L 67.711,43.3906 h 1.4726 L 69.1777,99.457 h 16.5547 l 0.0059,-47.8965 h 0.5528 L 86.2872,99.457 h 0.9062 l 0.002,-15.0742 h 14.7406 l -0.002,15.0742 h 0.906 l 0.006,-47.8965 h 0.516 V 39.6992 H 84.0566 v 0.8086 l -16.3457,-0.002 v -0.4961 h -0.3105 l 0.1348,-0.2031 -0.5938,-0.3965 0.334,-0.5 -0.1719,-0.1152 29.8379,0.0039 V 24.5469 Z m -40.4941,1.1367 40.4941,0.004 v 12.205 L 54.3262,37.8887 Z m -12.8711,13.1094 24.8828,0.002 -0.1973,0.2949 0.2696,0.1797 -0.3653,0.5488 0.3535,0.2344 0.0489,-0.0723 0.3574,0.2363 v 0.2891 L 42.2324,40.502 h -0.8398 z m -8.0742,4.5918 h 0.582 l -0.002,25.9589 h -0.58 V 56.3535 Z m 1.4882,0 h 7.3633 l 6.3321,0.0059 v 0.2558 h -1.8536 v 1.6953 h 2.9004 L 49.6074,84.793 H 34.8652 Z m 14.961,0.0059 h 1.3281 v 0.2558 h -1.3281 z m 2.2344,0 h 14.7402 l -0.002,9.6777 H 52.0625 Z m 18.0253,0 h 13.9668 v 8.1699 H 84.832 L 84.83,72.0918 H 70.0879 Z m 17.1075,8.1699 h 14.7417 l -0.002,28.2539 H 87.1953 Z m -34.4668,3.6348 h 13.375 v 0.5019 h -13.375 z m -21.8243,1.9394 h 0.168 v 4.1211 h -0.168 v -2.0605 z m 21.1563,0.6895 H 66.8027 L 66.7988,97.4941 H 52.0586 Z M 13.8066,71.4961 h 3.3008 v 3.043 h -0.3027 v 2.0723 h 0.3027 L 17.1035,98.9825 H 4.79883 L 4.80274,73.502 h 9.00386 z m 56.2813,5.1641 H 84.8301 L 84.8262,97.336 H 70.084 v -0.0821 h 0.1914 V 95.3594 H 70.084 Z M 4.79883,102.836 H 17.1035 l -0.002,12.529 H 4.79688 Z"
+   id="path206" />
+    </g>
+    <g
+   id="Wall-3"
+   class="wall">
+      <path
+   d="M 33.4632,43.3852 V 42.8765"
+   id="path207" />
+      <path
+   d="M 33.4632,41.1808 V 40.5026"
+   id="path208" />
+      <path
+   d="m 11.0866,72.0362 h 0.926 V 69.344"
+   id="path209" />
+      <path
+   d="M 9.54317,72.0362 H 4.56644 v -2.6921"
+   id="path210" />
+      <path
+   d="M 30.906,60.4972 H 28.7195"
+   id="path211" />
+    </g>
+    <g
+   id="Stairs-3"
+   class="stairs">
+      <g
+   id="Stairs-3-down">
+        <use
+   xlink:href="#stair-127"
+   id="use211" />
+        <use
+   xlink:href="#stair-128"
+   id="use212" />
+        <use
+   xlink:href="#stair-69"
+   id="use213" />
+        <use
+   xlink:href="#stair-96"
+   id="use214" />
+        <use
+   xlink:href="#stair-97"
+   id="use215" />
+        <use
+   xlink:href="#stair-100"
+   id="use216" />
+        <use
+   xlink:href="#stair-101"
+   id="use217" />
+        <use
+   xlink:href="#stair-129"
+   id="use218" />
+      </g>
+    </g>
+  </g>
+</svg>
