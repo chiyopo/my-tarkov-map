@@ -1131,7 +1131,7 @@ const tasksData = [
             
            
             
-            "ライトハウス": [{ left: 68, top: 41},
+            "ライトハウス": [{ left: 63, top: 27,width:28,height:6,type:"area"},
                 
             ],
               
