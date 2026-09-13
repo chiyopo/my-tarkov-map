@@ -5,51 +5,6 @@ let currentMap = "ショアライン";
 // タスクのデータ
 const tasksData = [
 
-
-
-    
-
-    {
-        name: "Colleagues",
-        giver:"セラピスト",
-        maps: {
-            "ショアライン": [
-                {left: 49, top: 35},
-               { left: 28.5, top: 48 },
-               { left: 52, top: 83.5 }
-            ]
-        },
-        description: "3箇所の死体を1度のレイドでみて生還する",
-        selected: false
-    },
-
-    {
-        name: "Health Care Privacy - Part 1",
-        giver:"セラピスト",
-        maps: {
-            "ショアライン": [
-                { left: 15, top: 68 },
-               { left: 14.5, top: 68 },
-                { left: 28.5, top: 48 },
-                { left: 49, top: 34 },
-            ]
-        },
-        description: "4箇所の救急車にマーカー",
-        selected: false
-    },
-
-    {
-        name: "Health Care Privacy - Part 2",
-        giver:"セラピスト",
-        maps: {
-            "ショアライン": [
-                { left: 47, top: 33 ,comment:"西棟306号室🔑"}
-            ]
-        },
-        description: "西棟306号室(鍵)で情報を手に入れる",
-        selected: false
-    },
-
     {
         name: "NO swiping",
         giver:"スキアー",
@@ -300,30 +255,6 @@ const tasksData = [
             ]
         },
         description: "東館328号室でArtyomの仕事の情報を見つけて引き渡す",
-        selected: false
-    },
-    {
-        name: "Tarkov-Style Dipolomacy",
-        giver:"セラピスト",
-        maps: {
-            "ショアライン": [ { left: 28.7, top: 50, comment:"Cottage(コテージの裏口)🔑"},
-                { left: 52.5, top: 83 },
-               
-            ]
-        },
-        description: "サニターの検眼鏡とサージカルキットを手に入れる",
-        selected: false
-    },
-    {
-        name: "Thirsty-Echo",
-        giver:"セラピスト",
-        maps: {
-            "ショアライン": [ { left: 45.3, top: 34, comment:"西棟地下" }
-               
-               
-            ]
-        },
-        description: "サニターの検眼鏡とサージカルキットを手に入れる",
         selected: false
     },
    {
@@ -730,54 +661,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Sea Side Vacation",
-        giver:"セラピスト",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: 50.5, top: 41.5 },
-                
-            ]
-            
-   
-        },
-        description: "情報提供者のブリーフケースを入手する",
-        selected: false
-    },
-    {
-        name: "Lost Contact",
-        giver:"セラピスト",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: 75, top: 29 },
-                
-            ]
-            
-   
-        },
-        description: "失踪したグループを探す、生還する",
-        selected: false
-    },
-    {
-        name: "Drug Trafficking",
-        giver:"セラピスト",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: -18, top: 26 },
-                
-            ]
-            
-   
-        },
-        description: "ドラッグラボにWI-FIカメラつける",
-        selected: false
-    },
-    {
         name: "Missing Cargo",
         giver:"スキアー",
         maps: {
@@ -934,19 +817,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Disease History",
-        giver:"セラピスト",
-        maps: {
-            
-            "リザーブ": [{ left: 10, top: 248,comment:"RB-SMP🔑",commentY:10,commentX:-55},{ left:20, top: 248 ,comment:"RB-KSM🔑",commentY:10,commentX:-15},
-            ],
-            
-            
-        },
-        description: "医療日誌を2つ手に入れる",
-        selected: false
-    },
-    {
         name: "Safe Corridor",
         giver:"スキアー",
         maps: {
@@ -1100,59 +970,6 @@ const tasksData = [
      
         },
         description: "グラハをkill(kill共有あり）、護衛のヘルメットを2つ納品する",
-        selected: false
-    },
-
-    {
-        name: "Population Census",
-        giver:"セラピスト",
-        maps: {
-            
-            "ストタル": [{ left: 37.5, top: 66},
-            ],
-            
-     
-        },
-        description: "ジャーナルを入手する",
-        selected: false
-    },
-    {
-        name: "Paramedic",
-        giver:"セラピスト",
-        maps: {
-            
-            "ストタル": [{ left: 37.5, top: 19},{ left: 31, top: 29},{ left: 33, top:44},{ left: 32, top: 54},{ left: 31, top: 83},{ left: 5, top: 105},{ left: -10, top: 111},{ left: 19.5, top: 115},{ left: 60, top:98},{ left: 65, top: 78},
-            ],
-            
-     
-        },
-        description: "スマホを入手して、タクシー脱出する",
-        selected: false
-    },
-    {
-        name: "Urban Medicine",
-        giver:"セラピスト",
-        maps: {
-            
-            "ストタル": [{ left: 33.8, top: 96},
-            ],
-            
-     
-        },
-        description: "薬品サンプルの容器を入手する、Scavを10kill",
-        selected: false
-    },
-    {
-        name: "Pet Won't Need It",
-        giver:"セラピスト",
-        maps: {
-            
-            "ストタル": [{ left: 46, top: 70,comment:"薬局"},{ left: 63.5, top: 98,comment:"薬局"},{ left: 7, top: 72.8},{ left: 14, top: 63,comment:"X-ray🔑"},{ left: 35, top: 2,comment:"薬局"},
-            ],
-            
-     
-        },
-        description: "薬局3か所めぐる、動物病院を探す、放射線技師の部屋を探す、医薬品を5つ納品する",
         selected: false
     },
     {
@@ -1469,56 +1286,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Sanitary Standards",
-        giver:"セラピスト",
-        maps: {
-            
-            "ファクトリー": [{ left:40.5, top: 68,},
-            ],
-          
-        },
-        description: "研究棟にガスアナ設置する、ガスアナ2つ納品",
-        selected: false
-    },
-    {
-        name: "All Is Revealed",
-        giver:"セラピスト",
-        maps: {
-            
-            "ファクトリー": [{ left:21.8, top: 33,},
-            ],
-          
-        },
-        description: "壊れたタンクコンテナから化学サンプルを入手する",
-        selected: false
-    },
-    {
-        name: "Health Care Privacy-Part5",
-        giver:"セラピスト",
-        maps: {
-            
-            "ファクトリー": [{ left:63.5, top: 71,},
-            ],
-          
-        },
-        description: "夜にガンパウダー3つ隠す",
-        selected: false
-    },
-    {
-        name: "Health Care Privacy-Part6",
-        giver:"セラピスト",
-        maps: {
-            
-            "ファクトリー": [{ left: 97, top:  31.6,comment:"Factory emergency🔑"},
-            ],
-            "ラボ": [{ left:50, top: 50,comment:"地図入れたらマーカー移動する"},
-            ],
-          
-        },
-        description: "死亡した労働者から血液サンプルを採取する⇒ラボのサニターオフィスに隠す、LEDXを納品する",
-        selected: false
-    },
-    {
         name: "Playing the Market",
         giver:"メカニック",
         maps: {
@@ -1632,6 +1399,35 @@ const tasksData = [
         description: "PMCを6kill(kill共有あり）",
         selected: false
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         name: "Luxurious Life",
         giver:"プラパー",
@@ -2391,6 +2187,479 @@ const tasksData = [
         description: "ライハで任意の敵を15kill(kill共有あり）⇒リザーブにトランジットする、ライハのPassage by the Lake付近でRedフレア上げる(共有あり）",
         selected: false
     },
+    {
+        name: "Supply Plans",
+        giver:"セラピスト",
+        maps: {
+           "ウッズ": [ { left: 39, top: 207 },
+           ]
+          
+        },
+        description: "フォルダーを入手する",
+        selected: false
+    },
+    {
+        name: "Shipment Tracking",
+        giver:"セラピスト",
+        maps: {
+           "カスタム": [ { left: 12, top: 407 ,comment:"Company🔑"},
+           ]
+          
+        },
+        description: "出荷記録を入手する",
+        selected: false
+    },
+    {
+        name: "Abandoned Cargo",
+        giver:"セラピスト",
+        maps: {
+           "カスタム": [ { left: -145, top: 485,comment:"いずれか"},{ left: -10, top: 407,commentX:-200,commentY:"10",comment:"いずれか（この建物3か所対象あり）" },{ left: 12, top: 407,comment:"いずれか（この建物3か所対象あり）" },
+            ]
+        },
+        description: "貨物のいずれか1つにマーカー設置",
+        selected: false
+    },
+    {
+        name: "Fall Ailment",
+        giver:"セラピスト",
+        maps: {
+           
+        },
+        description: "シリンジ（in raid)を納品する",
+        selected: false
+    },
+    {
+        name: "Blood in the Water",
+        giver:"セラピスト",
+        maps: {
+           "カスタム": [ 
+            ]
+        },
+        description: "Scavを15kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Pharmacist",
+        giver:"セラピスト",
+        maps: {
+           "カスタム": [ { left: 92, top: 160,comment:"Dorm114🔑"},
+            ]
+        },
+        description: "ケースを入手する",
+        selected: false
+    },
+    {
+        name: "Shortage",
+        giver:"セラピスト",
+        maps: {
+          
+        },
+        description: "サレワ(in raid)3個納品する",
+        selected: false
+    },
+    {
+        name: "First in Line",
+        giver:"セラピスト",
+        maps: {
+             "グラゼロ": [ { left: 92, top: 160,},
+            ]
+          
+        },
+        description: "エマーコムステーションを見つける、医療品(in raid)3つ納品する",
+        selected: false
+    },
+    {
+        name: "Operation Aquarius",
+        giver:"セラピスト",
+        maps: {
+           "カスタム": [ { left: 90, top: 185,comment:"Dorm206🔑"},
+            ]
+        },
+        description: "水を見つける、飲み物(in raid)3つ納品する",
+        selected: false
+    },
+    {
+        name: "Population Census",
+        giver:"セラピスト",
+        maps: {
+            
+            "ストタル": [{ left: 37.5, top: 66},
+            ],
+            
+     
+        },
+        description: "ジャーナルを入手する",
+        selected: false
+    },
+    {
+        name: "Sanitary Standards",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:80.5, top: 14,},
+            ],
+          
+        },
+        description: "研究棟にガスアナ設置する、ガスアナ2つ納品",
+        selected: false
+    },
+    {
+        name: "Paramedic",
+        giver:"セラピスト",
+        maps: {
+            
+            "ストタル": [{ left: 37.5, top: 19},{ left: 31, top: 29},{ left: 33, top:44},{ left: 32, top: 54},{ left: 31, top: 83},{ left: 5, top: 105},{ left: -10, top: 111},{ left: 19.5, top: 115},{ left: 60, top:98},{ left: 65, top: 78},
+            ],
+            
+     
+        },
+        description: "スマホを入手して、タクシー脱出する",
+        selected: false
+    },
+    {
+        name: "All Is Revealed",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:21.8, top: 33,},
+            ],
+          
+        },
+        description: "壊れたタンクコンテナから化学サンプルを入手する",
+        selected: false
+    },
+    {
+        name: "General Wares",
+        giver:"セラピスト",
+        maps: {
+          
+        },
+        description: "ツナ缶小(in raid)15個納品",
+        selected: false
+    },
+    {
+        name: "Urban Medicine",
+        giver:"セラピスト",
+        maps: {
+            
+            "ストタル": [{ left: 33.8, top: 96},
+            ],
+
+        },
+        description: "薬品サンプルの容器を入手する、Scavを10kill",
+        selected: false
+    },
+    {
+        name: "Aid Stations",
+        giver:"セラピスト",
+        maps: {
+
+        },
+        description: "Dorm303🔑、ZB-014🔑、Checkpoint🔑、Gas store🔑をin raidで納品する",
+        selected: false
+    },
+    {
+        name: "Pet Won't Need It",
+        giver:"セラピスト",
+        maps: {
+            
+            "ストタル": [{ left: 46, top: 70,comment:"薬局"},{ left: 63.5, top: 98,comment:"薬局"},{ left: 7, top: 72.8},{ left: 14, top: 63,comment:"X-ray🔑"},{ left: 35, top: 2,comment:"薬局"},
+            ],
+            
+     
+        },
+        description: "薬局3か所めぐる、動物病院を探す、放射線技師の部屋を探す、医薬品を5つ納品する",
+        selected: false
+    },
+    {
+        name: "The Tarkov Butcher",
+        giver:"セラピスト",
+        maps: {
+            
+            "グラゼロ": [{ left: 46, top: 70,},
+              ],
+             "ストタル": [{ left: 102, top: 65,},
+              ],
+     
+        },
+        description: "グラゼロで化学容器を入手する⇒ストタルの警察署のそばに隠す",
+        selected: false
+    },
+    {
+        name: "Charity",
+        giver:"セラピスト",
+        maps: {
+            
+        },
+        description: "アドレナリン注射器(inraid)5個納品する",
+        selected: false
+    },
+    {
+        name: "Disease History",
+        giver:"セラピスト",
+        maps: {
+            
+            "リザーブ": [{ left: 10, top: 248,comment:"RB-SMP🔑",commentY:10,commentX:-55},{ left:20, top: 248 ,comment:"RB-KSM🔑",commentY:10,commentX:-15},
+            ],
+            
+            
+        },
+        description: "医療日誌を2つ手に入れる",
+        selected: false
+    },
+    {
+        name: "Tarkov-Style Dipolomacy",
+        giver:"セラピスト",
+        maps: {
+            "ショアライン": [ { left: 28.7, top: 50, comment:"Cottage(コテージの裏口)🔑"},
+                { left: 52.5, top: 83 },
+               
+            ]
+        },
+        description: "サニターの検眼鏡とサージカルキットを手に入れる",
+        selected: false
+    },
+    {
+        name: "Sea Side Vacation",
+        giver:"セラピスト",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 50.5, top: 41.5 },
+                
+            ]
+            
+   
+        },
+        description: "情報提供者のブリーフケースを入手する",
+        selected: false
+    },
+    {
+        name: "Lost Contact",
+        giver:"セラピスト",
+        maps: {
+            
+            "ライトハウス": [{ left: 75, top: 29 },
+            ]
+            
+        },
+        description: "失踪したグループを探す、生還する",
+        selected: false
+    },
+    {
+        name: "Drug Trafficking",
+        giver:"セラピスト",
+        maps: {
+
+            "ライトハウス": [{ left: -18, top: 26 },
+            ]
+               
+        },
+        description: "ドラッグラボにWI-FIカメラつける",
+        selected: false
+    },
+    {
+        name: "Colleagues",
+        giver:"セラピスト",
+        maps: {
+            "ショアライン": [
+                {left: 49, top: 35},
+               { left: 28.5, top: 48 },
+               { left: 52, top: 83.5 }
+            ]
+        },
+        description: "3箇所の死体を1度のレイドでみて生還する",
+        selected: false
+    },
+    {
+        name: "Car Repair",
+        giver:"セラピスト",
+        maps: {
+           
+        },
+        description: "カーバッテリー(in raid)4個とスパークプラグ(in raid)8個納品する",
+        selected: false
+    },
+    {
+        name: "Beneath The Streets",
+        giver:"セラピスト",
+        maps: {
+            "ストタル": [
+                {left: 10, top: 58},
+               
+            ],
+             "ラボ": [
+                {left: 29, top: 40,comment:"サーバールーム"},{left: 14.5, top: 30.5,comment:"ハザードルーム"},{left: 86, top: 31.5,comment:"コントロールルーム"},{left: 4, top: 30.5,comment:"トランジットポイント"},
+               
+               
+            ]
+           
+        },
+        description: "ストタルからラボにトランジットする⇒ラボのサーバールームとハザードルームとコントロールルームを偵察する⇒ストタルに帰る道を発見する（全部を1レイドで行う）",
+        selected: false
+    },
+    {
+        name: "Crisis",
+        giver:"セラピスト",
+        maps: {
+           
+        },
+        description: "除細動器(in raid)3個、検眼鏡(in raid)3個、LEDX(in raid)2個、Meds(in raid)20個、ビタミン(in raid)10個納品する",
+        selected: false
+    },
+    {
+        name: "Decontamination Service",
+        giver:"セラピスト",
+        maps: {
+
+            "ラボ": [
+               
+            ]
+           
+        },
+        description: "指定装備（防毒マスクorガスマスク(白or黒)orAvonガスマスクorレスピレーター）で任意の敵を60m以内から40kill",
+        selected: false
+    },
+    {
+        name: "【選択タスク】Out of Curiosity",
+        giver:"セラピスト",
+        maps: {
+
+            "カスタム": [ {left: 225, top: 408},  
+            ]
+
+        },
+        description: "化学薬品輸送車にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Thirsty-Echo",
+        giver:"セラピスト",
+        maps: {
+            "ショアライン": [ { left: 45.3, top: 34, comment:"西棟地下" }
+               
+               
+            ]
+        },
+        description: " Thirstyのアジトの情報を入手する",
+        selected: false
+    },
+    {
+        name: "Thirsty-Secrets",
+        giver:"セラピスト",
+        maps: {
+    
+        },
+        description: "アドレナリン(in raid)2個、ビタミン(in raid)4個、NaCl(in raid)3個納品する",
+        selected: false
+    },
+    {
+        name: "Health Care Privacy - Part1",
+        giver:"セラピスト",
+        maps: {
+            "ショアライン": [
+                { left: 15, top: 68 },
+               { left: 14.5, top: 68 },
+                { left: 28.5, top: 48 },
+                { left: 49, top: 34 },
+            ]
+        },
+        description: "4箇所の救急車にマーカー",
+        selected: false
+    },
+    {
+        name: "Health Care Privacy - Part2",
+        giver:"セラピスト",
+        maps: {
+            "ショアライン": [
+                { left: 47, top: 33 ,comment:"西棟306号室🔑"}
+            ]
+        },
+        description: "西棟306号室(鍵)で情報を手に入れる",
+        selected: false
+    },
+    {
+        name: "Health Care Privacy - Part3",
+        giver:"セラピスト",
+        maps: {
+            "ウッズ": [
+                { left: 60, top: 283 ,}
+            ]
+        },
+        description: "血液サンプルを入手する（近づくだけでおｋ）",
+        selected: false
+    },
+    {
+        name: "Health Care Privacy - Part4",
+        giver:"セラピスト",
+        maps: {
+           
+        },
+        description: "疲労状態を8分間維持する",
+        selected: false
+    },
+    {
+        name: "Health Care Privacy-Part5",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:63.5, top: 71,},
+            ],
+          
+        },
+        description: "夜にガンパウダー3つ隠す",
+        selected: false
+    },
+    {
+        name: "Health Care Privacy-Part6",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left: 97, top:  31.6,comment:"Factory emergency🔑"},
+            ],
+            "ラボ": [{ left:50, top: 50,comment:"地図入れたらマーカー移動する"},
+            ],
+          
+        },
+        description: "死亡した労働者から血液サンプルを採取する⇒ラボのサニターオフィスに隠す、LEDXを納品する",
+        selected: false
+    },
+    {
+        name: "Postman Pat-Part2",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:68.5, top: 33,},
+            ],
+          
+        },
+        description: "封書を入手する",
+        selected: false
+    },
+    {
+        name: "【選択タスク】A Healthy Alternative",
+        giver:"セラピスト",
+        maps: {
+            
+            "ファクトリー": [{ left:40, top: 68,comment:"ランダム沸き"},
+            ],
+          
+        },
+        description: "ジャーナルを入手する",
+        selected: false
+    },
+    {
+        name: "【選択タスク】A Difficult Choice",
+        giver:"セラピスト",
+        maps: {
+          
+        },
+        description: "サニターを殺すな、AHF1-M(in raid)1個、3-(b-TG)(in raid)1個,ラボのアクセスキーカード(in raid)10個納品する",
+        selected: false
+    },
+
+
 
 
 
