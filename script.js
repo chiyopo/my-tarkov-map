@@ -4039,7 +4039,7 @@ mapSelect.addEventListener("change", function () {
         labsFloorGrid.style.display = "none";
         interchangeFloorGrid.style.display = "none";
 
-        loadFactoryFloors();
+        //loadFactoryFloors();
 
         // 通常マップの脱出口を消す
         pmcExits.innerHTML = "";
