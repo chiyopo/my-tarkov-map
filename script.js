@@ -2618,7 +2618,7 @@ const tasksData = [
             
             "ファクトリー": [{ left: 97, top:  31.6,comment:"Factory emergency🔑"},
             ],
-            "ラボ": [{ left:50, top: 50,comment:"地図入れたらマーカー移動する"},
+            "ラボ": [{ left:75, top: 39,comment:"カードキーいるかも？"},
             ],
           
         },
