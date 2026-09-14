@@ -3946,6 +3946,7 @@ async function loadFactoryFloors() {
 async function loadLabsFloors() {
 
     const floorMaps = document.querySelectorAll(".labs-floor-map");
+console.log("Labs floor maps:", floorMaps.length);
 
     try {
         const response = await fetch("Labs.svg");
