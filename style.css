@@ -654,6 +654,12 @@ margin-bottom: 8px;
     height: auto;
 }
 
+.labs-floor-map svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .labs-floor-map img {
     display: block;
     width: 100%;
