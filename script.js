@@ -4082,7 +4082,7 @@ mapSelect.addEventListener("change", function () {
             labsFloorGrid.style.display = "grid";
             interchangeFloorGrid.style.display = "none";
 
-            loadLabsFloors();
+            //loadLabsFloors();
         }
     }
 
