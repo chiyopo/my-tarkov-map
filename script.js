@@ -5,20 +5,6 @@ let currentMap = "ショアライン";
 // タスクのデータ
 const tasksData = [
 
-    {
-        name: "NO swiping",
-        giver:"スキアー",
-        maps: {
-            "ショアライン": [
-               {left: 68, top: 25 ,width:13,height:30,rotate:0,type:"area" }
-            ],
-            "インチェ": [
-                {left:50, top: 55 ,width:30,height:35,rotate:0,type:"area" }
-            ]
-        },
-        description: "密輸業者の基地で10キルする（kill共有あり）",
-        selected: false
-    },
 
     {
         name: "Master key",
@@ -255,35 +241,6 @@ const tasksData = [
             ]
         },
         description: "東館328号室でArtyomの仕事の情報を見つけて引き渡す",
-        selected: false
-    },
-   {
-        name: "Rigged Game",
-        giver:"スキアー",
-        maps: {
-            "ショアライン": [
-                { left: 49, top: 34 },
-                { left: 28.5, top: 49.2 },
-                { left: 52, top: 83.5 }
-            ]
-        },
-        description: "医療物資コンテナ3箇所にマーカー設置",
-        selected: false
-    },
-
-
-    {
-        name: "Long Road",
-        giver:"スキアー",
-        maps: {
-            "ショアライン": [
-                
-            ],
-            "ライトハウス": [
-                
-            ]
-        },
-        description: "海岸及び主要道路沿いのScavを7kill(kill共有あり）",
         selected: false
     },
     {
@@ -661,63 +618,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Missing Cargo",
-        giver:"スキアー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: 72, top: 25.8 },{ left: 90, top: 26,comment:"ヘリ"},
-                
-            ]
-            
-   
-        },
-        description: "墜落したヘリを見つける、情報提供者のフォルダを探す",
-        selected: false
-    },
-    {
-        name: "Top Secret",
-        giver:"スキアー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: 115, top: 53.5,comment:"Radar🔑"},
-                
-            ]
-            
-   
-        },
-        description: "レーダー指令基地でHDDを入手する、DSPTが必要？？",
-        selected: false
-    },
-    {
-        name: "【選択タスク+ストーリータスクエンディング分岐】Choose Your Friends Wisely",
-        giver:"スキアー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [
-                
-            ],
-            "カスタム": [
-                
-            ],
-            "リザーブ": [
-                
-            ],
-            "ウッズ": [
-                
-            ],
-            
-   
-        },
-        description: "カスタム⇒リザーブ⇒ウッズ⇒ライトハウスにトランジットして生還する、トランジットしつつPMCを5kill",
-        selected: false
-    },
-    {
         name: "Revision-Lighthouse",
         giver:"ピースキーパー",
         maps: {
@@ -814,32 +714,6 @@ const tasksData = [
    
         },
         description: "レコーディングスタジオを見つけてシグナルジャマーを設置する",
-        selected: false
-    },
-    {
-        name: "Safe Corridor",
-        giver:"スキアー",
-        maps: {
-            
-            "リザーブ": [{ left: 113, top: 292,width:33,height:90,type:"area"},
-            ],
-            
-            
-        },
-        description: "地下倉庫でScavを5kill(kill共有あり）、地下倉庫の🔑3つ納品",
-        selected: false
-    },
-    {
-        name: "Classified Technologies",
-        giver:"スキアー",
-        maps: {
-            
-            "リザーブ": [{ left: -30, top:123},
-            ],
-            
-            
-        },
-        description: "パッケージを入手する",
         selected: false
     },
     {
@@ -970,84 +844,6 @@ const tasksData = [
      
         },
         description: "グラハをkill(kill共有あり）、護衛のヘルメットを2つ納品する",
-        selected: false
-    },
-    {
-        name: "Beyond the Red Meat",
-        giver:"スキアー",
-        maps: {
-            
-            "ストタル": [{ left: 61, top: 39.5,comment:"Beluga🔑"},
-            ],
-            
-     
-        },
-        description: "料理の秘密の情報を入手する（ランダム沸き）",
-        selected: false
-    },
-    {
-        name: "Debtor",
-        giver:"スキアー",
-        maps: {
-            
-            "ストタル": [{ left: 25, top: 81.5,comment:"Check15🔑"},{ left: 77, top: 55,comment:"206号室"},
-            ],
-            
-     
-        },
-        description: "パインウッドホテルの債務者の死体を確認する、CELLSのCheck15🔑の部屋を訪れる、Iron gate🔑納品",
-        selected: false
-    },
-    {
-        name: "The Secret Recipe",
-        giver:"スキアー",
-        maps: {
-            
-            "ストタル": [{ left: 44, top: 36,comment:"TG meetin🔑"},{ left: 62, top: 28},
-            ],
-            
-     
-        },
-        description: "どっちかにランダム沸きの秘密の材料を入手する",
-        selected: false
-    },
-    {
-        name: "House Arrest",
-        giver:"スキアー",
-        maps: {
-            
-            "ストタル": [{ left: 25, top: 81.5,comment:"Iron gate🔑"},{ left: 77, top: 55,comment:"206号室"},
-            ],
-            
-     
-        },
-        description: "パインウッドホテルの債務者の死体を確認する、CELLSのIron gate🔑の部屋を訪れる、Check15🔑納品",
-        selected: false
-    },
-    {
-        name: "Pyramid Scheme",
-        giver:"スキアー",
-        maps: {
-            
-            "ストタル": [{ left: 32, top: 42},{ left: 37, top: 41},
-            ],
-            
-     
-        },
-        description: "ATMにマーカー設置(どっちからしい)",
-        selected: false
-    },
-    {
-        name: "Route Diviation",
-        giver:"スキアー",
-        maps: {
-            
-            "ストタル": [{ left: 27.5, top: 49.5},{ left: 10, top: 85},{ left: 86, top: 108},{ left: 55, top: 78},{ left: 103, top: 82},{ left: 82, top: 55},
-            ],
-            
-     
-        },
-        description: "BTRの停車場所にマーカー設置",
         selected: false
     },
     {
@@ -2658,6 +2454,655 @@ const tasksData = [
         description: "サニターを殺すな、AHF1-M(in raid)1個、3-(b-TG)(in raid)1個,ラボのアクセスキーカード(in raid)10個納品する",
         selected: false
     },
+    {
+        name: "What's on the Flash Drive?",
+        giver:"スキアー",
+        maps: {
+          
+        },
+        description: "フラッシュドライブ（in raid）2つ納品する",
+        selected: false
+    },
+    {
+        name: "Informed Means Armed",
+        giver:"スキアー",
+        maps: {
+            "ウッズ": [{ left:33, top: 242,},
+            ],
+            "インチェ": [{ left:84.5, top: 97,},
+            ],
+          
+        },
+        description: "ウッズの製材所の桟橋を観察できる場所とインチェのキバを監視できる場所にWi-Fiを設置する",
+        selected: false
+    },
+    {
+        name: "Burning Rubber",
+        giver:"スキアー",
+        maps: {
+            "グラゼロ": [{left: 110, top: 122,},
+            ],
+
+        },
+        description: "車脱出する",
+        selected: false
+    },
+    {
+        name: "Golden Swag",
+        giver:"スキアー",
+        maps: {
+            "カスタム": [{left: 60, top: 165,comment:"3F寮303🔑"},
+            ],
+
+        },
+        description: "金色のライターを入手する、普通のライターを設置する",
+        selected: false
+    },
+    {
+        name: "No swiping",
+        giver:"スキアー",
+        maps: {
+            "ショアライン": [
+               {left: 68, top: 25 ,width:13,height:30,rotate:0,type:"area" }
+            ],
+            "インチェ": [
+                {left:50, top: 55 ,width:30,height:35,rotate:0,type:"area" }
+            ]
+        },
+        description: "密輸業者の基地で10キルする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "The Extortionist",
+        giver:"スキアー",
+        maps: {
+            "カスタム": [
+                {left:165, top: 393 ,comment:"Unknown🔑"}
+            ],
+
+        },
+        description: "フォルダーを入手する",
+        selected: false
+    },
+    {
+        name: "Supplier",
+        giver:"スキアー",
+        maps: {
+           
+        },
+        description: "3Mアーマー(in raid不要)とToz-106(in raid不要)を納品する",
+        selected: false
+    },
+    {
+        name: "Private Club",
+        giver:"スキアー",
+        maps: {
+            "カスタム": [
+                {left:-12, top: 405 ,}
+            ],
+           
+        },
+        description: "スキアーの財布を入手する",
+        selected: false
+    },
+    {
+        name: "Polikhim Hobo",
+        giver:"スキアー",
+        maps: {
+            "インチェ": [
+            ],
+            "グラゼロ": [
+            ],
+            "ウッズ": [
+            ],
+           
+        },
+        description: "Scavを25kill",
+        selected: false
+    },
+    {
+        name: "Beyond the Red Meat",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 61, top: 39.5,comment:"Beluga🔑（ランダムで必要）"},
+            ],
+     
+        },
+        description: "料理の秘密の情報を入手する（ランダム沸き）",
+        selected: false
+    },
+    {
+        name: "【USECのみ】Supplements",
+        giver:"スキアー",
+        maps: {
+            
+            "カスタム": [{ left: 5, top: 510,},
+            ],
+     
+        },
+        description: "化学容器を入手する、防毒マスク(in raid)4個と輸血セット(in raid)3個納品する",
+        selected: false
+    },
+    {
+        name: "Chumming",
+        giver:"スキアー",
+        maps: {
+            
+            "カスタム": [{ left: 56, top: 148,},
+            ],
+            "ウッズ": [{ left: 39, top: 208.5,},
+            ],
+     
+        },
+        description: "ゴルチェ3個ずつ隠す",
+        selected: false
+    },
+    {
+        name: "The Walls Have Eyes",
+        giver:"スキアー",
+        maps: {
+            
+        },
+        description: "PMCを5kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Setup",
+        giver:"スキアー",
+        maps: {
+            "カスタム": [
+            ],
+            
+        },
+        description: "ウシャンカ帽子とスカブベストを装備して、指定武器でPMCを8kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Vitamins",
+        giver:"スキアー",
+        maps: {
+            
+            "ファクトリー": [{ left: 40, top: 68,comment:"ランダム沸き"},
+            ],
+     
+        },
+        description: "化学容器を入手する、防毒マスク(in raid)4個と輸血セット(in raid)3個納品する",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Debtor",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 25, top: 81.5,comment:"Check15🔑"},{ left: 77, top: 55,comment:"206号室"},
+            ],
+            
+     
+        },
+        description: "パインウッドホテルの債務者の死体を確認する、CELLSのCheck15🔑の部屋を訪れる、Iron gate🔑納品",
+        selected: false
+    },
+    {
+        name: "The Secret Recipe",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 44, top: 36,comment:"TG meetin🔑"},{ left: 62, top: 28},
+            ],
+            
+     
+        },
+        description: "どっちかにランダム沸きの秘密の材料を入手する",
+        selected: false
+    },
+    {
+        name: "Exit Here",
+        giver:"スキアー",
+        maps: {
+            
+            "ファクトリー": [{ left:  53, top: 20,},
+            ],    
+     
+        },
+        description: "Courtyard Gateから帰宅する",
+        selected: false
+    },
+    {
+        name: "Frienf From the West",
+        giver:"スキアー",
+        maps: {  
+     
+        },
+        description: "PMCを5killする（kill共有あり)",
+        selected: false
+    },
+    {
+        name: "Stirrup",
+        giver:"スキアー",
+        maps: {  
+            "ファクトリー": [
+            ], 
+     
+        },
+        description: "ピストルで任意の敵を10kill（kill共有あり)",
+        selected: false
+    },
+    {
+        name: "【USECのみ】House Arrest",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 25, top: 81.5,comment:"Iron gate🔑"},{ left: 77, top: 55,comment:"206号室"},
+            ],
+            
+     
+        },
+        description: "パインウッドホテルの債務者の死体を確認する、CELLSのIron gate🔑の部屋を訪れる、Check15🔑納品",
+        selected: false
+    },
+    {
+        name: "Safe Corridor",
+        giver:"スキアー",
+        maps: {
+            
+            "リザーブ": [{ left: 113, top: 292,width:33,height:90,type:"area"},
+            ],
+            
+            
+        },
+        description: "地下倉庫でScavを5kill(kill共有あり）、地下倉庫の🔑3つ納品",
+        selected: false
+    },
+    {
+        name: "Pyramid Scheme",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 32, top: 42},{ left: 37, top: 41},
+            ],
+            
+     
+        },
+        description: "ATMにマーカー設置(どっちからしい)",
+        selected: false
+    },
+    {
+        name: "Missing Cargo",
+        giver:"スキアー",
+        maps: {
+  
+            "ライトハウス": [{ left: 72, top: 25.8 },{ left: 90, top: 26,comment:"ヘリ"},
+            ]
+   
+        },
+        description: "墜落したヘリを見つける、情報提供者のフォルダを探す",
+        selected: false
+    },
+    {
+        name: "Rigged Game",
+        giver:"スキアー",
+        maps: {
+            "ショアライン": [
+                { left: 49, top: 34 },
+                { left: 28.5, top: 49.2 },
+                { left: 52, top: 83.5 }
+            ]
+        },
+        description: "医療物資コンテナ3箇所にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Top Secret",
+        giver:"スキアー",
+        maps: {           
+            
+            "ライトハウス": [{ left: 115, top: 53.5,comment:"Radar🔑"},  
+            ]
+            
+        },
+        description: "レーダー指令基地でHDDを入手する、DSPTが必要？？",
+        selected: false
+    },
+    {
+        name: "Classified Technologies",
+        giver:"スキアー",
+        maps: {
+            
+            "リザーブ": [{ left: -30, top:123},
+            ],
+ 
+        },
+        description: "パッケージを入手する",
+        selected: false
+    },
+    {
+        name: "From Hand to Hand",
+        giver:"スキアー",
+        maps: {
+            
+            "ライトハウス": [{ left: -18, top: 26 },
+            ],     
+            
+        },
+        description: "VirtexとSG-C10を隠す",
+        selected: false
+    },
+    {
+        name: "Long Road",
+        giver:"スキアー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            "ライトハウス": [
+                
+            ]
+        },
+        description: "海岸及び主要道路沿いのScavを7kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Silent Caliber",
+        giver:"スキアー",
+        maps: {
+            "リザーブ": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ラボ": [
+                
+            ]
+        },
+        description: "リザーブ、グラゼロ、ライトハウスもしくはラボで任意の敵30kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Bullshit",
+        giver:"スキアー",
+        maps: {
+            "ライトハウス": [{ left: 75, top: 29 },
+            ],
+        },
+        description: "RolerとAXMC(機関部のみでok)とMFDを隠す、多分ローグとグーンズをkillすると失敗になる？らしい",
+        selected: false
+    },
+    {
+        name: "Connections Up North",
+        giver:"スキアー",
+        maps: {
+            
+        },
+        description: "ナイトスコープもしくはサーマルスコープ付きのボルトアクションライフルを使用してPMCを20kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Night Sweep",
+        giver:"スキアー",
+        maps: {
+            
+        },
+        description: "カルトKnifeを12個納品する、カルトを5killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "A Familiar Face...",
+        giver:"スキアー",
+        maps: {
+            "ライトハウス": [{left: -18, top: 33.2,},
+            ],
+            
+        },
+        description: "Kirasa-NアーマーかNFM THORアーマーを着てArmored Trainから脱出する",
+        selected: false
+    },
+    {
+        name: "Scope the Clearing",
+        giver:"スキアー",
+        maps: {
+            "ライトハウス": [{left: -23, top: 33.2,},{left: -18, top: 33.2,},{left: -30, top: 40.2,},
+            ],
+            
+        },
+        description: "駅のホーム2か所とウッズへのトランジットポイントにWi-Fiカメラを設置する",
+        selected: false
+    },
+    {
+        name: "Fair Price-Part1",
+        giver:"スキアー",
+        maps: {
+            
+        },
+        description: "5万ユーロ支払う",
+        selected: false
+    },
+    {
+        name: "Fair Price-Part2",
+        giver:"スキアー",
+        maps: {
+            
+        },
+        description: "メカニックのHobby Clubのタスクを完了する",
+        selected: false
+    },
+    {
+        name: "Chemical-Part1",
+        giver:"スキアー",
+        maps: {
+
+            "カスタム": [{left: 230, top: 495,comment:"フォルダー"},
+            ],
+            
+        },
+        description: "フォルダーと寮220🔑を入手する",
+        selected: false
+    },
+    {
+        name: "Chemical-Part2",
+        giver:"スキアー",
+        maps: {
+
+            "カスタム": [{left: 65, top: 143,comment:"寮220🔑"},
+            ],
+        
+        },
+        description: "調査に役立ちそうな情報を2つ入手する",
+        selected: false
+    },
+    {
+        name: "Chemical-Part3",
+        giver:"スキアー",
+        maps: {
+
+            "ファクトリー": [{left: 63.8, top: 71.5,},
+            ],
+        
+        },
+        description: "化学物質の入った注射器を見つける",
+        selected: false
+    },
+    {
+        name: "【選択タスク】Chemical-Part4",
+        giver:"スキアー",
+        maps: {
+
+            "カスタム": [{left: 226, top: 410,},
+            ],
+        
+        },
+        description: "化学薬品輸送車にマーカー設置",
+        selected: false
+    },
+    {
+        name: "【USECのみ】Profitable Venture",
+        giver:"スキアー",
+        maps: {
+        
+        },
+        description: "REAP-IR(in raid不要)を15個引き渡す",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Safety Guarantee",
+        giver:"スキアー",
+        maps: {
+        
+        },
+        description: "BNTI Zhukアーマー(in raid不明)を15個、Vulkan-5 LShZ-5ヘルメット(in raid不明)を12個、Maska-1SCh(キラエディション)(in raid不明)を3個納品する",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】A Life Lesson",
+        giver:"スキアー",
+        maps: {
+        
+        },
+        description: "Vodkaワイン(in raid不明)を12個、ウイスキー(in raid不明)を20個、ムーンシャイン(in raid不明)を20個納品する",
+        selected: false
+    },
+    {
+        name: "The Higher They Fly",
+        giver:"スキアー",
+        maps: {
+         "ウッズ": [{left: 226, top: 410,},
+            ],
+        },
+        description: "PMCを2kill",
+        selected: false
+    },
+    {
+        name: "Route Diviation",
+        giver:"スキアー",
+        maps: {
+            
+            "ストタル": [{ left: 27.5, top: 49.5},{ left: 10, top: 85},{ left: 86, top: 108},{ left: 55, top: 78},{ left: 103, top: 82},{ left: 82, top: 55},
+            ],
+            
+     
+        },
+        description: "BTRの停車場所にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Hindsight 20/20",
+        giver:"スキアー",
+        maps: {
+            
+            "ウッズ": [{ left: 100.5, top: 132},
+    　　　　　　　　　 ],
+        },
+        description: "バンカーに徹甲弾パックを3つ隠す",
+        selected: false
+    },
+    {
+        name: "Key Partner",
+        giver:"スキアー",
+        maps: {
+
+        },
+        description: "ピースキーパーに75個アイテムを売る",
+        selected: false
+    },
+    {
+        name: "Killer Argument",
+        giver:"スキアー",
+        maps: {
+
+            "ウッズ": [{ left: -52.5, top: 285},
+    　　　　　　　　　 ],
+
+        },
+        description: "RPG弾薬の入ったパッケージを入手する",
+        selected: false
+    },
+    {
+        name: "【選択タスク+ストーリータスクエンディング分岐】Choose Your Friends Wisely",
+        giver:"スキアー",
+        maps: {
+            
+           
+            
+            "ライトハウス": [
+                
+            ],
+            "カスタム": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            
+   
+        },
+        description: "カスタム⇒リザーブ⇒ウッズ⇒ライトハウスにトランジットして生還する、トランジットしつつPMCを5kill",
+        selected: false
+    },
+    {
+        name: "Thirsty-Breadwinner",
+        giver:"スキアー",
+        maps: {
+
+
+        },
+        description: "プロパンタンク(in raid)を2つ納品する",
+        selected: false
+    },
+    {
+        name: "Thirsty-Delivery",
+        giver:"スキアー",
+        maps: {
+            "ウッズ": [{ left: -11, top: 69},
+            ],
+             "カスタム": [{ left: -33, top: 298},
+            ],
+
+        },
+        description: "プロパンタンクを2つ隠す",
+        selected: false
+    },
+    {
+        name: "Dangerous Props",
+        giver:"スキアー",
+        maps: {
+
+        },
+        description: "MPS Auto Assault-12 shotgunで敵を20kill",
+        selected: false
+    },
+    {
+        name: "Irresistible",
+        giver:"スキアー",
+        maps: {
+            
+            "インチェ": [{left: 1.5, top: 40.3,},{ left:38, top: 68},
+    　　　　　　　　　 ],
+
+        },
+        description: "発電所で電源入れて、21ws💳のコンテナから武器箱を回収する",
+        selected: false
+    },
+    {
+        name: "Easy Money-Part1",
+        giver:"スキアー",
+        maps: {
+            
+            "カスタム": [{left: 76, top: 480,},
+    　　　　　　　　　 ],
+
+        },
+        description: "ポスターを設置する",
+        selected: false
+    },
+
+
 
 
 
@@ -3113,7 +3558,7 @@ const factoryPmcExitsData = [
 
     { name: "Gate 3",left: 53, top: 8, labelX:53,labelY: 8, condition: "" },
 
-    { name: "COURTYARD GATE",left:  53, top: 20, labelX:  53, labelY:  20, condition: "" },
+    { name: "Courtyard Gate",left:  53, top: 20, labelX:  53, labelY:  20, condition: "" },
 
     { name: "Gate 0",left:  55.7, top:  45.2, labelX:  55.7, labelY:  45.2, condition: "" },
     { name: "Med Tent Gates", left: 97, top:  31.6, labelX:  97, labelY:  31.6, condition: "Factory emergency exit🔑" },
