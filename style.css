@@ -613,8 +613,7 @@ height: auto;
    ========================= */
 
 #factory-floor-grid {
-    width: 82vw;
-    max-width: 1250px;
+    width: 1250px;
     margin: 0 auto;
 
     display: grid;
@@ -668,7 +667,7 @@ margin-bottom: 8px;
 
 
 #labs-floor-grid {
-    width: 90vw;
+    width: 1250px;
     max-width: 1400px;
     margin: 0 auto;
 
@@ -676,6 +675,8 @@ margin-bottom: 8px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 50px;
     padding: 0;
+
+    position: relative;
 }
 
 #interchange-floor-grid {
@@ -793,9 +794,54 @@ margin-bottom: 8px;
     position: relative;
 }
 
-#factory-exits {
+/* =========================
+   共通マップ表示
+   ========================= */
+
+.map-view {
+    position: relative;
+}
+
+.map-view > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.map-exits,
+.map-tasks {
     position: absolute;
-    inset: 0;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-exits {
     z-index: 5000;
+}
+
+.map-tasks {
+    z-index: 5001;
+    pointer-events: none;
+}
+
+
+/* 特殊マップは通常非表示 */
+#factory-floor-grid,
+#labs-floor-grid,
+#interchange-floor-grid,
+#reserve-floor-grid {
+    display: none;
+}
+
+/* =========================
+   特殊マップの共通マップ箱
+   ========================= */
+
+.factory-floor-map,
+.labs-floor-map,
+.interchange-floor-map,
+.reserve-floor-map {
+    position: relative;
 }

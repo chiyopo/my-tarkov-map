@@ -44,117 +44,167 @@
 
         <div class="map-container">
 
-    <!-- 通常マップ -->
-    <img id="mapImage" src="Shoreline.svg" alt="ショアラインのマップ">
+ <!-- =========================
+     マップ表示エリア
+     ========================= -->
 
-    <!-- ファクトリー専用 -->
-   <div id="factory-floor-grid">
+<!-- 通常マップ -->
+<div id="normal-map-view" class="map-view">
 
-    <div class="factory-floor-card">
-        <div class="factory-floor-title">地下</div>
-       <div class="factory-floor-map" data-floor="Basement">
+    <img
+        id="mapImage"
+        src="Shoreline.svg"
+        alt="ショアラインのマップ"
+    >
+
+    <div class="map-exits pmc-exits"></div>
+    <div class="map-exits scav-exits"></div>
+    <div class="map-tasks"></div>
+
+</div>
+
+
+<!-- =========================
+     ファクトリー
+     ========================= -->
+
+<div id="factory-floor-grid" class="map-view factory-map-view">
+
+  <div class="factory-floor-card">
+    <div class="factory-floor-title">地下</div>
     <img src="Factory_Basement.svg" alt="ファクトリー地下">
-    </div>
-    </div>
+  </div>
 
-    <div class="factory-floor-card">
-        <div class="factory-floor-title">1F</div>
-        <div class="factory-floor-map" data-floor="Ground_Floor">
-       <img src="Factory_Ground_Floor.svg" alt="ファクトリー1F">
-     </div>
-    </div>
+  <div class="factory-floor-card">
+    <div class="factory-floor-title">1F</div>
+    <img src="Factory_Ground_Floor.svg" alt="ファクトリー1F">
+  </div>
 
-    <div class="factory-floor-card">
-        <div class="factory-floor-title">2F</div>
-        <div class="factory-floor-map" data-floor="Second_Floor">
-       <img src="Factory_Second_Floor.svg" alt="ファクトリー2F">
-      </div>
-    </div>
+  <div class="factory-floor-card">
+    <div class="factory-floor-title">2F</div>
+    <img src="Factory_Second_Floor.svg" alt="ファクトリー2F">
+  </div>
 
-    <div class="factory-floor-card">
-        <div class="factory-floor-title">3F</div>
-        <div class="factory-floor-map" data-floor="Third_Floor">
-       <img src="Factory_Third_Floor.svg" alt="ファクトリー3F">
-      </div>
-    </div>
+  <div class="factory-floor-card">
+    <div class="factory-floor-title">3F</div>
+    <img src="Factory_Third_Floor.svg" alt="ファクトリー3F">
+  </div>
 
-    
+  <div class="map-exits pmc-exits"></div>
+  <div class="map-exits scav-exits"></div>
+  <div class="map-tasks"></div>
+
 </div>
 
-<!-- ラボ専用 -->
-<div id="labs-floor-grid">
+
+<!-- =========================
+     ラボ
+     ========================= -->
+
+<div id="labs-floor-grid" class="map-view labs-map-view">
 
     <div class="factory-floor-card">
         <div class="factory-floor-title">1F</div>
-        <div class="labs-floor-map">
-            <img src="Labs_First_Level.svg" alt="ラボ1F">
-        </div>
+        <img src="Labs_First_Level.svg" alt="ラボ1F">
     </div>
 
     <div class="factory-floor-card">
         <div class="factory-floor-title">2F</div>
-        <div class="labs-floor-map">
-            <img src="Labs_Second_Level.svg" alt="ラボ2F">
-        </div>
+        <img src="Labs_Second_Level.svg" alt="ラボ2F">
     </div>
 
     <div class="factory-floor-card">
         <div class="factory-floor-title">地下</div>
-        <div class="labs-floor-map">
-            <img src="Labs_Technical_Level.svg" alt="ラボ地下">
-        </div>
+        <img src="Labs_Technical_Level.svg" alt="ラボ地下">
     </div>
+
+    <div class="factory-floor-card labs-empty-card"></div>
+
+    <div class="map-exits pmc-exits"></div>
+    <div class="map-exits scav-exits"></div>
+    <div class="map-tasks"></div>
 
 </div>
 
 
+<!-- =========================
+     インチェ
+     ========================= -->
 
-<!-- インチェ専用 -->
-<div id="interchange-floor-grid">
+<div id="interchange-floor-grid" class="multi-map-view">
 
-    <!-- 上中央：1F・外 -->
     <div class="factory-floor-card interchange-ground">
         <div class="factory-floor-title">1F・外</div>
-        <div class="interchange-floor-map">
+
+        <div class="interchange-floor-map map-view">
             <img src="Interchange_Ground_Level.svg" alt="インチェ1F・外">
+
+            <div class="map-exits pmc-exits"></div>
+            <div class="map-exits scav-exits"></div>
         </div>
     </div>
 
-    <!-- 左下：2F -->
+
     <div class="factory-floor-card interchange-first">
         <div class="factory-floor-title">2F</div>
-        <div class="interchange-floor-map">
+
+        <div class="interchange-floor-map map-view">
             <img src="Interchange_First_Floor.svg" alt="インチェ2F">
+
+            <div class="map-exits pmc-exits"></div>
+            <div class="map-exits scav-exits"></div>
         </div>
     </div>
 
-    <!-- 右下：3F -->
+
     <div class="factory-floor-card interchange-second">
         <div class="factory-floor-title">3F</div>
-        <div class="interchange-floor-map">
+
+        <div class="interchange-floor-map map-view">
             <img src="Interchange_Second_Floor.svg" alt="インチェ3F">
+
+            <div class="map-exits pmc-exits"></div>
+            <div class="map-exits scav-exits"></div>
         </div>
     </div>
+
+    <div class="map-tasks"></div>
 
 </div>
 
 
+<!-- =========================
+     リザーブ
+     ========================= -->
+
+<div id="reserve-floor-grid" class="multi-map-view">
+
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">地上</div>
+
+        <div class="reserve-floor-map map-view">
+            <img src="Reserve_Ground_Level.svg" alt="リザーブ地上">
+
+            <div class="map-exits pmc-exits"></div>
+            <div class="map-exits scav-exits"></div>
+            <div class="map-tasks"></div>
+        </div>
+    </div>
 
 
+    <div class="factory-floor-card">
+        <div class="factory-floor-title">地下</div>
 
+        <div class="reserve-floor-map map-view">
+            <img src="Reserve_Underground.svg" alt="リザーブ地下">
 
+            <div class="map-exits pmc-exits"></div>
+            <div class="map-exits scav-exits"></div>
+            <div class="map-tasks"></div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-    <div id="pmc-exits"></div>
-    <div id="scav-exits"></div>
-    <div id="task-markers"></div>
+</div>
 
 </div>
 

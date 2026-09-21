@@ -15,20 +15,6 @@ const tasksData = [
         description: "東棟110号室(San tapeキー)(サニターオフィス)をみる。脱出する",
         selected: false
     },
-
-    {
-        name: "Ill-Wisher",
-        giver:"メカニック",
-        maps: {
-            "ショアライン": [
-                { left: 45, top: 34 },
-                { left: 62, top: 63 }
-            ]
-        },
-        description: "信号発信源2箇所にシグナルジャマーを設置する",
-        selected: false
-    },
-
     {
         name: "Nothing Fishy About This",
         giver:"ラグマン",
@@ -456,48 +442,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "The Secret to Productivity",
-        giver:"メカニック",
-        maps: {
-            
-            "ストタル": [{ left:100 , top: 92,comment:"Relax🔑"},
-            ],
-           
-            
-     
-        },
-        description: "Hiveにいく",
-        selected: false
-    },
-    {
-        name: "Corporate Perks",
-        giver:"メカニック",
-        maps: {
-            
-            "ストタル": [{ left:18 , top: 70,comment:"Negotiatio🔑"},
-            ],
-           
-            
-     
-        },
-        description: "オフィスで会社が成功した秘密を解明する",
-        selected: false
-    },
-    {
-        name: "Watching You",
-        giver:"メカニック",
-        maps: {
-            
-            "ストタル": [{ left:70 , top: 55,comment:"Pnwd 215🔑"},
-            ],
-           
-            
-     
-        },
-        description: "オフィスで会社が成功した秘密を解明する",
-        selected: false
-    },
-    {
         name: "The Door",
         giver:"メカニック",
         maps: {
@@ -631,60 +575,6 @@ const tasksData = [
           
         },
         description: "古い家の中で血まみれの放送があった場所を探す、生還する",
-        selected: false
-    },
-    {
-        name: "Playing the Market",
-        giver:"メカニック",
-        maps: {
-            
-            "ファクトリー": [{ left:92, top: 7,}, {left:80, top: 4.8,},
-            ],
-            
-          
-        },
-        description: "ツールセットを2か所に設置する",
-        selected: false
-    },
-    {
-        name: "Black Swan",
-        giver:"メカニック",
-        maps: {
-            
-            "ファクトリー": [{ left:13.8, top: 38,}, {left:30.5, top: 18.3,},{left:44, top: 15,},
-            ],
-            
-          
-        },
-        description: "熱交換器のいずれか1つにマーカー設置",
-        selected: false
-    },
-    {
-        name: "Scout",
-        giver:"メカニック",
-        maps: {
-            
-            "ファクトリー": [{left: 53, top: 8}, {left:  55.7, top:  45.2,}, {left: 97, top:  31.6,},{left:  41, top:  3.5,},
-            ],
-            
-          
-        },
-        description: "出口0、3、Med Tent Gates、Cellarsを見て生還する",
-        selected: false
-    },
-    {
-        name: "Seacret of Polikhim",
-        giver:"メカニック",
-        maps: {
-            
-            "カスタム": [{left: 5, top: 510,}, 
-            ],
-            "ファクトリー": [{ left:89, top: 17.5,},
-            ],
-            
-          
-        },
-        description: "カスタムでツールパッケージを入手する⇒ファクトリーにトランジットする⇒Scavを3killしてパッケージを設置する",
         selected: false
     },
     {
@@ -2058,7 +1948,7 @@ const tasksData = [
                {left: 68, top: 25 ,width:13,height:30,rotate:0,type:"area" }
             ],
             "インチェ": [
-                {left:50, top: 55 ,width:30,height:35,rotate:0,type:"area" }
+                {left:32, top: 93 ,width:12,height:9,rotate:0,type:"area" }
             ]
         },
         description: "密輸業者の基地で10キルする（kill共有あり）",
@@ -3245,6 +3135,225 @@ const tasksData = [
         description: "ショアかライハで7.62×51口径のマークスマンライフルで50m以上の距離から任意の敵を15kill(kill共有あり）",
         selected: false
     },
+    {
+        name: "Steady Signal",
+        giver:"メカニック",
+        maps: {
+             "ウッズ": [ { left:-50, top: 95 ,},{ left: 58, top: 105 ,},{ left: 83, top: 165,},{ left: -15, top: 290 ,},{ left: 132, top: 283 ,},
+               
+            ],
+        },
+        description: "百葉箱のいずれかにマーカー設置",
+        selected: false
+    },
+    {
+        name: "Passion for Ergonomics",
+        giver:"メカニック",
+        maps: {
+             "カスタム": [ { left:-219, top: 535 ,},
+            ],
+        },
+        description: "ツールセットを入手する",
+        selected: false
+    },
+    {
+        name: "The Courier",
+        giver:"メカニック",
+        maps: {
+             "カスタム": [ { left:197, top: 306 ,},
+            ],
+        },
+        description: "REAP-IRを隠す",
+        selected: false
+    },
+    {
+        name: "Gunsmith-AKS-74U",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "AKS-74Uを指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-MP-133",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "MP-133を指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-HK MP5",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "HK MP5を指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Farming",
+        giver:"メカニック",
+        maps: {
+            "カスタム": [ { left:-155, top: 448 ,},
+            ],
+             
+        },
+        description: "税関押収品を入手する",
+        selected: false
+    },
+    {
+        name: "Bad Habit",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "マルボロ、ストライク、ウィルストンのいずれか（in raid)を15個納品",
+        selected: false
+    },
+    {
+        name: "Saving the Mole",
+        giver:"メカニック",
+        maps: {
+             
+             "グラゼロ": [ { left:107, top: 92 ,commnet:"1Fの死体から鍵拾う"},
+            ],
+        },
+        description: "ハードドライブを入手する",
+        selected: false
+    },
+    {
+        name: "Playing the Market",
+        giver:"メカニック",
+        maps: {
+            
+            "ファクトリー": [{ left:92, top: 8,}, {left:79.8, top: 5.2,},
+            ],
+            
+          
+        },
+        description: "ツールセットを2か所に設置する",
+        selected: false
+    },
+    {
+        name: "Surveillance",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:12, top: 110,comment:"地下、Concd sec.🔑"}, 
+            ],
+            
+          
+        },
+        description: "地下駐車場でデータを入手する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-Model 870",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "Model 870を指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Ill-Wisher",
+        giver:"メカニック",
+        maps: {
+            "ショアライン": [
+                { left: 45, top: 34 },
+                { left: 62, top: 63 }
+            ]
+        },
+        description: "信号発信源2箇所にシグナルジャマーを設置する",
+        selected: false
+    },
+    {
+        name: "The Secret to Productivity",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:100 , top: 92,comment:"Relax🔑"},
+            ],
+           
+            
+     
+        },
+        description: "Hiveにいく",
+        selected: false
+    },
+    {
+        name: "Black Swan",
+        giver:"メカニック",
+        maps: {
+            
+            "ファクトリー": [{ left:13.5, top: 38,}, {left:30.3, top: 18.5,},{left:43.2, top: 15,},
+            ],
+            
+          
+        },
+        description: "熱交換器のいずれか1つにマーカー設置",
+        selected: false
+    },
+    {
+        name: "Scout",
+        giver:"メカニック",
+        maps: {
+            
+            "ファクトリー": [{left: 53.5, top: 8.8,}, {left:  56.2, top:  45.2,}, {left: 97, top:  31.6,},{left:  40, top:  4.5,},
+            ],
+            
+          
+        },
+        description: "出口0、3、Med Tent Gates、Cellarsを見て生還する",
+        selected: false
+    },
+    {
+        name: "Seacret of Polikhim",
+        giver:"メカニック",
+        maps: {
+            
+            "カスタム": [{left: 5, top: 510,}, 
+            ],
+            "ファクトリー": [{ left:89, top: 17.5,},
+            ],
+            
+          
+        },
+        description: "カスタムでツールパッケージを入手する⇒ファクトリーにトランジットする⇒Scavを3killしてパッケージを設置する",
+        selected: false
+    },
+    {
+        name: "Corporate Perks",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:18 , top: 70,comment:"Negotiatio🔑"},
+            ],
+           
+            
+     
+        },
+        description: "オフィスで会社が成功した秘密を解明する",
+        selected: false
+    },
+    {
+        name: "Watching You",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:70 , top: 55,comment:"Pnwd 215🔑"},
+            ],
+           
+            
+     
+        },
+        description: "オフィスで会社が成功した秘密を解明する",
+        selected: false
+    },
 
 
 
@@ -3282,11 +3391,13 @@ const tasksData = [
 ];
 
 // タスクマーカー
-const taskMarkers = document.getElementById("task-markers");
+let taskMarkers = document.querySelector(".map-tasks");
 
 console.log("taskMarkers:", taskMarkers);
 
 function showTaskMarkers() {
+
+    
 
     taskMarkers.innerHTML = "";
 
@@ -3707,9 +3818,9 @@ const factoryPmcExitsData = [
 
     { name: "Courtyard Gate",left:  53, top: 20, labelX:  53, labelY:  20, condition: "" },
 
-    { name: "Gate 0",left:  55.7, top:  45.2, labelX:  55.7, labelY:  45.2, condition: "" },
+    { name: "Gate 0",left:  55.8, top:  45.5, labelX:  55.8, labelY:  45.5, condition: "" },
     { name: "Med Tent Gates", left: 97, top:  31.6, labelX:  97, labelY:  31.6, condition: "Factory emergency exit🔑" },
-    { name: "Cellars", left:  41, top:  3.5, labelX:36.5, labelY:  4.6, condition:"地下、Factory emaergency exit🔑"},
+    { name: "Cellars", left:  41.5, top:  3.4, labelX:34, labelY:  5, condition:"地下、Factory emaergency exit🔑"},
 
     ];
 
@@ -3834,8 +3945,8 @@ const exitsByMap = {
 };
 
 // HTMLの要素を取得
-const pmcExits = document.getElementById("pmc-exits");
-const scavExits = document.getElementById("scav-exits");
+const pmcExits = document.querySelector(".pmc-exits");
+const scavExits = document.querySelector(".scav-exits");
 
 const pmcButton = document.getElementById("pmcButton");
 const scavButton = document.getElementById("scavButton");
@@ -3898,69 +4009,104 @@ if (exit.condition) {
 }
 
 function showFactoryExits(exits, type) {
-    console.log("Factory exits:", exits);
 
+    // 通常マップと同じ脱出表示用コンテナを使う
+    const container = type === "scav"
+    ? factoryScavContainer
+    : factoryPmcContainer;
 
-// ファクトリー脱出口専用レイヤーを取得
-let factoryExits = document.getElementById("factory-exits");
+    container.innerHTML = "";
 
-if (!factoryExits) {
-    factoryExits = document.createElement("div");
-    factoryExits.id = "factory-exits";
+    exits.forEach(function(exit) {
 
-    const factoryMap = document.getElementById("factory-floor-grid");
-    factoryMap.appendChild(factoryExits);
+        // ●
+        const dot = document.createElement("div");
+
+        dot.className = "exit-dot";
+        dot.textContent = "●";
+
+        dot.style.left = exit.left + "%";
+        dot.style.top = exit.top + "%";
+
+        // 脱出地点名
+        const label = document.createElement("div");
+
+        label.className = "exit-label";
+        label.style.left = exit.labelX + "%";
+        label.style.top = exit.labelY + "%";
+
+        const name = document.createElement("div");
+        name.textContent = exit.name;
+
+        label.appendChild(name);
+
+        // 条件がある場合
+        if (exit.condition) {
+
+            const condition = document.createElement("div");
+
+            condition.className = "exit-condition";
+            condition.textContent = exit.condition;
+
+            label.appendChild(condition);
+        }
+
+        container.appendChild(dot);
+        container.appendChild(label);
+    });
+
+    container.style.display = "block";
 }
 
-// 今表示されている脱出口を消す
-factoryExits.innerHTML = "";
-
-exits.forEach(function(exit) {
-
-    // ⚫ 脱出口の点
-    const dot = document.createElement("div");
-
-    dot.className = "exit-dot";
-    dot.textContent = "●";
-
-    dot.style.left = exit.left + "%";
-    dot.style.top = exit.top + "%";
 
 
-    // 文字
-    const label = document.createElement("div");
+function showExitsIntoView(exits, view, type) {
+    const container = type === "scav"
+        ? view.querySelector(".scav-exits")
+        : view.querySelector(".pmc-exits");
 
-    label.className = "exit-label";
+    if (!container) return;
 
-    label.style.left = exit.labelX + "%";
-    label.style.top = exit.labelY + "%";
+    container.innerHTML = "";
 
+    exits.forEach(function(exit) {
+        const dot = document.createElement("div");
+        dot.className = "exit-dot";
+        dot.textContent = "●";
+        dot.style.left = exit.left + "%";
+        dot.style.top = exit.top + "%";
 
-    // 脱出地点名
-    const name = document.createElement("div");
+        const label = document.createElement("div");
+        label.className = "exit-label";
+        label.style.left = exit.labelX + "%";
+        label.style.top = exit.labelY + "%";
 
-    name.textContent = exit.name;
+        const name = document.createElement("div");
+        name.textContent = exit.name;
+        label.appendChild(name);
 
-    label.appendChild(name);
+        if (exit.condition) {
+            const condition = document.createElement("div");
+            condition.className = "exit-condition";
+            condition.textContent = exit.condition;
+            label.appendChild(condition);
+        }
 
+        container.appendChild(dot);
+        container.appendChild(label);
+    });
 
-    // 条件がある場合だけ表示
-    if (exit.condition) {
-
-        const condition = document.createElement("div");
-
-        condition.className = "exit-condition";
-        condition.textContent = exit.condition;
-
-        label.appendChild(condition);
-    }
-
-
-    factoryExits.appendChild(dot);
-    factoryExits.appendChild(label);
-
-});
+    container.style.display = "block";
 }
+
+
+
+
+
+
+
+
+
 
 function showInterchangeExits(exits, type) {
     console.log("Interchange exits:", exits);
@@ -4020,6 +4166,61 @@ function showInterchangeExits(exits, type) {
     });
 }
 
+
+function showLabsExits(exits, type) {
+
+    // Factoryと同じく、通常マップと同じ脱出表示用コンテナを使う
+    const container = type === "scav"
+    ? labsScavContainer
+    : labsPmcContainer;
+
+    container.innerHTML = "";
+
+    exits.forEach(function(exit) {
+
+        // ●
+        const dot = document.createElement("div");
+
+        dot.className = "exit-dot";
+        dot.textContent = "●";
+
+        dot.style.left = exit.left + "%";
+        dot.style.top = exit.top + "%";
+
+        // 脱出地点名
+        const label = document.createElement("div");
+
+        label.className = "exit-label";
+        label.style.left = exit.labelX + "%";
+        label.style.top = exit.labelY + "%";
+
+        const name = document.createElement("div");
+        name.textContent = exit.name;
+
+        label.appendChild(name);
+
+        // 条件がある場合
+        if (exit.condition) {
+
+            const condition = document.createElement("div");
+
+            condition.className = "exit-condition";
+            condition.textContent = exit.condition;
+
+            label.appendChild(condition);
+        }
+
+        container.appendChild(dot);
+        container.appendChild(label);
+    });
+
+    container.style.display = "block";
+}
+
+
+
+
+
 // マップごとの脱出地点データ
 const mapExitData = {
 shoreline: {
@@ -4035,8 +4236,6 @@ console.log("現在のマップ:", mapName);
 console.log("インチェデータ:", exitsByMap["インチェ"]);
 
 const data = exitsByMap[mapName];
-pmcExits.innerHTML = "";
-scavExits.innerHTML = "";
 if (!data) {
     pmcExits.style.display = "none";
     scavExits.style.display = "none";
@@ -4053,6 +4252,7 @@ setActiveButton(pmcButton);
 
 
 // 最初はPMCを表示
+pmcExits.style.display = "none";
 scavExits.style.display = "none";
 setActiveButton(pmcButton);
 
@@ -4060,6 +4260,16 @@ if (currentMap === "インチェ") {
     showInterchangeExits(interchangePmcExitsData, "pmc");
     pmcExits.style.display = "none";
     scavExits.style.display = "none";
+
+} else if (currentMap === "ファクトリー") {
+    pmcExits.style.display = "none";
+    scavExits.style.display = "none";
+
+    factoryPmcContainer.style.display = "block";
+    factoryScavContainer.style.display = "none";
+
+    showFactoryExits(factoryPmcExitsData, "pmc");
+
 } else {
     updateExits(currentMap);
 }
@@ -4068,9 +4278,24 @@ if (currentMap === "インチェ") {
 pmcButton.addEventListener("click", function() {
 
     if (currentMap === "ファクトリー") {
-        pmcExits.innerHTML = "";
-        scavExits.innerHTML = "";
-        showFactoryExits(factoryPmcExitsData, "pmc");
+    pmcExits.style.display = "none";
+　　scavExits.style.display = "none";
+
+　　factoryPmcContainer.style.display = "block";
+　　factoryScavContainer.style.display = "none";
+    showFactoryExits(factoryPmcExitsData, "pmc");
+    setActiveButton(pmcButton);
+    return;
+}
+
+    if (currentMap === "ラボ") {
+        pmcExits.style.display = "none";
+        scavExits.style.display = "none";
+
+        labsPmcContainer.style.display = "block";
+        labsScavContainer.style.display = "none";
+
+        showLabsExits(labsPmcExitsData, "pmc");
         setActiveButton(pmcButton);
         return;
     }
@@ -4095,11 +4320,23 @@ pmcButton.addEventListener("click", function() {
 scavButton.addEventListener("click", function() {
 
     if (currentMap === "ファクトリー") {
-        pmcExits.innerHTML = "";
-        scavExits.innerHTML = "";
+    factoryPmcContainer.style.display = "none";
+    factoryScavContainer.style.display = "block";
 
-        showFactoryExits(factoryScavExitsData, "scav");
+    showFactoryExits(factoryScavExitsData, "scav");
 
+    setActiveButton(scavButton);
+    return;
+}
+
+    if (currentMap === "ラボ") {
+        pmcExits.style.display = "none";
+        scavExits.style.display = "none";
+
+        labsPmcContainer.style.display = "none";
+        labsScavContainer.style.display = "block";
+
+        showLabsExits(labsScavExitsData, "scav");
         setActiveButton(scavButton);
         return;
     }
@@ -4128,13 +4365,25 @@ hideButton.addEventListener("click", function() {
     pmcExits.style.display = "none";
     scavExits.style.display = "none";
 
-    if (currentMap === "ファクトリー") {
-        const factoryExits = document.getElementById("factory-exits");
+        // ラボの脱出を非表示
+    if (currentMap === "ラボ") {
+        labsPmcContainer.style.display = "none";
+        labsScavContainer.style.display = "none";
 
-        if (factoryExits) {
-            factoryExits.innerHTML = "";
-        }
+        labsPmcContainer.innerHTML = "";
+        labsScavContainer.innerHTML = "";
     }
+
+
+    if (currentMap === "ファクトリー") {
+    factoryPmcContainer.style.display = "none";
+    factoryScavContainer.style.display = "none";
+
+    factoryPmcContainer.innerHTML = "";
+    factoryScavContainer.innerHTML = "";
+}
+
+
     if (currentMap === "インチェ") {
     const interchangeExits = document.getElementById("interchange-exits");
 
@@ -4461,6 +4710,31 @@ const mapImage = document.getElementById("mapImage");
 const factoryFloorGrid = document.getElementById("factory-floor-grid");
 const labsFloorGrid = document.getElementById("labs-floor-grid");
 const interchangeFloorGrid = document.getElementById("interchange-floor-grid");
+const factoryFloorView = document.getElementById("factory-floor-grid");
+
+const factoryPmcView = factoryFloorView;
+const factoryScavView = factoryFloorView;
+
+const factoryPmcContainer =
+    factoryFloorView.querySelector(".pmc-exits");
+
+const factoryScavContainer =
+    factoryFloorView.querySelector(".scav-exits");
+
+
+
+const labsFloorView = document.getElementById("labs-floor-grid");
+
+const labsPmcContainer =
+    labsFloorView.querySelector(".pmc-exits");
+
+const labsScavContainer =
+    labsFloorView.querySelector(".scav-exits");
+
+
+
+
+
 factoryFloorGrid.style.display = "none";
 labsFloorGrid.style.display = "none";
 interchangeFloorGrid.style.display = "none";
@@ -4597,6 +4871,8 @@ async function loadLabsFloors() {
 
 mapSelect.addEventListener("change", function () {
 
+    setActiveButton(pmcButton);
+
     // =========================
     // インチェ
     // =========================
@@ -4631,13 +4907,17 @@ mapSelect.addEventListener("change", function () {
         labsFloorGrid.style.display = "none";
         interchangeFloorGrid.style.display = "none";
 
+       pmcExits.innerHTML = "";
+       scavExits.innerHTML = "";
+       pmcExits.style.display = "none";
+       scavExits.style.display = "none";
+
+
         //loadFactoryFloors();
 
         // 通常マップの脱出口を消す
-        pmcExits.innerHTML = "";
-        scavExits.innerHTML = "";
-        pmcExits.style.display = "none";
-        scavExits.style.display = "none";
+        factoryPmcContainer.style.display = "block";
+　　　　factoryScavContainer.style.display = "none";
 
         showFactoryExits(factoryPmcExitsData, "pmc");
 
@@ -4652,6 +4932,9 @@ mapSelect.addEventListener("change", function () {
     else {
 
         mapImage.style.display = "block";
+
+            factoryPmcContainer.innerHTML = "";
+    　　　　factoryScavContainer.innerHTML = "";
 
         factoryFloorGrid.style.display = "none";
         labsFloorGrid.style.display = "none";
@@ -4674,7 +4957,14 @@ mapSelect.addEventListener("change", function () {
             labsFloorGrid.style.display = "grid";
             interchangeFloorGrid.style.display = "none";
 
-            //loadLabsFloors();
+           pmcExits.innerHTML = "";
+           scavExits.innerHTML = "";
+
+           
+
+          showLabsExits(labsPmcExitsData, "pmc");
+
+          //loadLabsFloors();
         }
     }
 
@@ -4763,6 +5053,17 @@ mapSelect.addEventListener("change", function () {
 
     currentMap = mapNames[this.value];
 
+    if (this.value === "factory") {
+    taskMarkers = document.querySelector("#factory-floor-grid > .map-tasks");
+} else if (this.value === "labs") {
+    taskMarkers = document.querySelector("#labs-floor-grid > .map-tasks");
+} else if (this.value === "interchange") {
+    taskMarkers = document.querySelector("#interchange-floor-grid > .map-tasks");
+} else {
+    taskMarkers = document.querySelector("#normal-map-view .map-tasks");
+}
+
+
     showTaskList();
     showTaskMarkers();
     showTaskConditions();
@@ -4774,11 +5075,12 @@ mapSelect.addEventListener("change", function () {
 
     // インチェ・ファクトリー以外は通常の脱出口処理
     if (
-        this.value !== "factory" &&
-        this.value !== "interchange"
-    ) {
-        updateExits(currentMap);
-    }
+    　　　this.value !== "factory" &&
+    　　　this.value !== "interchange" &&
+    　　　this.value !== "labs"
+　　　) {
+    　　　updateExits(currentMap);
+　　　}
 
 });
 
