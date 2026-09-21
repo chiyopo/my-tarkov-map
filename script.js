@@ -3,129 +3,7 @@ let currentMap = "ショアライン";
 
 
 // タスクのデータ
-const tasksData = [
-
-
-    {
-        name: "Master key",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                { left: 43, top: 14.8 }
-            ]
-        },
-        description: "Health Res(鍵)を手に入れる",
-        selected: false
-    },
-
- {
-    name: "The cult",
-    giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                { left: 17.7, top: 36.5 }
-            ]
-        },
-        description: "情報提供者を探す。生還する。",
-        selected: false
-    },
-
-    {
-        name: "Fishing Gear",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                { left: 45, top: 80.2 }
-            ]
-        },
-        description: "マルチツールとUNTERボディーアーマーをボートに隠す",
-        selected: false
-    },
-
-    {
-        name: "I Need More Power",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                { left: 44.8, top: 34, comment:"西棟219🔑or220号室🔑",commentX:-50,commentY:15},
-                { left: 53, top: 34,  comment:"東棟220号室"
-                },
-                
-            ]
-        },
-        description: "西棟219号室(鍵)と東棟220号室の発電機を見る。西棟219は220号室の鍵でもok。fuel tankを3つ納品する",
-        selected: false
-    },
-
-    {
-        name: "Eagle Eye",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                { left: 29.5, top: 26 },
-                { left: 65.9, top: 29.2 }
-            ]
-        },
-        description: "飛行機の墜落現場2箇所でSASディスクを手に入れる",
-        selected: false
-    },
-
-    {
-        name: "Weapons Circulation",
-        giver:"ピースキーパー",
-        maps: {
-            "ウッズ": [
-                { left: 0, top: 225 },
-                { left: 55, top: 65 }
-            ],
-            "ショアライン": [
-                { left: 53, top: 33, comment:"東棟321号室" }
-            ]
-        },
-        description: "ウッズ2箇所、ショアライン1箇所で儀式の場所にマーカー設置する",
-        selected: false
-    },
-
-    {
-        name: "Humanitarian Supplies",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                { left: 48, top: 26 },
-                { left: 68, top: 82 }
-            ]
-        },
-        description: "UNトラックにマーカー設置する。MREレーションパックを5個納品する",
-        selected: false
-    },
-
-    {
-        name: "Scrap Metal",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                { left: 12.2, top: 54 },
-                { left: 43.5, top: 17 },
-                { left: 54.3, top: 57 }
-            ]
-        },
-        description: "戦車3箇所にマーカー設置する",
-        selected: false
-    },
-    
-    {
-    name: "Tracker",
-    giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                { left: 53.5, top: 33 , comment:"東棟108号室"},
-                { left: 43, top: 34, comment:"西棟地下" }
-            ]
-        },
-        description: "東棟108号室で情報を手に入れる。西棟地下の隠された貨物を見つける",
-        selected: false
-    },
-
+const tasksData = [      
     {
         name: "Chemistry Closet",
         giver:"メカニック",
@@ -186,193 +64,6 @@ const tasksData = [
             ]
         },
         description: "22時〜7時の間にSCAVを12killする（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Wet Job-part1",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [ 
-               
-            ]
-        },
-        description: "M4A1、ADAR、Lone Star、M16A1、M16A2を使いScavを10killする（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Wet Job-part2",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [ { left: 20, top: 78 },
-               
-            ]
-        },
-        description: "M4A1、ADAR、Lone Star、M16A1、M16A2を使いScavを10killする（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Wet Job-part3",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [ { left: 30, top: 71 },
-               
-            ]
-        },
-        description: "Artyomの車（黄色いセダン）にマーカー設置",
-        selected: false
-    },
-    {
-        name: "Wet Job-part4",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [ { left: 49.5, top: 28 },
-               
-            ]
-        },
-        description: "北館3F東側の事務室で入居者リストを見つける",
-        selected: false
-    },
-　　{
-        name: "Wet Job-part5",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [ { left: 49.5, top: 28 ,comment:"東棟328号室🔑"},
-               
-            ]
-        },
-        description: "東館328号室でArtyomの仕事の情報を見つけて引き渡す",
-        selected: false
-    },
-    {
-        name: "Cargo X",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [{ left: 50.2, top: 33 ,comment:"東棟306or308号室🔑"},
-                
-            ]
-            
-        },
-        description: "積荷目録を入手して引き渡す",
-        selected: false
-    },
-    {
-        name: "Peacekeeping Mission",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                
-            ],
-            "ウッズ": [
-                
-            ],
-            "リザーブ": [
-                
-            ],
-            "カスタム": [
-                
-            ],
-            "ライトハウス": [
-                
-            ],
-            "ストタル": [
-                
-            ],
-            "グラゼロ": [
-                
-            ],
-            "インチェ": [
-                
-            ],
-            
-        },
-        description: "UNTERヘルメット＆アーマー装備＆武器指定（M16A1・M16A2・M4A1・SCAR-L・HK 416A5・HK G36・Howa Type 20・DML・Radian・AUG）、ウッズorリザーブでScavを12kill、カスタムorライトハウスでScavを12kill、ショアorストタルでScavを12kill,グラゼロorインチェでScavを12kill（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "The Guide",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                
-            ],
-            "ウッズ": [
-                
-            ],
-            "リザーブ": [
-                
-            ],
-            "カスタム": [
-                
-            ],
-            "ライトハウス": [
-                
-            ],
-            "ストタル": [
-                
-            ],
-            "グラゼロ": [
-                
-            ],
-            "インチェ": [
-                
-            ],
-            "ラボ": [
-                
-            ],
-            "ファクトリー": [
-                
-            ],
-
-
-            
-        },
-        description: "インチェorウッズから生還、ショアorリザーブから生還、ファクトリーorカスタムから生還、ラボorライトハウスから生還、グラゼロorストタルから生還、任意の敵を15kill(kill共有あり)",
-        selected: false
-    },
-    {
-        name: "Worst Job in the World",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                
-            ],
-            
-            "ライトハウス": [
-                
-            ],
-            
-            "グラゼロ": [
-                
-            ],
-            
-        },
-        description: "AR15系の武器（M4A1、ADAR、Lone Star、M16A1、M16A2、Radian)を使用して100m以上離れた場所から敵30kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "【BEARのみ】Insomnia",
-        giver:"ピースキーパー",
-        maps: {
-            "ショアライン": [
-                
-            ],
-            
-            "ライトハウス": [
-                
-            ],
-            
-            "グラゼロ": [
-                
-            ],
-            "ストタル": [
-                
-            ],
-            "リザーブ": [
-                
-            ],
-            
-        },
-        description: "21時～6時の間にPMCを25kill",
         selected: false
     },
     {
@@ -618,59 +309,6 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Revision-Lighthouse",
-        giver:"ピースキーパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: -2.7, top: 29.3},{ left: 15.5, top: 33.7},{ left: 112.3, top:37.5},{ left:65, top: 30.8},
-                
-            ],
-           
-            
-   
-        },
-        description: "BRDM2台とStryker2台にマーカー設置",
-        selected: false
-    },
-    {
-        name: "Gifts from Tarkov",
-        giver:"ピースキーパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: 68, top: 41},
-                
-            ],
-            "リザーブ": [
-                
-            ],
-           
-            
-   
-        },
-        description: "貨物にマーカー設置、ライハかリザーブでM203グレネードランチャーで任意の敵を10kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Overpopulation",
-        giver:"ピースキーパー",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: 63, top: 27,width:28,height:6,type:"area"},
-                
-            ],
-              
-   
-        },
-        description: "コテージエリアで任意の敵を10kill(kill共有あり）、地形図、インテリもしくはブルーフォルダーを5つ納品する",
-        selected: false
-    },
-    {
         name: "Corporate Secrets",
         giver:"メカニック",
         maps: {
@@ -714,35 +352,6 @@ const tasksData = [
    
         },
         description: "レコーディングスタジオを見つけてシグナルジャマーを設置する",
-        selected: false
-    },
-    {
-        name: "The Cleaner",
-        giver:"ピースキーパー",
-        maps: {
-            
-            "リザーブ": [
-            ],
-            "ラボ": [
-            ],
-            
-            
-        },
-        description: "レイダーもしくはBDを10kill(kill共有あり）",
-        selected: false
-    },
-　　{
-        name: "Revision-Reserve",
-        giver:"ピースキーパー",
-        maps: {
-            
-            "リザーブ": [{ left: 70, top:110},{ left: 100, top:145},{ left: 85, top:215},{ left: 95, top:350},
-            ],
-           
-            
-            
-        },
-        description: "BMP 4台にマーカー設置する",
         selected: false
     },
     {
@@ -844,63 +453,6 @@ const tasksData = [
      
         },
         description: "グラハをkill(kill共有あり）、護衛のヘルメットを2つ納品する",
-        selected: false
-    },
-    {
-        name: "New Paths",
-        giver:"ピースキーパー",
-        maps: {
-            
-            "ストタル": [
-            ],
-            "グラゼロ": [{ left: -45, top: 100,width:15,height:10,type:"area"},
-            ],
-            
-     
-        },
-        description: "グラゼロでMira Aveの周辺を偵察する⇒ストタルにトランジットする⇒生還する",
-        selected: false
-    },
-    {
-        name: "Secret Message",
-        giver:"ピースキーパー",
-        maps: {
-            
-            "ストタル": [
-            ],
-           
-            
-     
-        },
-        description: "12ゲージショットガンで任意の敵をヘッドショットで15kill(kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Revision-Street of Tarkov",
-        giver:"ピースキーパー",
-        maps: {
-            
-            "ストタル": [{ left:31, top: 106.5,},{ left:85, top: 114.5,}, {left:54, top:52,},
-            ],
-           
-            
-     
-        },
-        description: "戦車にマーカー設置",
-        selected: false
-    },
-    {
-        name: "Your Car Needs a Servise",
-        giver:"ピースキーパー",
-        maps: {
-            
-            "ストタル": [{ left:42, top: 95,comment:"LexOs🔑&LexOs sect🔑"},
-            ],
-           
-            
-     
-        },
-        description: "カーディーラーでUSB入手する",
         selected: false
     },
     {
@@ -3101,6 +2653,601 @@ const tasksData = [
         description: "ポスターを設置する",
         selected: false
     },
+    {
+        name: "Seizing the Initiative",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "カスタム": [
+    　　　　　　　　　 ],
+    　　　　　"ショアライン": [
+    　　　　　　　　　 ],
+
+        },
+        description: "カスタムからショアラインにトランジットして、ショアから生還する",
+        selected: false
+    },
+    {
+        name: "Tigr Safari",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "カスタム": [{left: -33, top: 330,},{left: 230, top: 345,},{left: 275, top: 370,},
+    　　　　　　　　　 ],
+
+        },
+        description: "装甲車のいずれかにマーカー設置",
+        selected: false
+    },
+    {
+        name: "Chemical Experiments",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "カスタム": [{left: 5, top: 517,},
+    　　　　　　　　　 ],
+
+        },
+        description: "コルゲートチューブを設置する",
+        selected: false
+    },
+    {
+        name: "【選択タスク】One Less Loose End",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ファクトリー": [{left: 40, top: 70,},
+    　　　　　　　　　 ],
+            "ウッズ": [{left: 148, top: 185,},
+    　　　　　　　　　 ],
+
+        },
+        description: "ファクトリーでジャーナルを入手する⇒ウッズの[旧]製材所に隠しに行く",
+        selected: false
+    },
+    {
+        name: "Hikingd",
+        giver:"ピースキーパー",
+        maps: {
+            
+            
+            "ウッズ": [
+    　　　　　　　　　 ],
+
+        },
+        description: "Usecキャンプ、伐採場、廃村、ScavキャンプでScavを10kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Master key",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                { left: 43, top: 14.8 }
+            ]
+        },
+        description: "Health Res🔑を手に入れる",
+        selected: false
+    },
+    {
+        name: "New Paths",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ストタル": [
+            ],
+            "グラゼロ": [{ left: -45, top: 100,width:15,height:10,type:"area"},
+            ],
+            
+     
+        },
+        description: "グラゼロでMira Aveの周辺を偵察する⇒ストタルにトランジットする⇒生還する",
+        selected: false
+    },
+    {
+        name: "Fuel Shortage",
+        giver:"ピースキーパー",
+        maps: {
+            
+     
+        },
+        description: "日用品と燃料を各5つずつ納品する",
+        selected: false
+    },
+    {
+        name: "Metal Birds",
+        giver:"ピースキーパー",
+        maps: {
+            "ウッズ": [{ left: 27, top: 216,},{ left: -12.7, top: 209,},
+    　　　　　　　　　 ],
+     
+        },
+        description: "モーターコントローラーとジャイロスコープを手に入れる",
+        selected: false
+    },
+    {
+        name: "Fishing Gear",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                { left: 45, top: 80.2 }
+            ]
+        },
+        description: "マルチツールとUNTERボディーアーマーをボートに隠す",
+        selected: false
+    },
+    {
+        name: "One-Way Ticket",
+        giver:"ピースキーパー",
+        maps: {
+            "ファクトリー": [
+                
+            ]
+        },
+        description: "AUGでヘッドショットで敵を15kill(kill共有あり）",
+        selected: false
+    },
+    {
+    name: "The cult",
+    giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                { left: 17.7, top: 36.5 }
+            ]
+        },
+        description: "情報提供者を探す。生還する。",
+        selected: false
+    },
+    {
+        name: "Secret Message",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ストタル": [
+            ],
+           
+            
+     
+        },
+        description: "12ゲージショットガンで任意の敵をヘッドショットで15kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Revision-Street of Tarkov",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ストタル": [{ left:31, top: 106.5,},{ left:85, top: 114.5,}, {left:54, top:52,},
+            ],
+           
+            
+     
+        },
+        description: "戦車にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Your Car Needs a Servise",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ストタル": [{ left:42, top: 95,comment:"LexOs🔑&LexOs sect🔑"},
+            ],       
+     
+        },
+        description: "カーディーラーでUSB入手する",
+        selected: false
+    },
+    {
+        name: "Eagle Eye",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                { left: 29.5, top: 26 },
+                { left: 65.9, top: 29.2 }
+            ]
+        },
+        description: "飛行機の墜落現場2箇所でSASディスクを手に入れる",
+        selected: false
+    },
+    {
+        name: "Weapons Circulation",
+        giver:"ピースキーパー",
+        maps: {
+            "ウッズ": [
+                { left: 0, top: 225 },
+                { left: 55, top: 65 }
+            ],
+            "ショアライン": [
+                { left: 53, top: 33, comment:"東棟321号室" }
+            ]
+        },
+        description: "ウッズ2箇所、ショアライン1箇所で儀式の場所にマーカー設置する",
+        selected: false
+    },
+    {
+        name: "I Need More Power",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                { left: 44.8, top: 34, comment:"西棟219🔑or220号室🔑",commentX:-50,commentY:15},
+                { left: 53, top: 34,  comment:"東棟220号室"
+                },
+                
+            ]
+        },
+        description: "西棟219号室(鍵)と東棟220号室の発電機を見る。西棟219は220号室の鍵でもok。fuel tankを3つ納品する",
+        selected: false
+    },
+    {
+        name: "Humanitarian Supplies",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                { left: 48, top: 26 },
+                { left: 68, top: 82 }
+            ]
+        },
+        description: "UNトラックにマーカー設置する。MREレーションパックを5個納品する",
+        selected: false
+    },
+    {
+        name: "Scrap Metal",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                { left: 12.2, top: 54 },
+                { left: 43.5, top: 17 },
+                { left: 54.3, top: 57 }
+            ]
+        },
+        description: "戦車3箇所にマーカー設置する",
+        selected: false
+    },
+    {
+        name: "Demonstration Model",
+        giver:"ピースキーパー",
+        maps: {
+            "リザーブ": [
+                
+            ]
+        },
+        description: "7.62×51口径のアサルトライフルもしくはマークスマンでヘッドショットで任意の敵を15kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Cargo X",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [{ left: 50.2, top: 33 ,comment:"東棟306🔑or308号室🔑"},
+                
+            ]
+            
+        },
+        description: "積荷目録を入手して引き渡す",
+        selected: false
+    },
+    {
+    name: "Tracker",
+    giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                { left: 53.5, top: 33 , comment:"東棟108号室"},
+                { left: 43, top: 34, comment:"西棟地下" }
+            ]
+        },
+        description: "東棟108号室で情報を手に入れる。西棟地下の隠された貨物を見つける",
+        selected: false
+    },
+    {
+        name: "Revision-Lighthouse",
+        giver:"ピースキーパー",
+        maps: {
+     
+            "ライトハウス": [{ left: -2.7, top: 29.3},{ left: 15.5, top: 33.7},{ left: 112.3, top:37.5},{ left:65, top: 30.8},               
+            ],
+
+        },
+        description: "BRDM2台とStryker2台にマーカー設置",
+        selected: false
+    },
+    {
+        name: "The Cleaner",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            "ラボ": [
+            ],
+            
+            
+        },
+        description: "レイダーもしくはBDを10kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Gifts from Tarkov",
+        giver:"ピースキーパー",
+        maps: { 
+            "ライトハウス": [{ left: 68, top: 41},
+            ],
+            "リザーブ": [
+            ],
+        },
+        description: "ライハの貨物にマーカー設置、ライハかリザーブでM203グレネードランチャーで任意の敵を10kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Revision-Reserve",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "リザーブ": [{ left: 70, top:110},{ left: 100, top:145},{ left: 85, top:215},{ left: 95, top:350},
+            ],
+         
+        },
+        description: "BMP 4台にマーカー設置する",
+        selected: false
+    },
+    {
+        name: "Overpopulation",
+        giver:"ピースキーパー",
+        maps: {
+     
+            "ライトハウス": [{ left: 63, top: 27,width:28,height:6,type:"area"},    
+            ],
+        },
+        description: "コテージエリアで任意の敵を10kill(kill共有あり）、地形図、インテリもしくはブルーフォルダーを5つ納品する",
+        selected: false
+    },
+    {
+        name: "Peacekeeping Mission",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            "カスタム": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            "インチェ": [
+                
+            ],
+            
+        },
+        description: "UNTERヘルメット＆アーマー装備＆武器指定（M16A1・M16A2・M4A1・SCAR-L・HK 416A5・HK G36・Howa Type 20・DML・Radian・AUG）、ウッズorリザーブでScavを12kill、カスタムorライトハウスでScavを12kill、ショアorストタルでScavを12kill,グラゼロorインチェでScavを12kill（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "The Guide",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            "カスタム": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            "インチェ": [
+                
+            ],
+            "ラボ": [
+                
+            ],
+            "ファクトリー": [
+                
+            ],
+
+
+            
+        },
+        description: "インチェorウッズから生還、ショアorリザーブから生還、ファクトリーorカスタムから生還、ラボorライトハウスから生還、グラゼロorストタルから生還、任意の敵を15kill(kill共有あり)",
+        selected: false
+    },
+    {
+        name: "Trophies",
+        giver:"ピースキーパー",
+        maps: {
+     
+        },
+        description: "プレステージ1以上のBEARとUSECのドックタグを10枚ずつ引き渡す",
+        selected: false
+    },
+    {
+        name: "Samples",
+        giver:"ピースキーパー",
+        maps: {
+     
+        },
+        description: "MULE、Obdolbos、Meldonin、AHF-1-M、P22、L1、3-(b-TG)(すべてin raid)を納品する",
+        selected: false
+    },
+    {
+        name: "TerraGroup Employee",
+        giver:"ピースキーパー",
+        maps: {
+            "ラボ": [
+                { left: 72, top: 38,comment:"たぶんここ、Blueマーキングの💳"},    
+            ],
+     
+        },
+        description: "サニターの仕事場で仕事に関する情報を見つける",
+        selected: false
+    },
+    {
+        name: "Worst Job in the World",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            
+            "ライトハウス": [
+                
+            ],
+            
+            "グラゼロ": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            
+        },
+        description: "AR15系の武器（M4A1、ADAR、Lone Star、M16A1、M16A2、Radian)を使用して100m以上離れた場所から敵30kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Special Equipment",
+        giver:"ピースキーパー",
+        maps: {
+            
+        },
+        description: "VPX 5個、RFIDR 5個、Virtex 5個、SG-C10 5個、MFD 4個(すべてin raid)で納品する",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Insomnia",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [
+                
+            ],
+            
+            "ライトハウス": [
+                
+            ],
+            
+            "グラゼロ": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            
+        },
+        description: "21時～6時の間にPMCを25kill",
+        selected: false
+    },
+    {
+        name: "【USECのみ】Counteraction",
+        giver:"ピースキーパー",
+        maps: {
+            
+            "ライトハウス": [
+                
+            ],
+            
+        },
+        description: "ライトハウスでBEARを20killする、BEARのドックタグを20枚納品する",
+        selected: false
+    },
+    {
+        name: "Wet Job-part1",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ 
+               
+            ]
+        },
+        description: "M4A1、ADAR、Lone Star、M16A1、M16A2を使いScavを10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Wet Job-part2",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ { left: 20, top: 78 },
+               
+            ]
+        },
+        description: "M4A1、ADAR、Lone Star、M16A1、M16A2を使いScavを10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Wet Job-part3",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ { left: 30, top: 71 },
+               
+            ]
+        },
+        description: "Artyomの車（黄色いセダン）にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Wet Job-part4",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ { left: 49.5, top: 28 },
+               
+            ]
+        },
+        description: "北館3F東側の事務室で入居者リストを見つける",
+        selected: false
+    },
+　　{
+        name: "Wet Job-part5",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ { left: 49.5, top: 28 ,comment:"東棟328号室🔑"},
+               
+            ]
+        },
+        description: "東館328号室でArtyomの仕事の情報を見つけて引き渡す",
+        selected: false
+    },
+    {
+        name: "Wet Job-part6",
+        giver:"ピースキーパー",
+        maps: {
+            "ショアライン": [ 
+               
+            ],
+             "ライトハウス": [ 
+               
+            ],
+        },
+        description: "ショアかライハで7.62×51口径のマークスマンライフルで50m以上の距離から任意の敵を15kill(kill共有あり）",
+        selected: false
+    },
+
+
+
 
 
 
