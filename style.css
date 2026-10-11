@@ -845,3 +845,69 @@ margin-bottom: 8px;
 .reserve-floor-map {
     position: relative;
 }
+
+
+/* =========================
+   Reserve 2枚配置
+   ========================= */
+
+#reserve-floor-grid {
+    width: 1250px;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: start;
+    position: relative;
+}
+
+#reserve-floor-grid > .map-tasks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5001;
+}
+
+/* 地下①を左側 */
+#reserve-floor-grid .factory-floor-card:nth-child(2) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* 地上を右側 */
+#reserve-floor-grid .factory-floor-card:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* 地下①・地上の画像をほぼ180度回転 */
+#reserve-floor-grid .reserve-floor-map img {
+    transform: rotate(165deg);
+    transform-origin: center center;
+}
+/* リザーブ地下 */
+#reserve-floor-grid .factory-floor-card:nth-child(2) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* 地下の文字とマップの間を空ける */
+#reserve-floor-grid .factory-floor-card:nth-child(2) .factory-floor-title {
+    margin-bottom: 80px;
+}
+
+/* 地下マップを小さくする */
+#reserve-floor-grid .factory-floor-card:nth-child(2) .reserve-floor-map {
+    transform: scale(0.7);
+    transform-origin: top center;
+}
+
+/* 地上マップを大きくする */
+#reserve-floor-grid .factory-floor-card:nth-child(1) .reserve-floor-map {
+    transform: scale(1.5);
+    transform-origin: top center;
+}

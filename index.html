@@ -130,44 +130,33 @@
 <!-- =========================
      インチェ
      ========================= -->
-
-<div id="interchange-floor-grid" class="multi-map-view">
+<!-- インチェ -->
+<div id="interchange-floor-grid" class="map-view">
 
     <div class="factory-floor-card interchange-ground">
         <div class="factory-floor-title">1F・外</div>
-
-        <div class="interchange-floor-map map-view">
+        <div class="interchange-floor-map">
             <img src="Interchange_Ground_Level.svg" alt="インチェ1F・外">
-
-            <div class="map-exits pmc-exits"></div>
-            <div class="map-exits scav-exits"></div>
         </div>
     </div>
-
 
     <div class="factory-floor-card interchange-first">
         <div class="factory-floor-title">2F</div>
-
-        <div class="interchange-floor-map map-view">
+        <div class="interchange-floor-map">
             <img src="Interchange_First_Floor.svg" alt="インチェ2F">
-
-            <div class="map-exits pmc-exits"></div>
-            <div class="map-exits scav-exits"></div>
         </div>
     </div>
-
 
     <div class="factory-floor-card interchange-second">
         <div class="factory-floor-title">3F</div>
-
-        <div class="interchange-floor-map map-view">
+        <div class="interchange-floor-map">
             <img src="Interchange_Second_Floor.svg" alt="インチェ3F">
-
-            <div class="map-exits pmc-exits"></div>
-            <div class="map-exits scav-exits"></div>
         </div>
     </div>
 
+    <!-- インチェ全体で共通して使う表示レイヤー -->
+    <div class="map-exits pmc-exits"></div>
+    <div class="map-exits scav-exits"></div>
     <div class="map-tasks"></div>
 
 </div>
@@ -177,17 +166,13 @@
      リザーブ
      ========================= -->
 
-<div id="reserve-floor-grid" class="multi-map-view">
+<div id="reserve-floor-grid" class="map-view">
 
     <div class="factory-floor-card">
         <div class="factory-floor-title">地上</div>
 
         <div class="reserve-floor-map map-view">
             <img src="Reserve_Ground_Level.svg" alt="リザーブ地上">
-
-            <div class="map-exits pmc-exits"></div>
-            <div class="map-exits scav-exits"></div>
-            <div class="map-tasks"></div>
         </div>
     </div>
 
@@ -196,15 +181,21 @@
         <div class="factory-floor-title">地下</div>
 
         <div class="reserve-floor-map map-view">
-            <img src="Reserve_Underground.svg" alt="リザーブ地下">
-
-            <div class="map-exits pmc-exits"></div>
-            <div class="map-exits scav-exits"></div>
-            <div class="map-tasks"></div>
+            <img src="Reserve_Underground_1.svg" alt="リザーブ地下">
         </div>
     </div>
 
+
+    <div class="map-tasks"></div>
+
+    <div class="map-exits pmc-exits"></div>
+    <div class="map-exits scav-exits"></div>
+
 </div>
+
+
+
+
 
 </div>
 
@@ -236,6 +227,11 @@
 </div>
 
 
+
+
+
+
+
 <!-- 選択したタスクの条件 -->
 <div class="condition-panel" id="condition-panel">
 
@@ -256,6 +252,11 @@
 </div>
 
 </div>
+
+
+
+
+
 
 <!-- Credits / License -->
 <button id="creditsButton" class="credits-button">
@@ -320,6 +321,9 @@
     </div>
 
 </div>
+
+
+
 
 <!-- これを一番最後にする -->
 <script src="script.js"></script>

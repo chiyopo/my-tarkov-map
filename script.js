@@ -4,668 +4,7 @@ let currentMap = "ショアライン";
 
 // タスクのデータ
 const tasksData = [      
-    {
-        name: "Chemistry Closet",
-        giver:"メカニック",
-        maps: {
-            "ショアライン": [
-                { left: 52, top: 34, comment:"東棟110号室(San tape🔑)"},
-            ]
-        },
-        description: "東棟110号室(San tapeキー)(サニターオフィス)をみる。脱出する",
-        selected: false
-    },
-    {
-        name: "Nothing Fishy About This",
-        giver:"ラグマン",
-        maps: {
-            "ショアライン": [
-                { left: 22, top: 25 }
-            ]
-        },
-        description: "ラグマンのSUV見つける。生還する(ランスルー不可)",
-        selected: false
-    },
-
-    {
-        name: "Courtesy Visit",
-        giver:"イエーガー",
-        maps: {
-            "ショアライン": [
-                { left: 12.2, top: 30 },
-                { left: 10.8, top: 37 },
-                { left: 17.6, top: 37 }
-            ]
-        },
-        description: "1レイドで会長の家、漁師の家、司祭の家を見つける。生還する",
-        selected: false
-    },
-
-    {
-        name: "Thirsty-Hounds",
-        giver:"イエーガー",
-        maps: {
-            "ショアライン": [
-               
-            ]
-        },
-        description: "22時〜7時の間にSCAVを12killする（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Shooter Born in Heaven",
-        giver:"メカニック",
-        maps: {
-            "カスタム": [
-                
-            ],
-            "ライトハウス": [
-                
-            ],
-            "ストタル": [
-                
-            ],
-            "ショアライン": [
-                
-            ],
-            "インチェ": [
-                
-            ],
-            "グラゼロ": [
-                
-            ],
-            
-            "リザーブ": [
-                
-            ],
-            "ウッズ": [
-                
-            ],
-            
-        },
-        description: "ボルトアクションライフル指定、カスタムorライトハウスでヘッドショットでPMCを5kill、ストタルorショアでヘッドショットでPMCを5kill、インチェorグラゼロでヘッドショットでPMCを5kill、ウッズorリザーブでヘッドショットでPMCを5kill、",
-        selected: false
-    },
-    {
-        name: "Needle in a Haystak",
-        giver:"メカニック",
-        maps: {
-            
-            "ストタル": [{ left: 9, top: 103 },
-                
-            ],
-            
-            "インチェ": [{ left: -15, top: 203 },{ left:-21, top: 233 },
-                
-            ],
-            "グラゼロ": [{ left: 85, top: 85 },
-                
-            ],
-            "ショアライン": [{ left: 53, top: 30 },{ left:70, top: 83 },
-                
-            ],
-            
-            
-        },
-        description: "グラゼロでテラグループ本社前中庭調査、インチェで子供の遊び場とカートコースを調査、ショアで工事現場と子供の遊び場を調査、ストタルで子供の遊び場を調査",
-        selected: false
-    },
-    {
-        name: "【ラビリンス】Hidden Layer",
-        giver:"メカニック",
-        maps: {
-            
-             "ショアライン": [{ left: 47.3, top: 33 ,commentX:-95,commentY:-28,comment:"西棟2F🔑沸き"},{ left: 45.6, top: 34 , commentX:-100,commentY:15,comment:"西棟1F🔑沸き【目的】地下入室"},{ left:51, top: 32.5,comment:"東棟2F&3F🔑沸き"},{ left: 49.5, top: 28.5 ,comment:"北館3F🔑沸き"},
-                
-            ],
-            
-            
-        },
-        description: "西棟地下の鍵部屋に入る方法を探す（任意：Knossos🔑を手に入れる）",
-        selected: false
-    },
-    {
-        name: "【ラビリンス】Offensive Reconnaissance",
-        giver:"メカニック",
-        maps: {
-            
-             "ショアライン": [{ left: 45.6, top: 34 ,}
-                
-            ],
-            
-            
-        },
-        description: "ラビリンスへトランジットする",
-        selected: false
-    },
-    {
-        name: "Nostalgia",
-        giver:"イエーガー",
-        maps: {
-            
-             "ショアライン": [{ left: 47, top: 33 ,comment:"西棟303号室",},
-                
-            ],
-            
-            
-        },
-        description: "イエーガーが宿泊してた西棟303号室のアルバムを持ち帰る",
-        selected: false
-    },
-    {
-        name: "Forester's Duty",
-        giver:"イエーガー",
-        maps: {
-            
-             "ショアライン": [
-                
-            ],
-             "ライトハウス": [{ left: 48, top: 12.5,comment:"ショアへのトランジット",},
-                
-            ],
-            
-            
-        },
-        description: "ライトハウスでScavを5killしてショアへトランジット⇒ショアでScavを5kill(1レイドで※脱出しなければトランジット繰り返してもOK）",
-        selected: false
-    },
-    {
-        name: "The Huntsman Path-Forest Cleaning",
-        giver:"イエーガー",
-        maps: {
-            
-             "ショアライン": [
-                
-            ],
-             "ライトハウス": [
-                
-            ],
-            "リザーブ": [
-                
-            ],
-            "ストタル": [
-                
-            ],
-            
-            
-        },
-        description: "ショア・ライハ・ストタル・リザーブのいずれかでScavを50kill（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Slaughterhouse",
-        giver:"イエーガー",
-        maps: {
-            
-            "ファクトリー": [
-                
-            ], 
-            "ストタル": [
-                
-            ],
-            "ライトハウス": [
-                
-            ],
-            "ショアライン": [
-                
-            ],
-             
-            "リザーブ": [
-                
-            ],
-            "グラゼロ": [
-                
-            ],
-            
-            
-            
-        },
-        description: "ファクトリー（昼）・ストタル・ライトハウス・ショア・リザーブ・グラゼロでそれぞれ近接武器でScavを10killする（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "【選択タスク】The Huntsman Path-Sadist",
-        giver:"イエーガー",
-        maps: {
-            
-           
-            "ショアライン": [
-                
-            ],
-             
-           
-            
-            
-        },
-        description: "サニターkill&サニターバッグ納品、セラピのA Difficult Choiceと選択タスク",
-        selected: false
-    },
-    {
-        name: "The Huntsman Path-Relentless",
-        giver:"イエーガー",
-        maps: {
-            
-           
-            "ショアライン": [
-                
-            ],
-            "ファクトリー": [
-                
-            ],
-            "インチェ": [
-                
-            ],
-            "カスタム": [
-                
-            ],
-            "ウッズ": [
-                
-            ],
-            "リザーブ": [
-                
-            ],
-             
-        },
-        description: "1回も死なずに、タギラ・キラ・リシャーラ・シュターマン・グラハ・サニターを倒す（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "Stray Dogs",
-        giver:"イエーガー",
-        maps: {
-            
-           
-            "ショアライン": [
-                
-            ],
-            "ライトハウス": [
-                
-            ],
-            
-            "カスタム": [
-                
-            ],
-            "ウッズ": [
-                
-            ],
-            
-             
-        },
-        description: "3バカの討伐（多分）",
-        selected: false
-    },
-    {
-        name: "Corporate Secrets",
-        giver:"メカニック",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: -7, top: 27.7 },{ left: 4.5, top: 35.8 },
-                
-            ],
-              
-   
-        },
-        description: "ウォーターポンプの情報とポンプ場の情報を入手する",
-        selected: false
-    },
-    {
-        name: "Energy Crisis",
-        giver:"メカニック",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: -25, top: 26 },{ left: -20, top: 29 },{ left: 6, top:24 },{ left: 23.8, top: 34.5 },
-            ],
-              
-   
-        },
-        description: "タンクローリーにマーカー設置",
-        selected: false
-    },
-    {
-        name: "Broadcast-part1",
-        giver:"メカニック",
-        maps: {
-            
-           
-            
-            "ライトハウス": [{ left: 4.5, top: 35.8 ,comment:"OR🔑"},
-            ],
-              
-   
-        },
-        description: "レコーディングスタジオを見つけてシグナルジャマーを設置する",
-        selected: false
-    },
-    {
-        name: "Surplus Goods",
-        giver:"メカニック",
-        maps: {
-            
-            "リザーブ": [{ left: 100, top:145,comment:"RB-ST🔑"},
-            ],
-           
-            
-            
-        },
-        description: "ナビゲーションシステムを手に入れる",
-        selected: false
-    },
-    {
-        name: "Back Door",
-        giver:"メカニック",
-        maps: {
-            
-            "リザーブ": [{ left: -53, top:113},
-            ],
-     
-        },
-        description: "D2から脱出する",
-        selected: false
-    },
-    {
-        name: "Reserve Expert",
-        giver:"ラグマン",
-        maps: {
-            
-            "リザーブ": [{ left: -63, top:218,comment:"2F RB-ORB3🔑,3F RB-OB🔑,4F 鍵なし"},{ left: -43, top:165,comment:"2F RB-ORB2🔑,4F RB-ORB1🔑"},
-            ],
-     
-        },
-        description: "武器庫を調べる、6アーマーを3つ納品する",
-        selected: false
-    },
-    {
-        name: "A Fuel Matter",
-        giver:"ラグマン",
-        maps: {
-            
-            "リザーブ": [{ left: 180, top:250,},{ left: 50, top:155,},
-            ],
-     
-        },
-        description: "燃料タンクにマーカー設置する",
-        selected: false
-    },
-    {
-        name: "Reserve",
-        giver:"イエーガー",
-        maps: {
-            
-            "リザーブ": [{ left: 113, top: 292,width:33,height:90,type:"area"},
-            ],
-     
-        },
-        description: "食料貯蔵庫を見つけて生還する",
-        selected: false
-    },
-    {
-        name: "Pest Control",
-        giver:"イエーガー",
-        maps: {
-            
-            "リザーブ": [{ left: -35, top: 193,width:75,height:75,type:"area"},
-            ],
-     
-        },
-        description: "食料貯蔵庫を見つけて生還する",
-        selected: false
-    },
-    {
-        name: "The Huntsman Path-Liberation",
-        giver:"イエーガー",
-        maps: {
-            
-            "リザーブ": [
-            ],
-            "ラボ": [
-            ],
-     
-        },
-        description: "レイダー6kill",
-        selected: false
-    },
-    {
-        name: "The Huntsman Path-Eraser",
-        giver:"イエーガー",
-        maps: {
-            
-            "リザーブ": [
-            ],
-            
-     
-        },
-        description: "グラハをkill(kill共有あり）、護衛のヘルメットを2つ納品する",
-        selected: false
-    },
-    {
-        name: "The Door",
-        giver:"メカニック",
-        maps: {
-            
-            "ストタル": [{ left:15 , top: 57,comment:"Rusted🔑"},
-            ],
-           
-            
-     
-        },
-        description: "オフィスで会社が成功した秘密を解明する",
-        selected: false
-    },
-    {
-        name: "Broadcast-part2",
-        giver:"メカニック",
-        maps: {
-            
-            "ストタル": [{ left:25 , top: 94,},
-            ],
-           
-            
-     
-        },
-        description: "食料店内で血まみれの放送場所を確認する",
-        selected: false
-    },
-    {
-        name: "Dandies",
-        giver:"ラグマン",
-        maps: {
-            
-            "ストタル": [{ left:10 , top: 109.8,},
-            ],
-           
-            
-     
-        },
-        description: "RayBenchヒップスターの眼鏡とBomberビーニー被って15killする（kill共有あり）⇒装備を隠す",
-        selected: false
-    },
-    {
-        name: "Ballet Lover",
-        giver:"ラグマン",
-        maps: {
-            
-            "ストタル": [{ left:43.8 , top: 68,comment:"Skybridge🔑"},
-            ],
-           
-            
-     
-        },
-        description: "balletmeister'sのアパートを探す、生還する",
-        selected: false
-    },
-    {
-        name: "Audit",
-        giver:"ラグマン",
-        maps: {
-            
-            "ストタル": [{ left:92 , top: 81,},
-            ],
-           
-            
-     
-        },
-        description: "財務記録を手に入れる",
-        selected: false
-    },
-    {
-        name: "Audiophile",
-        giver:"ラグマン",
-        maps: {
-            
-            "ストタル": [{ left:43.8 , top: 68,comment:"Skybridge🔑"},
-            ],
-           
-            
-     
-        },
-        description: "ミュージシャンが集まる場所でギターピックを入手する",
-        selected: false
-    },
-    {
-        name: "Know Your Place!",
-        giver:"ラグマン",
-        maps: {
-            
-            "ストタル": [
-            ],
-            "インチェ": [
-            ],
-           
-            
-     
-        },
-        description: "ストタルで任意の敵を5kill(kill共有あり)⇒インチェに移動する⇒任意の敵を5killする（kill共有あり）",
-        selected: false
-    },
-    {
-        name: "The Huntsman Path-Crooked Cop",
-        giver:"イエーガー",
-        maps: {
-            
-            "ストタル": [
-            ],
-          
-        },
-        description: "コロンタイを倒す（kill共有）、コロンタイの警棒を引き渡す",
-        selected: false
-    },
-    {
-        name: "The Delicious Sausage",
-        giver:"イエーガー",
-        maps: {
-            
-            "ストタル": [{ left:-5 , top: 105,},{ left:25 , top: 93,},{ left:73 , top: 73,},{ left:98 , top: 75.2,},
-            ],
-          
-        },
-        description: "スーパー巡る、ソーセージ納品する",
-        selected: false
-    },
-    {
-        name: "Broadcast-Part3",
-        giver:"イエーガー",
-        maps: {
-            
-            "ストタル": [{ left:97, top: 85,},
-            ],
-          
-        },
-        description: "古い家の中で血まみれの放送があった場所を探す、生還する",
-        selected: false
-    },
-    {
-        name: "Ever Hunter Knows This",
-        giver:"イエーガー",
-        maps: {
-            
-            "カスタム": [{left: 55, top: 160,}, 
-            ],
-            "ファクトリー": [{ left:63.5, top: 71,},
-            ],
-        },
-        description: "カスタムとファクトリーでトリップワイヤーの設置に適した場所を見つける",
-        selected: false
-    },
-    {
-        name: "Claustrophobia",
-        giver:"イエーガー",
-        maps: {
-            
-            
-            "ファクトリー": [
-            ],
-        },
-        description: "地下で任意の敵を5kill",
-        selected: false
-    },
-    {
-        name: "The Huntsman Path-Factory Chief",
-        giver:"イエーガー",
-        maps: {
-            
-            
-            "ファクトリー": [
-            ],
-        },
-        description: "タギラを倒す、ボスキャップを納品する",
-        selected: false
-    },
-    {
-        name: "Dragnet",
-        giver:"イエーガー",
-        maps: {
-            
-            
-            "ファクトリー": [{ left: 9, top: 38,comment:"地下、Polikhimカードキー"},
-            ],
-        },
-        description: "倉庫で化学薬品容器を見つける",
-        selected: false
-    },
-    {
-        name: "The Huntsman Path-Secured Perimenter",
-        giver:"イエーガー",
-        maps: {
-            
-            "ファクトリー": [
-            ],
-        },
-        description: "PMCを6kill(kill共有あり）",
-        selected: false
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     {
         name: "Luxurious Life",
         giver:"プラパー",
@@ -723,7 +62,7 @@ const tasksData = [
         giver:"プラパー",
         maps: {
             
-            "カスタム": [{ left: 60, top: 170,comment:"Dor203🔑"},
+            "カスタム": [{ left: 60, top: 170,comment:"Dorm203🔑"},
             ],
            
         },
@@ -905,7 +244,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Postman Pat-Part1",
+        name: "Postman Pat-Part 1",
         giver:"プラパー",
         maps: {
 
@@ -1071,7 +410,7 @@ const tasksData = [
         giver:"プラパー",
         maps: {
             
-            "リザーブ": [{ left: 120, top: 340 },
+            "リザーブ": [{ left: 88, top: 71},
             ],
             "ウッズ": [{ left: 63, top: 313},
             ],
@@ -1101,7 +440,7 @@ const tasksData = [
         giver:"プラパー",
         maps: {
             
-            "リザーブ": [{ left: -35, top: 202 },{ left: -38, top: 205 },{ left: -30, top: 210 },
+            "リザーブ": [{ left:20, top:52 },{ left: 22, top: 54 },{ left: 21.6, top: 51.8 },
             ],
             
             
@@ -1263,7 +602,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "The Punisher-Part1",
+        name: "The Punisher-Part 1",
         giver:"プラパー",
         maps: {
 　　　　　　　　"カスタム": [
@@ -1274,7 +613,7 @@ const tasksData = [
         selected: false
     },
      {
-        name: "The Punisher-part2",
+        name: "The Punisher-part 2",
         giver:"プラパー",
         maps: {
             "ショアライン": [ 
@@ -1285,7 +624,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "The Punisher-part3",
+        name: "The Punisher-part 3",
         giver:"プラパー",
         maps: {
             
@@ -1298,7 +637,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "The Punisher-part4",
+        name: "The Punisher-part 4",
         giver:"プラパー",
         maps: {
             
@@ -1311,7 +650,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "The Punisher-part5",
+        name: "The Punisher-part 5",
         giver:"プラパー",
         maps: {
 
@@ -1322,7 +661,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "The Punisher-part6",
+        name: "The Punisher-part 6",
         giver:"プラパー",
         maps: {
            "ライトハウス": [
@@ -1363,7 +702,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Shipping Delay-Part1",
+        name: "Shipping Delay-Part 1",
         giver:"プラパー",
         maps: {
             "ウッズ": [{ left: 170, top: 255 },
@@ -1423,6 +762,28 @@ const tasksData = [
           
         },
         description: "ライハで任意の敵を15kill(kill共有あり）⇒リザーブにトランジットする、ライハのPassage by the Lake付近でRedフレア上げる(共有あり）",
+        selected: false
+    },
+    {
+        name: "Lose yhe Tail",
+        giver:"プラパー",
+        maps: {
+           "ライトハウス": [ 
+           ]
+          
+        },
+        description: "グラハの護衛を5kill、グラハをkill(kill共有）",
+        selected: false
+    },
+    {
+        name: "Callsign Malachite",
+        giver:"プラパー",
+        maps: {
+           "ライトハウス": [ { left: 11, top: 13 ,},
+           ]
+          
+        },
+        description: "人事ファイルを回収する",
         selected: false
     },
     {
@@ -1499,7 +860,7 @@ const tasksData = [
         name: "First in Line",
         giver:"セラピスト",
         maps: {
-             "グラゼロ": [ { left: 92, top: 160,},
+             "グラゼロ": [ { left: -4, top: 26,},
             ]
           
         },
@@ -1534,7 +895,7 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             
-            "ファクトリー": [{ left:80.5, top: 14,},
+            "ファクトリー": [{ left:40, top: 68,},
             ],
           
         },
@@ -1614,7 +975,7 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             
-            "グラゼロ": [{ left: 46, top: 70,},
+            "グラゼロ": [{ left: 46, top: 115,comment:"地下"},
               ],
              "ストタル": [{ left: 102, top: 65,},
               ],
@@ -1637,7 +998,7 @@ const tasksData = [
         giver:"セラピスト",
         maps: {
             
-            "リザーブ": [{ left: 10, top: 248,comment:"RB-SMP🔑",commentY:10,commentX:-55},{ left:20, top: 248 ,comment:"RB-KSM🔑",commentY:10,commentX:-15},
+            "リザーブ": [{ left: 70, top: 52,comment:"RB-SMP🔑&RB-KSM🔑",commentY:10,commentX:-55},
             ],
             
             
@@ -1720,6 +1081,21 @@ const tasksData = [
         selected: false
     },
     {
+        name: "Invasive Therapy",
+        giver:"セラピスト",
+        maps: {
+
+            "ライトハウス": [
+                {left: 55, top: 28.8},
+               { left: 71, top: 26.3 ,comment:"2か所"},
+               
+            ]
+           
+        },
+        description: "P22 5個(in raid)とxTG-12 5個(in raid)を納品する、オブドルボス（どっちでも）を３か所に設置する",
+        selected: false
+    },
+    {
         name: "Beneath The Streets",
         giver:"セラピスト",
         maps: {
@@ -1728,7 +1104,7 @@ const tasksData = [
                
             ],
              "ラボ": [
-                {left: 29, top: 40,comment:"サーバールーム"},{left: 14.5, top: 30.5,comment:"ハザードルーム"},{left: 86, top: 31.5,comment:"コントロールルーム"},{left: 4, top: 30.5,comment:"トランジットポイント"},
+                {left: 29, top: 40,comment:"サーバールーム"},{left: 14.5, top: 30.5,comment:"ハザードルーム"},{left: 86, top: 31.5,comment:"コントロールルーム"},{left: 4, top: 30.5,commentX:-50,commentY:14,comment:"トランジットポイント"},
                
                
             ]
@@ -1793,7 +1169,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Health Care Privacy - Part1",
+        name: "Health Care Privacy - Part 1",
         giver:"セラピスト",
         maps: {
             "ショアライン": [
@@ -1807,7 +1183,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Health Care Privacy - Part2",
+        name: "Health Care Privacy - Part 2",
         giver:"セラピスト",
         maps: {
             "ショアライン": [
@@ -1818,7 +1194,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Health Care Privacy - Part3",
+        name: "Health Care Privacy - Part 3",
         giver:"セラピスト",
         maps: {
             "ウッズ": [
@@ -1829,7 +1205,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Health Care Privacy - Part4",
+        name: "Health Care Privacy - Part 4",
         giver:"セラピスト",
         maps: {
            
@@ -1838,7 +1214,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Health Care Privacy-Part5",
+        name: "Health Care Privacy-Part 5",
         giver:"セラピスト",
         maps: {
             
@@ -1850,13 +1226,13 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Health Care Privacy-Part6",
+        name: "Health Care Privacy-Part 6",
         giver:"セラピスト",
         maps: {
             
             "ファクトリー": [{ left: 97, top:  31.6,comment:"Factory emergency🔑"},
             ],
-            "ラボ": [{ left:75, top: 39,comment:"カードキーいるかも？"},
+            "ラボ": [{ left: 72, top: 38,comment:"たぶんここ????、Blueマーキングの💳"},
             ],
           
         },
@@ -1864,7 +1240,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Postman Pat-Part2",
+        name: "Postman Pat-Part 2",
         giver:"セラピスト",
         maps: {
             
@@ -1911,7 +1287,7 @@ const tasksData = [
         maps: {
             "ウッズ": [{ left:33, top: 242,},
             ],
-            "インチェ": [{ left:84.5, top: 97,},
+            "インチェ": [{ left:84.5, top: 101,},
             ],
           
         },
@@ -1948,7 +1324,7 @@ const tasksData = [
                {left: 68, top: 25 ,width:13,height:30,rotate:0,type:"area" }
             ],
             "インチェ": [
-                {left:32, top: 93 ,width:12,height:9,rotate:0,type:"area" }
+                {left:32, top: 94 ,width:12,height:9,rotate:0,type:"area" }
             ]
         },
         description: "密輸業者の基地で10キルする（kill共有あり）",
@@ -2148,12 +1524,12 @@ const tasksData = [
         giver:"スキアー",
         maps: {
             
-            "リザーブ": [{ left: 113, top: 292,width:33,height:90,type:"area"},
+            "リザーブ": [
             ],
             
             
         },
-        description: "地下倉庫でScavを5kill(kill共有あり）、地下倉庫の🔑3つ納品",
+        description: "地下食料庫でScavを5kill(kill共有あり）、地下食糧庫の🔑3つ納品",
         selected: false
     },
     {
@@ -2245,6 +1621,18 @@ const tasksData = [
         selected: false
     },
     {
+        name: "Stimulating Demand",
+        giver:"スキアー",
+        maps: {
+            
+            "ライトハウス": [{ left: 73, top: 26 },
+                
+            ]
+        },
+        description: "7.62×54R口径の武器でローグ5killかグーンズをkill、パッケージを入手する",
+        selected: false
+    },
+    {
         name: "Silent Caliber",
         giver:"スキアー",
         maps: {
@@ -2315,7 +1703,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Fair Price-Part1",
+        name: "Fair Price-Part 1",
         giver:"スキアー",
         maps: {
             
@@ -2324,7 +1712,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Fair Price-Part2",
+        name: "Fair Price-Part 2",
         giver:"スキアー",
         maps: {
             
@@ -2333,7 +1721,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Chemical-Part1",
+        name: "Chemical-Part 1",
         giver:"スキアー",
         maps: {
 
@@ -2345,7 +1733,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Chemical-Part2",
+        name: "Chemical-Part 2",
         giver:"スキアー",
         maps: {
 
@@ -2357,7 +1745,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Chemical-Part3",
+        name: "Chemical-Part 3",
         giver:"スキアー",
         maps: {
 
@@ -2369,7 +1757,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "【選択タスク】Chemical-Part4",
+        name: "【選択タスク】Chemical-Part 4",
         giver:"スキアー",
         maps: {
 
@@ -2399,6 +1787,15 @@ const tasksData = [
         selected: false
     },
     {
+        name: "【USECのみ】Never Too Late To Learn",
+        giver:"スキアー",
+        maps: {
+        
+        },
+        description: "5.56×45mmSOST弾を4500発納品する、マチェットを8個納品する",
+        selected: false
+    },
+    {
         name: "【BEARのみ】A Life Lesson",
         giver:"スキアー",
         maps: {
@@ -2408,10 +1805,40 @@ const tasksData = [
         selected: false
     },
     {
+        name: "【USECのみ】Get a Foothold",
+        giver:"スキアー",
+        maps: {
+        
+        },
+        description: "SJ6 30個、オブドルボス2　30個、プロピタル30個、MULE30個、eTG30個、SJ9 30個、SJ12 30個、メルドニン30個納品する",
+        selected: false
+    },
+    {
+        name: "【BEARのみ】Profit Retention",
+        giver:"スキアー",
+        maps: {
+        
+        },
+        description: "グラボ30個、ビットコイン15個納品する",
+        selected: false
+    },
+    {
+        name: "Consolation Prize",
+        giver:"スキアー",
+        maps: {
+
+            "ラボ": [
+            ],
+        
+        },
+        description: "ラボから15回生還する、ラボで任意の敵100kill(kill共有あり）",
+        selected: false
+    },
+    {
         name: "The Higher They Fly",
         giver:"スキアー",
         maps: {
-         "ウッズ": [{left: 226, top: 410,},
+         "ウッズ": [
             ],
         },
         description: "PMCを2kill",
@@ -2532,7 +1959,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Easy Money-Part1",
+        name: "Easy Money-Part 1",
         giver:"スキアー",
         maps: {
             
@@ -2586,7 +2013,7 @@ const tasksData = [
         giver:"ピースキーパー",
         maps: {
             
-            "ファクトリー": [{left: 40, top: 70,},
+            "ファクトリー": [{left: 40, top: 68,},
     　　　　　　　　　 ],
             "ウッズ": [{left: 148, top: 185,},
     　　　　　　　　　 ],
@@ -2873,7 +2300,7 @@ const tasksData = [
         giver:"ピースキーパー",
         maps: {
             
-            "リザーブ": [{ left: 70, top:110},{ left: 100, top:145},{ left: 85, top:215},{ left: 95, top:350},
+            "リザーブ": [{ left: 84.5, top:32,comment:"RB-ST🔑"},{ left: 83, top:48},{ left: 79, top:25},{ left: 84, top:75},
             ],
          
         },
@@ -3067,7 +2494,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Wet Job-part1",
+        name: "Wet Job-part 1",
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [ 
@@ -3078,7 +2505,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Wet Job-part2",
+        name: "Wet Job-part 2",
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [ { left: 20, top: 78 },
@@ -3089,7 +2516,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Wet Job-part3",
+        name: "Wet Job-part 3",
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [ { left: 30, top: 71 },
@@ -3100,7 +2527,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Wet Job-part4",
+        name: "Wet Job-part 4",
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [ { left: 49.5, top: 28 },
@@ -3111,7 +2538,7 @@ const tasksData = [
         selected: false
     },
 　　{
-        name: "Wet Job-part5",
+        name: "Wet Job-part 5",
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [ { left: 49.5, top: 28 ,comment:"東棟328号室🔑"},
@@ -3122,7 +2549,7 @@ const tasksData = [
         selected: false
     },
     {
-        name: "Wet Job-part6",
+        name: "Wet Job-part 6",
         giver:"ピースキーパー",
         maps: {
             "ショアライン": [ 
@@ -3133,6 +2560,18 @@ const tasksData = [
             ],
         },
         description: "ショアかライハで7.62×51口径のマークスマンライフルで50m以上の距離から任意の敵を15kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Ease the Move",
+        giver:"ピースキーパー",
+        maps: {
+           
+             "ライトハウス": [ { left: 16, top: 43.5 },{ left: 26.5, top: 24.8 },{ left: 33, top: 8.5 },
+               
+            ],
+        },
+        description: "3か所のローグスタッシュにマーカー設置する",
         selected: false
     },
     {
@@ -3197,7 +2636,7 @@ const tasksData = [
         name: "Farming",
         giver:"メカニック",
         maps: {
-            "カスタム": [ { left:-155, top: 448 ,},
+            "カスタム": [ { left:-155, top: 448 ,commnet:"Director's🔑"},
             ],
              
         },
@@ -3218,7 +2657,7 @@ const tasksData = [
         giver:"メカニック",
         maps: {
              
-             "グラゼロ": [ { left:107, top: 92 ,commnet:"1Fの死体から鍵拾う"},
+             "グラゼロ": [ { left:107, top: 92 ,comment:"1Fの死体から鍵拾う",},
             ],
         },
         description: "ハードドライブを入手する",
@@ -3229,7 +2668,7 @@ const tasksData = [
         giver:"メカニック",
         maps: {
             
-            "ファクトリー": [{ left:92, top: 8,}, {left:79.8, top: 5.2,},
+            "ファクトリー": [{ left:92, top: 7,}, {left:79.5, top: 4,},
             ],
             
           
@@ -3290,7 +2729,7 @@ const tasksData = [
         giver:"メカニック",
         maps: {
             
-            "ファクトリー": [{ left:13.5, top: 38,}, {left:30.3, top: 18.5,},{left:43.2, top: 15,},
+            "ファクトリー": [{ left:13.5, top: 38,}, {left:30.3, top: 18,},{left:43.8, top: 15,},
             ],
             
           
@@ -3303,7 +2742,7 @@ const tasksData = [
         giver:"メカニック",
         maps: {
             
-            "ファクトリー": [{left: 53.5, top: 8.8,}, {left:  56.2, top:  45.2,}, {left: 97, top:  31.6,},{left:  40, top:  4.5,},
+            "ファクトリー": [{left: 53, top: 8,}, {left:  56.2, top:  45.2,}, {left: 97, top:  31.6,},{left:  41.5, top:  3.4,},
             ],
             
           
@@ -3351,7 +2790,1520 @@ const tasksData = [
             
      
         },
+        description: "監視スポットで観測結果を入手する",
+        selected: false
+    },
+    {
+        name: "Rat Hunting",
+        giver:"メカニック",
+        maps: {
+            
+        },
+        description: "CPU、RBattery、PCB（すべてin raid)で各1つ納品する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-OP-SKS",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "OP-SKSを指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Chemistry Closet",
+        giver:"メカニック",
+        maps: {
+            "ショアライン": [
+                { left: 52, top: 34, comment:"東棟110号室(San tape🔑)"},
+            ]
+        },
+        description: "東棟110号室(San tapeキー)(サニターオフィス)をみる。脱出する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-AKM",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "AKMを指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-AKS-74N",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "AKS-74Nを指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Surplus Goods",
+        giver:"メカニック",
+        maps: {
+            
+            "リザーブ": [{ left: 84.5, top:32,comment:"RB-ST🔑"},
+            ],
+           
+            
+            
+        },
+        description: "ナビゲーションシステムを手に入れる",
+        selected: false
+    },
+    {
+        name: "Gunsmith-AS-VAL",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "AS-VALを指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Corporate Secrets",
+        giver:"メカニック",
+        maps: {
+    
+            "ライトハウス": [{ left: -7, top: 27.7 },{ left: 4.5, top: 35.8 },      
+            ],
+        },
+        description: "ウォーターポンプの情報とポンプ場の情報を入手する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-MPX",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "MPXを指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-AK-105",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "AK-105を指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Back Door",
+        giver:"メカニック",
+        maps: {
+            
+            "リザーブ": [{ left: -53, top:113},
+            ],
+     
+        },
+        description: "D2から脱出する",
+        selected: false
+    },
+    {
+        name: "Import",
+        giver:"メカニック",
+        maps: {
+        },
+        description: "RFIDRとVPX（両方in raid)を各1つ納品する",
+        selected: false
+    },
+    {
+        name: "The Door",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:15 , top: 57,comment:"Rusted🔑"},
+            ],
+           
+            
+     
+        },
         description: "オフィスで会社が成功した秘密を解明する",
+        selected: false
+    },
+    {
+        name: "Semiconductor Crisis",
+        giver:"メカニック",
+        maps: {
+        },
+        description: "GPU（グラボ in raid）1個とCPUファン(in raid)8個を納品する",
+        selected: false
+    },
+    {
+        name: "Fertilizers",
+        giver:"メカニック",
+        maps: {
+        },
+        description: "Wires（in raid）10個とCaps(in raid)6個を納品する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-P226R",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "P226Rを指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Energy Crisis",
+        giver:"メカニック",
+        maps: {
+  
+            "ライトハウス": [{ left: -25, top: 26 },{ left: -20, top: 29 },{ left: 6, top:24 },{ left: 23.8, top: 34.5 },
+            ],
+        },
+        description: "タンクローリーにマーカー設置",
+        selected: false
+    },
+    {
+        name: "Gunsmith-M4A1",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "M4A1を指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Gunsmith-Vector 9×19",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "Vector 9×19を指定されたカスタムにして納品する",
+        selected: false
+    },
+    {
+        name: "Psycho Sniper",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "死なずにボルアクで任意の敵を15killして、生還する",
+        selected: false
+    },
+    {
+        name: "Setting Priorities",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "アーマーなしヘッドセットでPMCを10kill(kill共有あり）、ヘッドセットなしTank helmetを着用してPMCを10kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Calibration",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "100m以上離れた場所からPMC20kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Shooter Born in Heaven",
+        giver:"メカニック",
+        maps: {
+            "カスタム": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            "ショアライン": [
+                
+            ],
+            "インチェ": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            
+            "リザーブ": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            
+        },
+        description: "ボルトアクションライフル指定、カスタムorライトハウスでヘッドショットでPMCを5kill、ストタルorショアでヘッドショットでPMCを5kill、インチェorグラゼロでヘッドショットでPMCを5kill、ウッズorリザーブでヘッドショットでPMCを5kill、",
+        selected: false
+    },
+    {
+        name: "Goals and Means",
+        giver:"メカニック",
+        maps: {
+             
+        },
+        description: "9×39の武器で50m以上離れたところからPMCを20kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Make ULTRA Great Again",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+                
+            ],
+             
+        },
+        description: "任意の敵を10kill",
+        selected: false
+    },
+    {
+        name: "Fuel Crisis",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+                { left: 1.1, top: 43.4,comment:"変電所のタンクローリーどっちか" },{ left: 18.5, top: 41.8,comment:"変電所のタンクローリーどっちか"  },
+                { left: 30, top: 92.05 ,comment:"西側のタンクローリーどっちか"},{ left: 40.3, top: 62,comment:"西側のタンクローリーどっちか"},
+            ],
+             
+        },
+        description: "2か所マーカー設置",
+        selected: false
+    },
+    {
+        name: "Pathfinder",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+                { left: -3, top: 95,},{left: 37.8, top: 32.8,},
+                { left: 0.3, top:33,},
+            ],
+             
+        },
+        description: "出口3か所見る",
+        selected: false
+    },
+    {
+        name: "Inventory Files",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+                { left: 57, top: 99,},{left: 71.5, top: 89.5,},
+                { left: 103, top:105,},
+            ],
+             
+        },
+        description: "ファイルを入手する",
+        selected: false
+    },
+    {
+        name: "Dressed to Kill",
+        giver:"ラグマン",
+        maps: {
+             
+        },
+        description: "ウシャンカ帽子(in raid)2個、カウボーイハット(in raid)2個納品する",
+        selected: false
+    },
+    {
+        name: "A Big Loss",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+                { left: 100, top: 111.5,comment:"OLI Log.🔑"},
+            ],
+             
+        },
+        description: "ドキュメントを入手する",
+        selected: false
+    },
+    {
+        name: "Gratitude",
+        giver:"ラグマン",
+        maps: {
+
+            "ウッズ": [
+                { left: 33.4, top: 248,},
+            ],
+             
+        },
+        description: "Shemagh(緑)とRay Bench眼鏡を設置する",
+        selected: false
+    },
+    {
+        name: "Long Line",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+               
+            ],
+             
+        },
+        description: "PMC4kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Small Things,Big Help",
+        giver:"ラグマン",
+        maps: {
+
+            "ウッズ": [
+                { left: -38, top: 207,}, { left: 108, top: 230,},{ left: 82.9, top: 178.5,},
+            ],
+             
+        },
+        description: "燃料の隠し場所にマーカー設置",
+        selected: false
+    },
+    {
+        name: "Big Sale",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+               { left: 72, top: 108,},{ left: 74.2, top: 112.2,},{ left: 77, top: 96,},
+               { left: 90, top: 112.2,},{ left: 91, top: 95.8,},
+            ],
+             
+        },
+        description: "店内チェックする",
+        selected: false
+    },
+    {
+        name: "The Key to Success",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+               { left: 74, top: 96,},{ left: 88.5, top: 48,},
+            ],
+             
+        },
+        description: "デザインブックを入手する",
+        selected: false
+    },
+    {
+        name: "Hot Delivery",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [
+               { left: 20.3, top: 73.4,},{ left: 91, top: 93,},
+            ],
+             
+        },
+        description: "装備隠す",
+        selected: false
+    },
+    {
+        name: "Dandies",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [{ left:10 , top: 109.8,},
+            ],
+           
+            
+     
+        },
+        description: "RayBenchヒップスターの眼鏡とBomberビーニー被って15killする（kill共有あり）⇒装備を隠す",
+        selected: false
+    },
+    {
+        name: "Ballet Lover",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [{ left:43.8 , top: 68,comment:"Skybridge🔑"},
+            ],
+           
+            
+     
+        },
+        description: "balletmeister'sのアパートを探す、生還する",
+        selected: false
+    },
+    {
+        name: "Audit",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [{ left:92 , top: 81,},
+            ],
+           
+            
+     
+        },
+        description: "財務記録を手に入れる",
+        selected: false
+    },
+    {
+        name: "Break the Deal",
+        giver:"ラグマン",
+        maps: {
+            
+            "カスタム": [{ left:109 , top: 355,comment:"2F スコープ 新建側、3F マガジン 新エリア側、4F 弾 寮側、4F DVL 新建側"},
+            ],
+           
+            
+     
+        },
+        description: "DVL、DVLマガジン、SpecterDR、BCP FMJアモパックを隠す",
+        selected: false
+    },
+    {
+        name: "Minibus",
+        giver:"ラグマン",
+        maps: {
+            
+            "インチェ": [{ left:38 , top: 70,},{ left:25.3 , top: 55,},{ left:21.8 , top: 60.5,},
+            ],
+           
+        },
+        description: "ミニバスにマーカー設置する、工具(in raid)10個を納品する",
+        selected: false
+    },
+    {
+        name: "Nothing Fishy About This",
+        giver:"ラグマン",
+        maps: {
+            "ショアライン": [
+                { left: 22, top: 25 }
+            ]
+        },
+        description: "ラグマンのSUV見つける。生還する(ランスルー不可)",
+        selected: false
+    },
+    {
+        name: "Supervisor",
+        giver:"ラグマン",
+        maps: {
+
+            "インチェ": [{ left:62 , top: 103,comment:"9番レジにIDEA reg.🔑設置"},{ left:98 , top: 101,comment:"8番レジにOLI reg.🔑設置"},{ left:77.6 , top: 91,comment:"更衣室内にGoshan re🔑設置"},
+            ],
+        },
+        description: "🔑を設置する",
+        selected: false
+    },
+    {
+        name: "Audiophile",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [{ left:43.8 , top: 68,comment:"Skybridge🔑"},
+            ],
+           
+            
+     
+        },
+        description: "ミュージシャンが集まる場所でギターピックを入手する",
+        selected: false
+    },
+    {
+        name: "Living High is Not a Crime",
+        giver:"ラグマン",
+        maps: {
+     
+        },
+        description: "Lion(in raid)2個、Horse(in raid)2個、Rooster(in raid)2個、cat(in raid)2個、Roler(in raid)2個、Egg(in raid)2個納品する",
+        selected: false
+    },
+    {
+        name: "Reserve Expert",
+        giver:"ラグマン",
+        maps: {
+            
+            "リザーブ": [{ left: 55.8, top:46.3,comment:"2F RB-ORB3🔑,3F RB-OB🔑,4F 鍵なし"},{ left: 59, top:35.2,comment:"2F RB-ORB2🔑,4F RB-ORB1🔑"},
+            ],
+     
+        },
+        description: "武器庫を調べる、6アーマーを3つ納品する",
+        selected: false
+    },
+    {
+        name: "A Fuel Matter",
+        giver:"ラグマン",
+        maps: {
+            
+            "リザーブ": [{ left: 75.7, top:33.5,},{ left: 100, top:52.5,},
+            ],
+     
+        },
+        description: "燃料タンクにマーカー設置する",
+        selected: false
+    },
+    {
+        name: "Know Your Place!",
+        giver:"ラグマン",
+        maps: {
+            
+            "ストタル": [
+            ],
+            "インチェ": [
+            ],
+    
+        },
+        description: "ストタルで任意の敵を5kill(kill共有あり)⇒インチェに移動する⇒任意の敵を5killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Scavenger",
+        giver:"ラグマン",
+        maps: {
+            
+        },
+        description: "フェイスカバー、ヘッドウェア、ヘッドセット、アイウェア、ボディアーマーを各15個納品する",
+        selected: false
+    },
+    {
+        name: "Booze",
+        giver:"ラグマン",
+        maps: {
+            
+        },
+        description: "Vodka(in raid)10個、Whiskey(in raid)10個、Superwater(in raid)3個、Pevko(in raid)20個納品する",
+        selected: false
+    },
+    {
+        name: "Sisyphus",
+        giver:"ラグマン",
+        maps: {
+            
+            "ウッズ": [{ left:-58, top: 240,},{ left: -50, top:215,},
+            ],
+            "リザーブ": [{ left: 107, top:62,},
+            ],
+            "ライトハウス": [{ left: -15.5, top:32.2,},
+            ],
+    
+        },
+        description: "ウッズでPlates2つ入手する、リザーブとライハにそれぞれ設置する、リザーブかライハのArmored trainで脱出する",
+        selected: false
+    },
+    {
+        name: "Akimbo",
+        giver:"ラグマン",
+        maps: {
+            
+            "ライトハウス": [
+            ],
+    
+        },
+        description: "任意の敵を7.62×39の弾使って3kill、7.62×51の弾使って3killを1レイドでする",
+        selected: false
+    },
+    {
+        name: "Antique Enthusiast",
+        giver:"ラグマン",
+        maps: {
+            
+        },
+        description: "Teapot(in raid)3個、Vase(in raid)3個、Axel(インコ)(in raid)2個、Raven(in raid)2個、Skull(in raid)5個納品する",
+        selected: false
+    },
+    {
+        name: "Sensory Analysis - Part 1",
+        giver:"ラグマン",
+        maps: {
+
+            "ウッズ": [
+            ],
+            "ストタル": [
+            ],
+            
+        },
+        description: "BTRにmoonshineを渡す",
+        selected: false
+    },
+    {
+        name: "Sew it Good - Part 1",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "Shmaska(in raid)1個、Pilgrim(in raid)1個納品する",
+        selected: false
+    },
+    {
+        name: "Sew it Good - Part 2",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "WTrig(TV-109+TV-106)(in raid)2個、BlackRock(in raid)2個納品する",
+        selected: false
+    },
+    {
+        name: "Sew it Good - Part 3",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "Trooper2個、GZHEL-K2個納品する",
+        selected: false
+    },
+    {
+        name: "Sew it Good - Part 4",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "6B43(in raid)1個納品する",
+        selected: false
+    },
+    {
+        name: "Drip-Out - Part 1",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "レイダー100kill(kill共有あり）、WARTECHブランドの物を50個納品",
+        selected: false
+    },
+    {
+        name: "Drip-Out - Part 2",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "ローグ100kill(kill共有あり）、LBTブランドの物を50個納品",
+        selected: false
+    },
+    {
+        name: "Textile - Part 1",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "Aramid(in raid)5個、Ripstop(in raid)10個、Paracord(in raid)3個納品する",
+        selected: false
+    },
+    {
+        name: "Textile - Part 2",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "Fleece(in raid)10個、Cordura(in raid)10個、KEK(in raid)5個納品する",
+        selected: false
+    },
+    {
+        name: "The Invisible Hand",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "20マス以上のバックパックを装備した敵を15kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Circulate",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "タクティカルリグもしくはバックパックをラグマンに250個売る",
+        selected: false
+    },
+    {
+        name: "Special Offer",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "サニターバック(in raid)1個、タギラアマリグ(in raid)1個、バードアイリグとバック(in raid)各1個、ナイトアマリグ(in raid)1個納品",
+        selected: false
+    },
+    {
+        name: "Combat Proven",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "グーンズのリグを装備してボス(グーンズとパルチザン以外）5kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "【Unheard以外のエディションの人】Old Patterns",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "ビットコインを15個納品する",
+        selected: false
+    },
+    {
+        name: "【ICEBRAKER】Pay the Fare",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "PGW(in raid)1個、Ratchet(in raid)1個、Drill(in raid)1個納品する",
+        selected: false
+    },
+    {
+        name: "Can't Drink Away Skill",
+        giver:"ラグマン",
+        maps: {
+
+        },
+        description: "GoldChain(in raid)10個、Rooster(in raid)5個、1GPhone(in raid)5個、Wallet(in raid)10個、WZ(in raid)5個納品する",
+        selected: false
+    },
+    {
+        name: "Rough Tarkov",
+        giver:"イエーガー",
+        maps: {
+　　　　　　"グラゼロ": [{ left: 64, top:150,},
+            ],
+            "ウッズ": [{ left:-32, top:115,},
+            ],
+        },
+        description: "地雷を見る",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Trophy",
+        giver:"イエーガー",
+        maps: {
+　　　　　　
+            "カスタム": [
+            ],
+        },
+        description: "リシャーラーkill(kill共有あり）、GoldenTT(in raid)を納品する",
+        selected: false
+    },
+    {
+        name: "Swift",
+        giver:"イエーガー",
+        maps: {
+　　　　　　
+            "ウッズ": [
+            ],
+        },
+        description: "アーマーとヘルメットなしで任意の敵を10kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "All This Filth...",
+        giver:"イエーガー",
+        maps: {
+　　　　　　
+            "ウッズ": [
+            ],
+            "インチェ": [
+            ],
+            "グラゼロ": [
+            ],
+            "カスタム": [
+            ],
+        },
+        description: "インチェ、グラゼロ、ウッズもしくはカスタムでSCAV20kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Acquaintance",
+        giver:"イエーガー",
+        maps: {
+　　　　　　
+        },
+        description: "食料品カテゴリのもの10個納品",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Woods Keeper",
+        giver:"イエーガー",
+        maps: {
+　　　　　　"ウッズ": [
+            ],
+        },
+        description: "シュターマンkill(kill共有あり）、SSK🔑を納品する",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Justice",
+        giver:"イエーガー",
+        maps: {
+　　　　　　"カスタム": [
+            ],
+        },
+        description: "リシャーラ護衛を3kill(kill共有あり）、護衛のアーマーベストを1個納品",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Angry Watchman",
+        giver:"イエーガー",
+        maps: {
+　　　　　　"カスタム": [
+            ],
+        },
+        description: "寮でPMC 3kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "First Aid",
+        giver:"イエーガー",
+        maps: {
+　　　　　　
+        },
+        description: "医療品(in raid)4個納品、負傷治療品(in raid)4個納品する",
+        selected: false
+    },
+    {
+        name: "Work Smarter",
+        giver:"イエーガー",
+        maps: {
+　　　　　　"カスタム": [{ left: -65, top: 210,comment:"どっちか"},{ left: 220, top: 475,comment:"どっちか"},
+            ],
+        },
+        description: "隠された脱出を発見する",
+        selected: false
+    },
+    {
+        name: "Ever Hunter Knows This",
+        giver:"イエーガー",
+        maps: {
+            
+            "カスタム": [{left: 55, top: 160,}, 
+            ],
+            "ファクトリー": [{ left:63.5, top: 71,},
+            ],
+        },
+        description: "カスタムとファクトリーでトリップワイヤーの設置に適した場所を見つける",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Crooked Cop",
+        giver:"イエーガー",
+        maps: {
+            
+            "ストタル": [
+            ],
+          
+        },
+        description: "コロンタイを倒す（kill共有）、コロンタイの警棒を引き渡す",
+        selected: false
+    },
+    {
+        name: "Nostalgia",
+        giver:"イエーガー",
+        maps: {
+            
+             "ショアライン": [{ left: 47, top: 33 ,comment:"西棟303号室",},
+                
+            ],
+            
+            
+        },
+        description: "イエーガーが宿泊してた西棟303号室のアルバムを持ち帰る",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Big Game",
+        giver:"イエーガー",
+        maps: {
+            
+             "ストタル": [
+                
+            ],
+            
+            
+        },
+        description: "カバンkill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Cease Fire!",
+        giver:"イエーガー",
+        maps: {
+            
+             "ストタル": [{left: 95, top:48,},
+                
+            ],
+            
+            
+        },
+        description: "Klimov Streetから脱出",
+        selected: false
+    },
+    {
+        name: "Claustrophobia",
+        giver:"イエーガー",
+        maps: {
+            
+             "ファクトリー": [
+                
+            ],
+            
+            
+        },
+        description: "地下で任意の敵を5kill",
+        selected: false
+    },
+    {
+        name: "Courtesy Visit",
+        giver:"イエーガー",
+        maps: {
+            "ショアライン": [
+                { left: 12.2, top: 30 },
+                { left: 10.8, top: 37 },
+                { left: 17.6, top: 37 }
+            ]
+        },
+        description: "1レイドで会長の家、漁師の家、司祭の家を見つける。生還する",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Sellout",
+        giver:"イエーガー",
+        maps: {
+            "インチェ": [
+            ]
+        },
+        description: "キラkill(kill共有あり）、キラのヘルメットを納品する",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Factory Chief",
+        giver:"イエーガー",
+        maps: {
+            
+            
+            "ファクトリー": [
+            ],
+        },
+        description: "タギラを倒す、ボスキャップを納品する",
+        selected: false
+    },
+    {
+        name: "The Delicious Sausage",
+        giver:"イエーガー",
+        maps: {
+            
+            "ストタル": [{ left:-5 , top: 105,},{ left:25 , top: 93,},{ left:73 , top: 73,},{ left:98 , top: 75.2,},
+            ],
+          
+        },
+        description: "スーパー巡る、ソーセージ納品する",
+        selected: false
+    },
+    {
+        name: "Dragnet",
+        giver:"イエーガー",
+        maps: {
+            
+            
+            "ファクトリー": [{ left: 9, top: 38,comment:"地下、Polikhim💳"},
+            ],
+        },
+        description: "倉庫で化学薬品容器を見つける",
+        selected: false
+    },
+    {
+        name: "Reserve",
+        giver:"イエーガー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+     
+        },
+        description: "食料貯蔵庫を見つけて生還する",
+        selected: false
+    },
+    {
+        name: "Forester's Duty",
+        giver:"イエーガー",
+        maps: {
+            
+             "ショアライン": [
+                
+            ],
+             "ライトハウス": [{ left: 48, top: 12.5,comment:"ショアへのトランジット",},
+                
+            ],
+            
+            
+        },
+        description: "ライトハウスでScavを5killしてショアへトランジット⇒ショアでScavを5kill(1レイドで※脱出しなければトランジット繰り返してもOK）",
+        selected: false
+    },
+    {
+        name: "The Hermit",
+        giver:"イエーガー",
+        maps: {
+            
+             "ライトハウス": [{ left: 32.1, top: 18.2,},
+                
+            ],
+            
+        },
+        description: "イエーガーの友達のハイドアウトを見つけて手紙を入手する",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Administrator",
+        giver:"イエーガー",
+        maps: {
+            
+             "ライトハウス": [{ left: -20, top: 33,width:13,height:3,type:"area"},
+                　　　{ left: -20, top: 31,width:18,height:11,type:"area",},
+            ],
+            "リザーブ": [{ left: 91, top: 60,width:15,height:10,type:"area"},
+                { left: 95, top: 58,width:22,height:15,type:"area"},
+            ],
+            
+        },
+        description: "【BEAR】リザーブでイエローフレア打ち上げて任意の敵を6kill(フレアとkill共有）、【USEC】ライトハウスでイエローフレア打ち上げて任意の敵6kill(フレアとkill共有）",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Secured Perimenter",
+        giver:"イエーガー",
+        maps: {
+            
+            "ファクトリー": [
+            ],
+        },
+        description: "PMCを6kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Pest Control",
+        giver:"イエーガー",
+        maps: {
+            
+            "リザーブ": [{ left: 60.1, top: 45,width:12,height:21,type:"area"},
+            ],
+     
+        },
+        description: "兵舎エリアでScavを10kill(kill共有あり)",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Liberation",
+        giver:"イエーガー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            "ラボ": [
+            ],
+     
+        },
+        description: "レイダー6kill",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Outcasts",
+        giver:"イエーガー",
+        maps: {
+            
+            "ライトハウス": [
+            ],
+     
+        },
+        description: "ローグ10kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Forest Cleaning",
+        giver:"イエーガー",
+        maps: {
+            
+             "ショアライン": [
+                
+            ],
+             "ライトハウス": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+            "ストタル": [
+                
+            ],
+            
+            
+        },
+        description: "ショア・ライハ・ストタル・リザーブのいずれかでScavを50kill（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Fishing Place",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "Accessキーカード(in raid)2個納品",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Eraser",
+        giver:"イエーガー",
+        maps: {
+            
+            "リザーブ": [
+            ],
+            
+     
+        },
+        description: "グラハをkill(kill共有あり）、護衛のヘルメットを2つ納品する",
+        selected: false
+    },
+    {
+        name: "Slaughterhouse",
+        giver:"イエーガー",
+        maps: {
+            
+            "ファクトリー": [
+                
+            ], 
+            "ストタル": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            "ショアライン": [
+                
+            ],
+             
+            "リザーブ": [
+                
+            ],
+            "グラゼロ": [
+                
+            ],
+            
+            
+            
+        },
+        description: "ファクトリー（昼）・ストタル・ライトハウス・ショア・リザーブ・グラゼロでそれぞれ近接武器でScavを10killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "【選択タスク】The Huntsman Path-Sadist",
+        giver:"イエーガー",
+        maps: {
+            
+           
+            "ショアライン": [
+                
+            ],
+             
+           
+            
+            
+        },
+        description: "サニターkill&サニターバッグ納品、セラピのA Difficult Choiceと選択タスク",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path-Relentless",
+        giver:"イエーガー",
+        maps: {
+            
+           
+            "ショアライン": [
+                
+            ],
+            "ファクトリー": [
+                
+            ],
+            "インチェ": [
+                
+            ],
+            "カスタム": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            "リザーブ": [
+                
+            ],
+             
+        },
+        description: "1回も死なずに、タギラ・キラ・リシャーラ・シュターマン・グラハ・サニターを倒す（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "The Huntsman Path - Control",
+        giver:"イエーガー",
+        maps: {
+          
+            "ラボ": [
+                
+            ],
+             
+        },
+        description: "1レイドで任意の敵を10killする(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Stray Dogs",
+        giver:"イエーガー",
+        maps: {
+            
+           
+            "ショアライン": [
+                
+            ],
+            "ライトハウス": [
+                
+            ],
+            
+            "カスタム": [
+                
+            ],
+            "ウッズ": [
+                
+            ],
+            
+             
+        },
+        description: "3バカの討伐（多分）",
+        selected: false
+    },
+    {
+        name: "Hunting Trip",
+        giver:"イエーガー",
+        maps: {
+            
+            "ウッズ": [
+                
+            ],
+            
+        },
+        description: "任意のボスをボルトアクションライフルで20kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Broadcast - Part 3",
+        giver:"イエーガー",
+        maps: {
+            
+            "ストタル": [{ left:97, top: 85,},
+            ],
+          
+        },
+        description: "古い家の中で血まみれの放送があった場所を探す、生還する",
+        selected: false
+    },
+    {
+        name: "Broadcast - Part 4",
+        giver:"イエーガー",
+        maps: {
+            
+            "ストタル": [{ left:83, top: 88,comment:"Aband🔑"},
+            ],
+          
+        },
+        description: "カルトの集会所を発見する",
+        selected: false
+    },
+    {
+        name: "Broadcast - Part 5",
+        giver:"イエーガー",
+        maps: {
+            
+            "ストタル": [{ left:13.8, top: 81,comment:"Chek.13🔑"},
+            ],
+          
+        },
+        description: "カルティストのリーダーを排除する、儀式の場所にカルティストナイフを隠す",
+        selected: false
+    },
+    {
+        name: "The Tarkov Shooter - Part 1",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "40m以上離れた場所からスコープなしのボルトアクションライフルでSCAVを5kill",
+        selected: false
+    },
+    {
+        name: "The Tarkov Shooter - Part 1",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "40m以上離れた場所からスコープなしのボルトアクションライフルでSCAVを5kill",
+        selected: false
+    },
+    {
+        name: "The Tarkov Shooter - Part 2",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "40m以上離れた場所からボルトアクションライフルで足に3発、頭に2発当てる",
+        selected: false
+    },
+    {
+        name: "The Tarkov Shooter - Part 3",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "25m以内からボルトアクションライフルでPMCを3kill",
+        selected: false
+    },
+    {
+        name: "The Tarkov Shooter - Part 4",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "任意の敵をボルトアクションライフルで15kill",
+        selected: false
+    },
+    {
+        name: "The Tarkov Shooter - Part 5",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "ボルトアクションライフルを使いスナイパーSCAVを5kill(kill共有あり）",
+        selected: false
+    },
+    {
+        name: "The Tarkov Shooter - Part 6",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "サプレッサー付きボルトアクションライフルを使いPMCを5kill",
+        selected: false
+    },
+    {
+        name: "The Tarkov Shooter - Part 7",
+        giver:"イエーガー",
+        maps: {
+            
+        },
+        description: "ボルトアクションライフルを使い死なずにPMCを5kill",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Thrifty",
+        giver:"イエーガー",
+        maps: {
+
+            "ウッズ": [{ left:-60, top: 240,}, {left: 120, top: 228,},
+            ],
+            
+        },
+        description: "IskraとWaterのセットを2か所に隠す",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Zhivchik",
+        giver:"イエーガー",
+        maps: {
+
+        },
+        description: "ファクトリー以外のマップで脱水状態で5分経過して生還する",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Unprotected but Dangerous",
+        giver:"イエーガー",
+        maps: {
+
+        },
+        description: "アーマーなしでPMC5kill",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Wounded Beast",
+        giver:"イエーガー",
+        maps: {
+
+        },
+        description: "痛みの状態異常中にSCAVを3kill",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Tough Guy",
+        giver:"イエーガー",
+        maps: {
+               "ウッズ": [
+            ],
+        },
+        description: "医療品を使用せず、1回のレイドでSCAVを3kill",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Controller",
+        giver:"イエーガー",
+        maps: {
+               
+        },
+        description: "フレッシュバンを使用して、目がくらんだPMCを2kill",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Cold Blooded",
+        giver:"イエーガー",
+        maps: {
+               
+        },
+        description: "震えの状態でPMCをヘッドショットで2kill",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Eagle-Owl",
+        giver:"イエーガー",
+        maps: {
+               
+        },
+        description: "ファクトリー以外のマップでナイトビジョンやサーマルサイトを使用せずに21:00～4:00の間にSCAVを6kill",
+        selected: false
+    },
+    {
+        name: "The Survivalist - Junkie",
+        giver:"イエーガー",
+        maps: {
+               "ウッズ": [
+            ],
+        },
+        description: "興奮剤の効果中にSCAVを15kill",
+        selected: false
+    },
+    {
+        name: "Thirsty-Hounds",
+        giver:"イエーガー",
+        maps: {
+            "ショアライン": [
+               
+            ]
+        },
+        description: "22時〜7時の間にSCAVを12killする（kill共有あり）",
+        selected: false
+    },
+    {
+        name: "Cut Down to the Root",
+        giver:"イエーガー",
+        maps: {
+            "ライトハウス": [
+               
+            ]
+        },
+        description: "ローグを15kill（kill共有あり）",
         selected: false
     },
 
@@ -3363,6 +4315,7 @@ const tasksData = [
 
 
 
+    
 
 
 
@@ -3385,6 +4338,95 @@ const tasksData = [
 
 
 
+
+
+
+
+
+
+
+
+    {
+        name: "Needle in a Haystak",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left: 9, top: 103 },
+                
+            ],
+            
+            "インチェ": [{ left: 7, top: 72 },{ left:68, top: 105 },
+                
+            ],
+            "グラゼロ": [{ left: 85, top: 85 },
+                
+            ],
+            "ショアライン": [{ left: 53, top: 30 },{ left:70, top: 83 },
+                
+            ],
+            
+            
+        },
+        description: "グラゼロでテラグループ本社前中庭調査、インチェで子供の遊び場とカートコースを調査、ショアで工事現場と子供の遊び場を調査、ストタルで子供の遊び場を調査",
+        selected: false
+    },
+    {
+        name: "【ラビリンス】Hidden Layer",
+        giver:"メカニック",
+        maps: {
+            
+             "ショアライン": [{ left: 47.3, top: 33 ,commentX:-95,commentY:-28,comment:"西棟2F🔑沸き"},{ left: 45.6, top: 34 , commentX:-100,commentY:15,comment:"西棟1F🔑沸き【目的】地下入室"},{ left:51, top: 32.5,comment:"東棟2F&3F🔑沸き"},{ left: 49.5, top: 28.5 ,comment:"北館3F🔑沸き"},
+                
+            ],
+            
+            
+        },
+        description: "西棟地下の鍵部屋に入る方法を探す（任意：Knossos🔑を手に入れる）",
+        selected: false
+    },
+    {
+        name: "【ラビリンス】Offensive Reconnaissance",
+        giver:"メカニック",
+        maps: {
+            
+             "ショアライン": [{ left: 45.6, top: 34 ,}
+                
+            ],
+            
+            
+        },
+        description: "ラビリンスへトランジットする",
+        selected: false
+    },
+    {
+        name: "Broadcast-part1",
+        giver:"メカニック",
+        maps: {
+            
+           
+            
+            "ライトハウス": [{ left: 4.5, top: 35.8 ,comment:"OR🔑"},
+            ],
+              
+   
+        },
+        description: "レコーディングスタジオを見つけてシグナルジャマーを設置する",
+        selected: false
+    },
+    {
+        name: "Broadcast-part2",
+        giver:"メカニック",
+        maps: {
+            
+            "ストタル": [{ left:22 , top: 95,},
+            ],
+           
+            
+     
+        },
+        description: "食料店内で血まみれの放送場所を確認する",
+        selected: false
+    },
 
 
 
@@ -3666,7 +4708,7 @@ const woodsPmcExitsData = [
 
     { name: "Outskirts", left: -39, top: 305, labelX: -55, labelY: 313, condition: "" },
 
-    { name: "ZB014", left:-60, top: 240, labelX: -108, labelY: 243, condition: "フレアがたかれてる時＆ZB-014鍵" },
+    { name: "ZB-014", left:-60, top: 240, labelX: -108, labelY: 243, condition: "フレアがたかれてる時＆ZB-014鍵" },
 
     { name: "Power Line Passage", left: -65, top: 213, labelX: -110, labelY: 210, condition: "緑フレアが必要" },
     { name: "Friendship Bridge(Co-Op)", left: 11.5, top: 42.5, labelX: 11.5, labelY: 42.5, condition: "PMCとSCAV各1人" },
@@ -3699,57 +4741,57 @@ const woodsScavExitsData = [
 // インチェ
 const interchangePmcExitsData = [
 
-    { name: "Railway Exfil", left: -4, top: 93.2, labelX: -4, labelY: 93.2, condition: "" },
+    { name: "Railway Exfil", left: -3, top: 95, labelX: -4, labelY: 93.2, condition: "" },
 
-    { name: "Scav Camp(Co-Op)", left: 18, top: 78, labelX: 18, labelY: 78, condition: "PMCとSCAV各1人" },
+    { name: "Scav Camp(Co-Op)", left: 18, top: 81.8, labelX: 18, labelY: 81.8, condition: "PMCとSCAV各1人" },
 
     { name: "Power Station V-Ex", left: -0.2, top:33, labelX: -0.2, labelY: 33, condition: "お金" },
     { name: "Hole in the Fence", left: 25.5, top: 37, labelX: 25.5, labelY: 37, condition: "バッグを装備しない" },
-    { name: "Emercom Checkpoint", left: 37, top: 32, labelX: 37, labelY: 32,condition: "" },
-    { name: "Saferoom Exfil", left: 23.5, top: 53, labelX: 23.5, labelY:53, condition: "地下図面いれる、電源＆Object 11SRキーカード" },
+    { name: "Emercom Checkpoint", left: 37.8, top: 32.8, labelX: 37.8, labelY: 32.8,condition: "" },
+    { name: "Saferoom Exfil", left: 23, top: 57, labelX: 18, labelY:57.7, condition: "地下図面いれる、電源＆Object 11SRキーカード" },
     { name: "", left: 0.8, top: 40.3, labelX: 0.8, labelY:40.3, condition: "電源オン"},
 
     ];
 
 const interchangeScavExitsData = [
 
-    { name: "Railway Exfil", left: -4, top: 93.2, labelX: -4, labelY: 93.2,condition: "" },
+    { name: "Railway Exfil",  left: -3, top: 95, labelX: -4, labelY: 93.2, condition: "" },
 
-    { name: "Emercom Checkpoint",left: 37, top: 32, labelX: 37, labelY: 32, condition: "" },
+    { name: "Emercom Checkpoint",left: 37.8, top: 32.8, labelX: 37.8, labelY: 32.8, condition: "" },
 
-    { name: "Scav Camp(Co-Op)",left: 18, top: 78, labelX: 18, labelY: 78,condition: "PMCとSCAV各1人" },
-
+    { name: "Scav Camp(Co-Op)",left: 18, top: 81.8, labelX: 18, labelY: 81.8, condition: "PMCとSCAV各1人" },
+    
     ];
 
 // リザーブ
 const reservePmcExitsData = [
 
-    { name: "Cliff Descent", left: 7, top: 65, labelX: 7, labelY: 65, condition: "RR&アーマー脱ぐ" },
+    { name: "Cliff Descent", left: 68, top: 15, labelX: 68, labelY: 15,condition: "RR&アーマー脱ぐ" },
 
-    { name: "Sewer Manhole", left: 65, top: 150, labelX: 65, labelY: 150, condition: "バッグを装備しない" },
+    { name: "Sewer Manhole", left: 78, top: 32.5, labelX: 78, labelY: 32.5, condition: "バッグを装備しない" },
 
-    { name: "Scav Lands(Co-Op)", left: -6, top: 335, labelX: -6, labelY: 335, condition: "PMCとSCAV各1人" },
-    { name: "Armored Train", left: 185, top: 288, labelX: 185, labelY: 288, condition: "列車おる時" },
-    { name: "Bunker Hermic Door", left: 120, top: 305, labelX: 120, labelY: 305, condition: "電源＆警報なってる間" },
-    { name: "", left: -3, top: 166, labelX: -3, labelY: 166, condition: "電源オン" },
-    { name: "D-2", left: -55, top: 113, labelX: -55, labelY: 113, condition: "地下電源" },
-    { name: "", left: -35, top: 215, labelX: -35, labelY: 215, condition: "地下電源オン" },
+    { name: "Scav Lands(Co-Op)", left: 65.8, top: 70, labelX: 65.8, labelY: 70, condition: "PMCとSCAV各1人" },
+    { name: "Armored Train", left: 100, top: 61.2, labelX: 100, labelY: 61.2, condition: "列車おる時" },
+    { name: "Bunker Hermic Door", left: 89.5, top: 66, labelX: 89.5, labelY: 66, condition: "電源＆警報なってる間" },
+    { name: "", left: 66.5, top: 36, labelX: 66.5, labelY: 36, condition: "電源オン" },
+    { name: "D-2", left: 14, top: 19, labelX: 14, labelY: 19, condition: "地下電源" },
+    { name: "", left: 21, top: 55, labelX: 21, labelY: 55, condition: "地下電源オン" },
     ];
 
 const reserveScavExitsData = [
 
-    { name: "Scav Lands(Co-Op)", left: -6, top: 335, labelX: -6, labelY: 335, condition: "PMCとSCAV各1人" },
+    { name: "Scav Lands(Co-Op)", left: 65.8, top: 70, labelX: 65.8, labelY: 70, condition: "PMCとSCAV各1人" },
 
-    { name: "Checkpoint Fence", left: 70, top: 100, labelX: 70, labelY: 100, condition: "" },
-    { name: "Sewer Manhole", left: 65, top: 150, labelX: 65, labelY: 150, condition: "バッグを装備しない" },
+    { name: "Checkpoint Fence", left: 79.2, top: 23, labelX: 79.2, labelY: 23, condition: "" },
+    { name: "Sewer Manhole", left: 78, top: 32.5, labelX: 78, labelY: 32.5, condition: "バッグを装備しない" },
 
 
-    { name: "Hole in the by the Mountains", left: -127, top: 217, labelX: -127, labelY: 217, condition: "" },
-    { name: "Bunker Hermic Door", left: 120, top: 305, labelX: 120, labelY: 305, condition: "電源＆警報なってる間" },
-    { name: "", left: -3, top: 166, labelX: -3, labelY: 166, condition: "電源オン" },
-    { name: "Armored Train", left: 185, top: 288, labelX: 185, labelY: 288, condition: "列車おる時" },
-    { name: "Heating Pipe", left: 69, top: 344.5, labelX: 69, labelY: 344.5, condition: "" },
-    { name: "Dept Hermic Door", left: 140, top: 250, labelX: 140, labelY: 250, condition: "" },
+    { name: "Hole in the by the Mountains", left: 44, top: 48, labelX: 44, labelY: 48, condition: "" },
+    { name: "Bunker Hermic Door", left: 89.5, top: 66, labelX: 89.5, labelY: 66,  condition: "電源＆警報なってる間" },
+    { name: "",left: 66.5, top: 36, labelX: 66.5, labelY: 36,  condition: "電源オン" },
+    { name: "Armored Train",left: 89.5, top: 66, labelX: 89.5, labelY: 66, condition: "列車おる時" },
+    { name: "Heating Pipe", left: 79, top: 73, labelX: 79, labelY: 73, condition: "" },
+    { name: "Dept Hermic Door", left: 92.6, top: 53.1, labelX: 92.6, labelY: 53.1, condition: "ここから地下入ってすぐ左" },
 
     ];
 
@@ -3820,7 +4862,7 @@ const factoryPmcExitsData = [
 
     { name: "Gate 0",left:  55.8, top:  45.5, labelX:  55.8, labelY:  45.5, condition: "" },
     { name: "Med Tent Gates", left: 97, top:  31.6, labelX:  97, labelY:  31.6, condition: "Factory emergency exit🔑" },
-    { name: "Cellars", left:  41.5, top:  3.4, labelX:34, labelY:  5, condition:"地下、Factory emaergency exit🔑"},
+    { name: "Cellars", left:  41.5, top:  3.4, labelX:34, labelY:  5.2, condition:"地下、Factory emaergency exit🔑"},
 
     ];
 
@@ -3948,6 +4990,14 @@ const exitsByMap = {
 const pmcExits = document.querySelector(".pmc-exits");
 const scavExits = document.querySelector(".scav-exits");
 
+function hideNormalExits() {
+    pmcExits.innerHTML = "";
+    scavExits.innerHTML = "";
+
+    pmcExits.style.display = "none";
+    scavExits.style.display = "none";
+}
+
 const pmcButton = document.getElementById("pmcButton");
 const scavButton = document.getElementById("scavButton");
 const hideButton = document.getElementById("hideButton");
@@ -3960,77 +5010,24 @@ function setActiveButton(button) {
     button.classList.add("active");
 }
 
-// 脱出地点を表示する関数
-function showExits(exits, container) {
+
+
+
+// 脱出地点を実際に描画する共通処理
+function renderExits(exits, container) {
 
     container.innerHTML = "";
 
     exits.forEach(function(exit) {
 
-        // ⚫︎
         const dot = document.createElement("div");
-
         dot.className = "exit-dot";
         dot.textContent = "●";
 
         dot.style.left = exit.left + "%";
         dot.style.top = exit.top + "%";
 
-
-        // 文字
         const label = document.createElement("div");
-        label.className = "exit-label";
-        label.style.left = exit.labelX + "%";
-        label.style.top = exit.labelY + "%";
-
-// 脱出地点名
-const name = document.createElement("div");
-name.textContent = exit.name;
-
-label.appendChild(name);
-
-
-// 条件がある場合だけ表示
-if (exit.condition) {
-
-    const condition = document.createElement("div");
-
-    condition.className = "exit-condition";
-    condition.textContent = exit.condition;
-
-    label.appendChild(condition);
-}
-
-
-        // 地図に直接置く
-        container.appendChild(dot);
-        container.appendChild(label);
-    });
-}
-
-function showFactoryExits(exits, type) {
-
-    // 通常マップと同じ脱出表示用コンテナを使う
-    const container = type === "scav"
-    ? factoryScavContainer
-    : factoryPmcContainer;
-
-    container.innerHTML = "";
-
-    exits.forEach(function(exit) {
-
-        // ●
-        const dot = document.createElement("div");
-
-        dot.className = "exit-dot";
-        dot.textContent = "●";
-
-        dot.style.left = exit.left + "%";
-        dot.style.top = exit.top + "%";
-
-        // 脱出地点名
-        const label = document.createElement("div");
-
         label.className = "exit-label";
         label.style.left = exit.labelX + "%";
         label.style.top = exit.labelY + "%";
@@ -4040,7 +5037,6 @@ function showFactoryExits(exits, type) {
 
         label.appendChild(name);
 
-        // 条件がある場合
         if (exit.condition) {
 
             const condition = document.createElement("div");
@@ -4054,47 +5050,25 @@ function showFactoryExits(exits, type) {
         container.appendChild(dot);
         container.appendChild(label);
     });
-
-    container.style.display = "block";
 }
 
 
+// 通常マップの脱出地点
+function showExits(exits, container) {
+    renderExits(exits, container);
+}
 
+
+// 特殊マップの脱出地点
 function showExitsIntoView(exits, view, type) {
+
     const container = type === "scav"
         ? view.querySelector(".scav-exits")
         : view.querySelector(".pmc-exits");
 
     if (!container) return;
 
-    container.innerHTML = "";
-
-    exits.forEach(function(exit) {
-        const dot = document.createElement("div");
-        dot.className = "exit-dot";
-        dot.textContent = "●";
-        dot.style.left = exit.left + "%";
-        dot.style.top = exit.top + "%";
-
-        const label = document.createElement("div");
-        label.className = "exit-label";
-        label.style.left = exit.labelX + "%";
-        label.style.top = exit.labelY + "%";
-
-        const name = document.createElement("div");
-        name.textContent = exit.name;
-        label.appendChild(name);
-
-        if (exit.condition) {
-            const condition = document.createElement("div");
-            condition.className = "exit-condition";
-            condition.textContent = exit.condition;
-            label.appendChild(condition);
-        }
-
-        container.appendChild(dot);
-        container.appendChild(label);
-    });
+    renderExits(exits, container);
 
     container.style.display = "block";
 }
@@ -4108,133 +5082,15 @@ function showExitsIntoView(exits, view, type) {
 
 
 
-function showInterchangeExits(exits, type) {
-    console.log("Interchange exits:", exits);
-
-    let interchangeExits = document.getElementById("interchange-exits");
-
-    if (!interchangeExits) {
-        interchangeExits = document.createElement("div");
-        interchangeExits.id = "interchange-exits";
-
-        const interchangeMap = document.getElementById("interchange-floor-grid");
-        interchangeMap.appendChild(interchangeExits);
-    }
-
-    interchangeExits.innerHTML = "";
-
-    exits.forEach(function(exit) {
-
-        const dot = document.createElement("div");
-
-        dot.className = "exit-dot";
-        dot.textContent = "●";
-
-        dot.style.left = exit.left + "%";
-        dot.style.top = exit.top + "%";
-
-
-        const label = document.createElement("div");
-
-        label.className = "exit-label";
-
-        label.style.left = exit.labelX + "%";
-        label.style.top = exit.labelY + "%";
-
-
-        const name = document.createElement("div");
-
-        name.textContent = exit.name;
-
-        label.appendChild(name);
-
-
-        if (exit.condition) {
-
-            const condition = document.createElement("div");
-
-            condition.className = "exit-condition";
-            condition.textContent = exit.condition;
-
-            label.appendChild(condition);
-        }
-
-
-        interchangeExits.appendChild(dot);
-        interchangeExits.appendChild(label);
-
-    });
-}
-
-
-function showLabsExits(exits, type) {
-
-    // Factoryと同じく、通常マップと同じ脱出表示用コンテナを使う
-    const container = type === "scav"
-    ? labsScavContainer
-    : labsPmcContainer;
-
-    container.innerHTML = "";
-
-    exits.forEach(function(exit) {
-
-        // ●
-        const dot = document.createElement("div");
-
-        dot.className = "exit-dot";
-        dot.textContent = "●";
-
-        dot.style.left = exit.left + "%";
-        dot.style.top = exit.top + "%";
-
-        // 脱出地点名
-        const label = document.createElement("div");
-
-        label.className = "exit-label";
-        label.style.left = exit.labelX + "%";
-        label.style.top = exit.labelY + "%";
-
-        const name = document.createElement("div");
-        name.textContent = exit.name;
-
-        label.appendChild(name);
-
-        // 条件がある場合
-        if (exit.condition) {
-
-            const condition = document.createElement("div");
-
-            condition.className = "exit-condition";
-            condition.textContent = exit.condition;
-
-            label.appendChild(condition);
-        }
-
-        container.appendChild(dot);
-        container.appendChild(label);
-    });
-
-    container.style.display = "block";
-}
 
 
 
 
-
-// マップごとの脱出地点データ
-const mapExitData = {
-shoreline: {
-pmc: pmcExitsData,
-scav: scavExitsData
-}
-};
 
 // マップに合わせて脱出地点を更新
 function updateExits(mapName) {
 
-console.log("現在のマップ:", mapName);
 console.log("インチェデータ:", exitsByMap["インチェ"]);
-
 const data = exitsByMap[mapName];
 if (!data) {
     pmcExits.style.display = "none";
@@ -4257,9 +5113,14 @@ scavExits.style.display = "none";
 setActiveButton(pmcButton);
 
 if (currentMap === "インチェ") {
-    showInterchangeExits(interchangePmcExitsData, "pmc");
     pmcExits.style.display = "none";
     scavExits.style.display = "none";
+
+    showExitsIntoView(
+        interchangePmcExitsData,
+        interchangeFloorGrid,
+        "pmc"
+    );
 
 } else if (currentMap === "ファクトリー") {
     pmcExits.style.display = "none";
@@ -4268,7 +5129,7 @@ if (currentMap === "インチェ") {
     factoryPmcContainer.style.display = "block";
     factoryScavContainer.style.display = "none";
 
-    showFactoryExits(factoryPmcExitsData, "pmc");
+    showExitsIntoView(factoryPmcExitsData, factoryFloorView, "pmc");
 
 } else {
     updateExits(currentMap);
@@ -4277,36 +5138,28 @@ if (currentMap === "インチェ") {
 // PMCボタン
 pmcButton.addEventListener("click", function() {
 
-    if (currentMap === "ファクトリー") {
-    pmcExits.style.display = "none";
-　　scavExits.style.display = "none";
+   const data = specialExitData[currentMap];
 
-　　factoryPmcContainer.style.display = "block";
-　　factoryScavContainer.style.display = "none";
-    showFactoryExits(factoryPmcExitsData, "pmc");
+if (data) {
+    pmcExits.style.display = "none";
+    scavExits.style.display = "none";
+
+    const pmcContainer =
+        data.view.querySelector(".pmc-exits");
+
+    const scavContainer =
+        data.view.querySelector(".scav-exits");
+
+    pmcContainer.style.display = "block";
+    scavContainer.style.display = "none";
+
+    showExitsIntoView(data.pmc, data.view, "pmc");
+
     setActiveButton(pmcButton);
     return;
 }
 
-    if (currentMap === "ラボ") {
-        pmcExits.style.display = "none";
-        scavExits.style.display = "none";
 
-        labsPmcContainer.style.display = "block";
-        labsScavContainer.style.display = "none";
-
-        showLabsExits(labsPmcExitsData, "pmc");
-        setActiveButton(pmcButton);
-        return;
-    }
-
-    if (currentMap === "インチェ") {
-    pmcExits.innerHTML = "";
-    scavExits.innerHTML = "";
-    showInterchangeExits(interchangePmcExitsData, "pmc");
-    setActiveButton(pmcButton);
-    return;
-    }
 
     pmcExits.style.display = "block";
     scavExits.style.display = "none";
@@ -4319,37 +5172,28 @@ pmcButton.addEventListener("click", function() {
 // SCAVボタン
 scavButton.addEventListener("click", function() {
 
-    if (currentMap === "ファクトリー") {
-    factoryPmcContainer.style.display = "none";
-    factoryScavContainer.style.display = "block";
+    const data = specialExitData[currentMap];
 
-    showFactoryExits(factoryScavExitsData, "scav");
+if (data) {
+    pmcExits.style.display = "none";
+    scavExits.style.display = "none";
+
+    const pmcContainer =
+        data.view.querySelector(".pmc-exits");
+
+    const scavContainer =
+        data.view.querySelector(".scav-exits");
+
+    pmcContainer.style.display = "none";
+    scavContainer.style.display = "block";
+
+    showExitsIntoView(data.scav, data.view, "scav");
 
     setActiveButton(scavButton);
     return;
 }
 
-    if (currentMap === "ラボ") {
-        pmcExits.style.display = "none";
-        scavExits.style.display = "none";
 
-        labsPmcContainer.style.display = "none";
-        labsScavContainer.style.display = "block";
-
-        showLabsExits(labsScavExitsData, "scav");
-        setActiveButton(scavButton);
-        return;
-    }
-    
-    if (currentMap === "インチェ") {
-    pmcExits.innerHTML = "";
-    scavExits.innerHTML = "";
-
-    showInterchangeExits(interchangeScavExitsData, "scav");
-
-    setActiveButton(scavButton);
-    return;
-   }
 
     pmcExits.style.display = "none";
     scavExits.style.display = "block";
@@ -4365,31 +5209,20 @@ hideButton.addEventListener("click", function() {
     pmcExits.style.display = "none";
     scavExits.style.display = "none";
 
-        // ラボの脱出を非表示
-    if (currentMap === "ラボ") {
-        labsPmcContainer.style.display = "none";
-        labsScavContainer.style.display = "none";
+       const data = specialExitData[currentMap];
 
-        labsPmcContainer.innerHTML = "";
-        labsScavContainer.innerHTML = "";
-    }
+if (data) {
+    const pmcContainer =
+        data.view.querySelector(".pmc-exits");
 
+    const scavContainer =
+        data.view.querySelector(".scav-exits");
 
-    if (currentMap === "ファクトリー") {
-    factoryPmcContainer.style.display = "none";
-    factoryScavContainer.style.display = "none";
+    pmcContainer.style.display = "none";
+    scavContainer.style.display = "none";
 
-    factoryPmcContainer.innerHTML = "";
-    factoryScavContainer.innerHTML = "";
-}
-
-
-    if (currentMap === "インチェ") {
-    const interchangeExits = document.getElementById("interchange-exits");
-
-    if (interchangeExits) {
-        interchangeExits.innerHTML = "";
-    }
+    pmcContainer.innerHTML = "";
+    scavContainer.innerHTML = "";
 }
 
     setActiveButton(hideButton);
@@ -4711,9 +5544,33 @@ const factoryFloorGrid = document.getElementById("factory-floor-grid");
 const labsFloorGrid = document.getElementById("labs-floor-grid");
 const interchangeFloorGrid = document.getElementById("interchange-floor-grid");
 const factoryFloorView = document.getElementById("factory-floor-grid");
+const reserveFloorView = document.getElementById("reserve-floor-grid");
 
-const factoryPmcView = factoryFloorView;
-const factoryScavView = factoryFloorView;
+
+
+function isSpecialMap(mapType) {
+    return (
+        mapType === "factory" ||
+        mapType === "labs" ||
+        mapType === "interchange" ||
+        mapType === "reserve"
+    );
+}
+
+function getSpecialMapView(mapType) {
+    if (!isSpecialMap(mapType)) {
+        return null;
+    }
+
+    const views = {
+        factory: document.getElementById("factory-floor-grid"),
+        labs: document.getElementById("labs-floor-grid"),
+        interchange: document.getElementById("interchange-floor-grid"),
+        reserve: document.getElementById("reserve-floor-grid")
+    };
+
+    return views[mapType] || null;
+}
 
 const factoryPmcContainer =
     factoryFloorView.querySelector(".pmc-exits");
@@ -4732,6 +5589,29 @@ const labsScavContainer =
     labsFloorView.querySelector(".scav-exits");
 
 
+    const specialExitData = {
+    "ファクトリー": {
+        view: factoryFloorView,
+        pmc: factoryPmcExitsData,
+        scav: factoryScavExitsData
+    },
+    "ラボ": {
+        view: labsFloorView,
+        pmc: labsPmcExitsData,
+        scav: labsScavExitsData
+    },
+    "インチェ": {
+        view: interchangeFloorGrid,
+        pmc: interchangePmcExitsData,
+        scav: interchangeScavExitsData
+    },
+    "リザーブ": {
+        view: reserveFloorView,
+        pmc: reservePmcExitsData,
+        scav: reserveScavExitsData
+    }
+};
+
 
 
 
@@ -4743,129 +5623,11 @@ const mapImages = {
     customs: "Customs.svg",
     lighthouse: "Lighthouse.svg",
     woods: "Woods.svg",
-    interchange: "Interchange.svg",
-    reserve: "Reserve.svg",
-    labs: "Labs.svg",
     streets: "StreetsOfTarkov.svg",
     groundzero: "GroundZero.svg",
-    factory: "Factory.svg",
+    
 };
-async function loadFactoryFloors() {
 
-    const floorMaps = document.querySelectorAll(".factory-floor-map");
-
-    try {
-        const response = await fetch("Factory.svg");
-
-        if (!response.ok) {
-            throw new Error("Factory.svg を読み込めませんでした");
-        }
-
-        const svgText = await response.text();
-
-        floorMaps.forEach(function (container) {
-
-            const floorName = container.dataset.floor;
-
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(
-                svgText,
-                "image/svg+xml"
-            );
-
-            const svg = doc.documentElement;
-
-            const floors = [
-                "Basement",
-                "Ground_Floor",
-                "Second_Floor",
-                "Third_Floor"
-            ];
-
-            floors.forEach(function (floor) {
-
-                const group = svg.querySelector("#" + floor);
-
-                if (group) {
-                    group.style.display = "none";
-                }
-            });
-
-            const currentFloor = svg.querySelector(
-                "#" + floorName
-            );
-
-            if (currentFloor) {
-             currentFloor.style.display = "block";
-              }
-
-            container.innerHTML = "";
-            container.appendChild(svg);
-
-        });
-
-    } catch (error) {
-        console.error("Factory.svg の読み込みに失敗:", error);
-    }
-}
-
-async function loadLabsFloors() {
-
-    const floorMaps = document.querySelectorAll(".labs-floor-map");
-
-    try {
-        const response = await fetch("Labs.svg");
-
-        if (!response.ok) {
-            throw new Error("Labs.svg を読み込めませんでした");
-        }
-
-        const svgText = await response.text();
-
-        floorMaps.forEach(function (container) {
-
-            const floorName = container.dataset.floor;
-
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(
-                svgText,
-                "image/svg+xml"
-            );
-
-            const svg = doc.documentElement;
-
-            const floors = [
-                "Technical_Level",
-                "First_Level",
-                "Second_Level"
-            ];
-
-            floors.forEach(function (floor) {
-
-                const group = svg.querySelector("#" + floor);
-
-                if (group) {
-                    group.style.display = "none";
-                }
-            });
-
-            const currentFloor = svg.querySelector(
-                "#" + floorName
-            );
-
-            if (currentFloor) {
-                currentFloor.style.display = "block";
-            }
-
-            container.innerHTML = "";
-            container.appendChild(svg);
-
-        });
-
-    } catch (error) {
-        console.error("Labs.svg の読み込みに失敗:", error);
-    }
-}
 
 
 
@@ -4873,101 +5635,103 @@ mapSelect.addEventListener("change", function () {
 
     setActiveButton(pmcButton);
 
-    // =========================
-    // インチェ
-    // =========================
+// =========================
+// インチェ
+// =========================
+if (this.value === "interchange") {
 
-    if (this.value === "interchange") {
-
-        mapImage.style.display = "none";
-
-        factoryFloorGrid.style.display = "none";
-        labsFloorGrid.style.display = "none";
-        interchangeFloorGrid.style.display = "grid";
-
-        
-
-        // 通常マップの脱出口を消す
-        pmcExits.innerHTML = "";
-        scavExits.innerHTML = "";
-        pmcExits.style.display = "none";
-        scavExits.style.display = "none";
-
-    }
-
-    // =========================
-    // ファクトリー
-    // =========================
-
-    else if (this.value === "factory") {
-
-        mapImage.style.display = "none";
-
-        factoryFloorGrid.style.display = "grid";
-        labsFloorGrid.style.display = "none";
-        interchangeFloorGrid.style.display = "none";
-
-       pmcExits.innerHTML = "";
-       scavExits.innerHTML = "";
-       pmcExits.style.display = "none";
-       scavExits.style.display = "none";
+    mapImage.style.display = "none";
+    factoryFloorGrid.style.display = "none";
+    labsFloorGrid.style.display = "none";
+    interchangeFloorGrid.style.display = "grid";
+    reserveFloorView.style.display = "none";
+    hideNormalExits();
+    
+}
 
 
-        //loadFactoryFloors();
+// =========================
+// ファクトリー
+// =========================
+else if (this.value === "factory") {
 
-        // 通常マップの脱出口を消す
-        factoryPmcContainer.style.display = "block";
-　　　　factoryScavContainer.style.display = "none";
+    mapImage.style.display = "none";
+    factoryFloorGrid.style.display = "grid";
+    labsFloorGrid.style.display = "none";
+    interchangeFloorGrid.style.display = "none";
+    reserveFloorView.style.display = "none";
 
-        showFactoryExits(factoryPmcExitsData, "pmc");
+    hideNormalExits();
 
 
+    factoryPmcContainer.style.display = "block";
+    factoryScavContainer.style.display = "none";
 
-    }
+    showExitsIntoView(factoryPmcExitsData, factoryFloorView, "pmc");
+}
 
-    // =========================
-    // その他のマップ
-    // =========================
 
-    else {
+// =========================
+// ラボ
+// =========================
+else if (this.value === "labs") {
 
-        mapImage.style.display = "block";
+    mapImage.style.display = "none";
+    factoryFloorGrid.style.display = "none";
+    labsFloorGrid.style.display = "grid";
+    interchangeFloorGrid.style.display = "none";
+    reserveFloorView.style.display = "none";
 
-            factoryPmcContainer.innerHTML = "";
-    　　　　factoryScavContainer.innerHTML = "";
+        hideNormalExits();
 
-        factoryFloorGrid.style.display = "none";
-        labsFloorGrid.style.display = "none";
-        interchangeFloorGrid.style.display = "none";
 
-        pmcExits.style.display = "block";
-        scavExits.style.display = "block";
+    showExitsIntoView(labsPmcExitsData, labsFloorView, "pmc");
+}
 
-        mapImage.src = mapImages[this.value];
 
-        // =========================
-        // ラボ
-        // =========================
+// =========================
+// リザーブ
+// =========================
+else if (this.value === "reserve") {
 
-        if (this.value === "labs") {
+    mapImage.style.display = "none";
+    factoryFloorGrid.style.display = "none";
+    labsFloorGrid.style.display = "none";
+    interchangeFloorGrid.style.display = "none";
+    document.getElementById("reserve-floor-grid").style.display = "grid";
 
-            mapImage.style.display = "none";
+        hideNormalExits();
 
-            factoryFloorGrid.style.display = "none";
-            labsFloorGrid.style.display = "grid";
-            interchangeFloorGrid.style.display = "none";
+    reserveFloorView.querySelector(".pmc-exits").innerHTML = "";
+    reserveFloorView.querySelector(".scav-exits").innerHTML = "";
 
-           pmcExits.innerHTML = "";
-           scavExits.innerHTML = "";
+    reserveFloorView.querySelector(".pmc-exits").style.display = "block";
+    reserveFloorView.querySelector(".scav-exits").style.display = "none";
 
-           
+    showExitsIntoView(reservePmcExitsData, reserveFloorView, "pmc");
+}
 
-          showLabsExits(labsPmcExitsData, "pmc");
 
-          //loadLabsFloors();
-        }
-    }
+// =========================
+// 通常マップ
+// =========================
+else {
 
+    mapImage.style.display = "block";
+
+    factoryPmcContainer.innerHTML = "";
+    factoryScavContainer.innerHTML = "";
+
+    factoryFloorGrid.style.display = "none";
+    labsFloorGrid.style.display = "none";
+    interchangeFloorGrid.style.display = "none";
+    reserveFloorView.style.display = "none";
+
+    pmcExits.style.display = "block";
+    scavExits.style.display = "block";
+
+    mapImage.src = mapImages[this.value];
+}
 
     // =========================
     // マップ専用クラスをリセット
@@ -5053,12 +5817,14 @@ mapSelect.addEventListener("change", function () {
 
     currentMap = mapNames[this.value];
 
-    if (this.value === "factory") {
-    taskMarkers = document.querySelector("#factory-floor-grid > .map-tasks");
-} else if (this.value === "labs") {
-    taskMarkers = document.querySelector("#labs-floor-grid > .map-tasks");
-} else if (this.value === "interchange") {
-    taskMarkers = document.querySelector("#interchange-floor-grid > .map-tasks");
+
+// 今まで表示していたタスクピンを消す
+taskMarkers.innerHTML = "";
+
+const specialMapView = getSpecialMapView(this.value);
+
+if (specialMapView) {
+    taskMarkers = specialMapView.querySelector(".map-tasks");
 } else {
     taskMarkers = document.querySelector("#normal-map-view .map-tasks");
 }
@@ -5069,18 +5835,18 @@ mapSelect.addEventListener("change", function () {
     showTaskConditions();
 
     if (this.value === "interchange") {
-    showInterchangeExits(interchangePmcExitsData, "pmc");
+    showExitsIntoView(
+        interchangePmcExitsData,
+        interchangeFloorGrid,
+        "pmc"
+    );
 }
 
 
-    // インチェ・ファクトリー以外は通常の脱出口処理
-    if (
-    　　　this.value !== "factory" &&
-    　　　this.value !== "interchange" &&
-    　　　this.value !== "labs"
-　　　) {
-    　　　updateExits(currentMap);
-　　　}
+    
+    if (!isSpecialMap(this.value)) {
+    updateExits(currentMap);
+}
 
 });
 
